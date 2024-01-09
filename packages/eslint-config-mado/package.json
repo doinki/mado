@@ -1,0 +1,57 @@
+{
+  "name": "eslint-config-mado",
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": {
+    "email": "doinki94@gmail.com",
+    "name": "doinki",
+    "url": "https://github.com/doinki"
+  },
+  "bugs": "https://github.com/doinki/mado/issues",
+  "description": "Eslint config",
+  "files": [
+    "CHANGELOG.md",
+    "airbnb-base.js",
+    "airbnb.js",
+    "prettier.js",
+    "sort.js",
+    "typescript.js"
+  ],
+  "homepage": "https://github.com/doinki/mado/tree/main/packages/eslint-config-mado#readme",
+  "keywords": [
+    "eslint"
+  ],
+  "repository": {
+    "directory": "packages/eslint-config-mado",
+    "type": "git",
+    "url": "https://github.com/doinki/mado.git"
+  },
+  "type": "commonjs",
+  "scripts": {
+    "lint": "eslint .",
+    "publint": "publint"
+  },
+  "peerDependencies": {
+    "eslint": "^8.2.0"
+  },
+  "dependencies": {
+    "@rushstack/eslint-patch": "^1.6.1",
+    "@typescript-eslint/eslint-plugin": "^6.18.1",
+    "@typescript-eslint/parser": "^6.18.1",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.1.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-prettier": "^5.1.2",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-salt": "^2.0.1",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-sort-destructure-keys": "^1.5.0",
+    "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "eslint-plugin-typescript-sort-keys": "^3.1.0",
+    "prettier": "^3.1.1"
+  }
+}

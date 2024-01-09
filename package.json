@@ -2,8 +2,9 @@
   "name": "mado",
   "private": true,
   "scripts": {
+    "publint": "pnpm -r publint",
     "version": "changeset version && pnpm install --lockfile-only",
-    "release": "changeset publish",
+    "release": "pnpm run publint && changeset publish",
     "prepare": "is-ci || husky install"
   },
   "devDependencies": {
