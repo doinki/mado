@@ -2,9 +2,10 @@
   "name": "mado",
   "private": true,
   "scripts": {
+    "build": "pnpm -r build",
     "publint": "pnpm -r publint",
     "version": "changeset version && pnpm install --lockfile-only",
-    "release": "pnpm run publint && changeset publish",
+    "release": "pnpm run build && pnpm run publint && changeset publish",
     "prepare": "is-ci || husky install"
   },
   "devDependencies": {
@@ -14,6 +15,7 @@
     "esbuild": "^0.19.11",
     "esbuild-plugin-extension": "^0.0.2",
     "eslint": "^8.56.0",
+    "eslint-config-mado": "workspace:^",
     "husky": "^8.0.3",
     "is-ci": "^3.0.1",
     "lint-staged": "^15.2.0",
