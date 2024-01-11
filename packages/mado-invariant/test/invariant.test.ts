@@ -1,6 +1,11 @@
 import { describe, expect, test } from 'vitest';
 
-import { invariant, InvariantError, invariantResponse } from '../src';
+import {
+  invariant,
+  InvariantError,
+  invariantResponse,
+  isInvariantError,
+} from '../src';
 
 describe('InvariantError', () => {
   test('should be an instance of Error', () => {
@@ -21,6 +26,26 @@ describe('InvariantError', () => {
 
   test('should have a stack trace', () => {
     expect(new InvariantError('')).toHaveProperty('stack');
+  });
+});
+
+describe('isInvariantError', () => {
+  test('should return true if error is an InvariantError', () => {
+    expect(isInvariantError(new InvariantError(''))).toBe(true);
+  });
+
+  test.each([
+    new Error(),
+    0,
+    false,
+    '',
+    Symbol(''),
+    null,
+    undefined,
+    {},
+    () => {},
+  ])('should return false if error is not an InvariantError', (a) => {
+    expect(isInvariantError(a)).toBe(false);
   });
 });
 

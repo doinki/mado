@@ -72,3 +72,19 @@ invariantResponse(
   { status: 500, headers: { 'Content-Type': 'text/json' } },
 );
 ```
+
+## isInvariantError
+
+```js
+import { invariant, isInvariantError } from '@mado/invariant';
+
+try {
+  const creature = { name: 'Mermaid', type: 'Water' };
+
+  invariant(creature.name === 'Dragon', 'Creature must be a Dragon');
+} catch (error) {
+  if (isInvariantError(error)) {
+    // ...
+  }
+}
+```
