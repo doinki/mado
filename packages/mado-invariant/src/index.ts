@@ -10,6 +10,10 @@ export class InvariantError extends Error {
   }
 }
 
+export function isInvariantError(error: unknown): error is InvariantError {
+  return error instanceof InvariantError;
+}
+
 /**
  * @throws {InvariantError}
  */
