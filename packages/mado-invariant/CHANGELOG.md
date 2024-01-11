@@ -4,7 +4,7 @@
 
 ### Minor Changes
 
-- e2fe5be: feat(invariant): Add isInvariant function
+- e2fe5be: feat(invariant): Add isInvariantError function
 
 ## 0.0.1
 

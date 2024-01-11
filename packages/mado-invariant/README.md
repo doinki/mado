@@ -73,7 +73,7 @@ invariantResponse(
 );
 ```
 
-## isInvariantError
+### isInvariantError
 
 ```js
 import { invariant, isInvariantError } from '@mado/invariant';
