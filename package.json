@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "build": "pnpm -r build",
+    "test": "pnpm -r test",
     "publint": "pnpm -r publint",
     "version": "changeset version && pnpm install --lockfile-only",
     "release": "pnpm run build && pnpm run publint && changeset publish",
