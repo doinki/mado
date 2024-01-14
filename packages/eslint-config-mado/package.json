@@ -10,12 +10,9 @@
   "bugs": "https://github.com/doinki/mado/issues",
   "description": "Eslint config",
   "files": [
+    "base.js",
     "CHANGELOG.md",
-    "airbnb-base.js",
-    "airbnb.js",
-    "prettier.js",
-    "sort.js",
-    "typescript.js"
+    "index.js"
   ],
   "homepage": "https://github.com/doinki/mado/tree/main/packages/eslint-config-mado#readme",
   "keywords": [
