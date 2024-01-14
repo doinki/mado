@@ -121,8 +121,6 @@ importers:
 
   packages/mado-remember: {}
 
-  packages/mado-utils: {}
-
 packages:
 
   /@aashutoshrathi/word-wrap@1.2.6:
