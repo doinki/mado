@@ -6,7 +6,6 @@ const rules = {
   'import/prefer-default-export': 'off',
   'no-underscore-dangle': 'off',
   'no-var': 'off',
-  'salt/react-hook-dependencies': 'warn',
   'simple-import-sort/exports': 'warn',
   'simple-import-sort/imports': 'warn',
   'sort-destructure-keys/sort-destructure-keys': 'warn',
@@ -53,7 +52,6 @@ module.exports = {
   },
   plugins: [
     'import',
-    'salt',
     'simple-import-sort',
     'sort-destructure-keys',
     'sort-keys-fix',
