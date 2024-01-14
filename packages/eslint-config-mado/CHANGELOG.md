@@ -1,5 +1,11 @@
 # eslint-config-mado
 
+## 0.1.1
+
+### Patch Changes
+
+- d2e133c: fix(eslint-config): Correct reversed configurations in base.js and index.js
+
 ## 0.1.0
 
 ### Minor Changes
