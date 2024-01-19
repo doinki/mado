@@ -1,5 +1,5 @@
 /**
- * @see [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API#feature-detecting_localstorage)
+ * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API#feature-detecting_localstorage MDN}
  */
 export function storageAvailable(
   type: 'localStorage' | 'sessionStorage',
