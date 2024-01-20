@@ -1,5 +1,12 @@
 # @mado/utils
 
+## 0.2.0
+
+### Minor Changes
+
+- ce252f2: - Add capitalize function
+  - Add isNil function
+
 ## 0.1.0
 
 ### Minor Changes
