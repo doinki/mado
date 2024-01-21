@@ -1,0 +1,60 @@
+{
+  "name": "@mado/hooks",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "author": {
+    "email": "doinki94@gmail.com",
+    "name": "doinki",
+    "url": "https://github.com/doinki"
+  },
+  "bugs": "https://github.com/doinki/mado/issues",
+  "description": "React hooks",
+  "files": [
+    "dist",
+    "src",
+    "CHANGELOG.md"
+  ],
+  "homepage": "https://github.com/doinki/mado/tree/main/packages/mado-hooks#readme",
+  "keywords": [
+    "react",
+    "hooks"
+  ],
+  "repository": {
+    "directory": "packages/mado-hooks",
+    "type": "git",
+    "url": "https://github.com/doinki/mado.git"
+  },
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint .",
+    "publint": "publint",
+    "typecheck": "tsc"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  },
+  "devDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
