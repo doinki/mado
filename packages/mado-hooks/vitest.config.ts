@@ -6,5 +6,6 @@ export default defineConfig({
       provider: 'istanbul',
     },
     environment: 'jsdom',
+    setupFiles: 'vitest.setup.ts',
   },
 });
