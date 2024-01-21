@@ -7,7 +7,7 @@
     "lint": "pnpm -r lint",
     "publint": "pnpm -r publint",
     "version": "changeset version && pnpm install --lockfile-only",
-    "release": "pnpm run build && pnpm run publint && changeset publish",
+    "publish": "pnpm run build && pnpm run publint && changeset publish",
     "prepare": "is-ci || husky install"
   },
   "devDependencies": {
