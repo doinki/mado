@@ -53,6 +53,9 @@
   "peerDependencies": {
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
+  "dependencies": {
+    "@mado/utils": "workspace:^"
+  },
   "devDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
