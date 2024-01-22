@@ -1,5 +1,11 @@
 # @mado/hooks
 
+## 0.2.0
+
+### Minor Changes
+
+- b713fbe: Add useDebounce and useIsMounted hooks
+
 ## 0.1.0
 
 ### Minor Changes
