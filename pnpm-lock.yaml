@@ -127,6 +127,10 @@ importers:
         version: 3.1.1
 
   packages/mado-hooks:
+    dependencies:
+      '@mado/utils':
+        specifier: workspace:^
+        version: link:../mado-utils
     devDependencies:
       react:
         specifier: ^18.2.0
