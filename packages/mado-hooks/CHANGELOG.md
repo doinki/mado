@@ -1,5 +1,11 @@
 # @mado/hooks
 
+## 0.3.1
+
+### Patch Changes
+
+- 06534b9: Integrate useSyncExternalStore from use-sync-external-store for backward compatibility
+
 ## 0.3.0
 
 ### Minor Changes
