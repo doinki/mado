@@ -1,5 +1,11 @@
 # @mado/hooks
 
+## 0.3.0
+
+### Minor Changes
+
+- 0450b7a: Add useOnline and useVisibilityState hooks
+
 ## 0.2.0
 
 ### Minor Changes
