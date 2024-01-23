@@ -1,5 +1,11 @@
 # @mado/hooks
 
+## 0.3.2
+
+### Patch Changes
+
+- 1b8fde4: Use shim import for useSyncExternalStore for React 16/17 compatibility
+
 ## 0.3.1
 
 ### Patch Changes
