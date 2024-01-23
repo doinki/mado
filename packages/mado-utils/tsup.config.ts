@@ -10,6 +10,6 @@ export default defineConfig({
   esbuildPlugins: [extension()],
   format: ['cjs', 'esm'],
   sourcemap: true,
-  target: 'es2019',
+  target: ['chrome80', 'edge80', 'safari13.1', 'firefox74', 'opera67'],
   treeshake: true,
 });
