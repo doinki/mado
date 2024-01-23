@@ -8,7 +8,7 @@ describe('useOnline', () => {
     vi.clearAllMocks();
   });
 
-  test('', () => {
+  test('returns true when the browser is online', () => {
     vi.spyOn(navigator, 'onLine', 'get').mockReturnValueOnce(true);
 
     const { result } = renderHook(() => useOnline());
@@ -16,7 +16,7 @@ describe('useOnline', () => {
     expect(result.current).toBe(true);
   });
 
-  test('', () => {
+  test('returns false when the browser is offline', () => {
     vi.spyOn(navigator, 'onLine', 'get').mockReturnValue(false);
 
     const { result } = renderHook(() => useOnline());

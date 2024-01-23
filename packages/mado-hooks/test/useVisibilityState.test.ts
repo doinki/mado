@@ -8,7 +8,7 @@ describe('useVisibilityState', () => {
     vi.clearAllMocks();
   });
 
-  test('', () => {
+  test('returns "visible" when the document visibility state is visible', () => {
     vi.spyOn(document, 'visibilityState', 'get').mockReturnValueOnce('visible');
 
     const { result } = renderHook(() => useVisibilityState());
@@ -16,7 +16,7 @@ describe('useVisibilityState', () => {
     expect(result.current).toBe('visible');
   });
 
-  test('', () => {
+  test('returns "hidden" when the document visibility state is hidden', () => {
     vi.spyOn(document, 'visibilityState', 'get').mockReturnValue('hidden');
 
     const { result } = renderHook(() => useVisibilityState());
