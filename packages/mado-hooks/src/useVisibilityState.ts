@@ -1,4 +1,4 @@
-import { useSyncExternalStore } from 'react';
+import { useSyncExternalStore } from 'use-sync-external-store';
 
 function subscribe(onStoreChange: VoidFunction): VoidFunction {
   document.addEventListener('visibilitychange', onStoreChange, {
