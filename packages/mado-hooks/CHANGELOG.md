@@ -1,5 +1,11 @@
 # @mado/hooks
 
+## 0.4.0
+
+### Minor Changes
+
+- 6b13875: Add useMediaQuery hook
+
 ## 0.3.3
 
 ### Patch Changes
