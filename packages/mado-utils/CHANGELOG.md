@@ -1,5 +1,11 @@
 # @mado/utils
 
+## 0.3.0
+
+### Minor Changes
+
+- 7da15aa: Add isObjectLike and isPlainObject functions
+
 ## 0.2.0
 
 ### Minor Changes
