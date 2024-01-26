@@ -1,5 +1,11 @@
 # eslint-config-mado
 
+## 0.1.2
+
+### Patch Changes
+
+- 86fe5ce: Add new rules
+
 ## 0.1.1
 
 ### Patch Changes
