@@ -1,5 +1,11 @@
 # eslint-config-mado
 
+## 0.3.0
+
+### Minor Changes
+
+- 04da13c: Add eslint-plugin-tailwindcss
+
 ## 0.2.0
 
 ### Minor Changes
