@@ -69,6 +69,7 @@ module.exports = {
     'simple-import-sort',
     'sort-destructure-keys',
     'sort-keys-fix',
+    'trim',
   ],
   rules: {
     ...rules,
@@ -77,5 +78,7 @@ module.exports = {
     'simple-import-sort/imports': 'warn',
     'sort-destructure-keys/sort-destructure-keys': 'warn',
     'sort-keys-fix/sort-keys-fix': 'warn',
+    'trim/argument': 'warn',
+    'trim/class-name': 'warn',
   },
 };
