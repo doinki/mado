@@ -1,5 +1,11 @@
 # eslint-config-mado
 
+## 0.2.0
+
+### Minor Changes
+
+- c22711c: Add eslint-plugin-trim
+
 ## 0.1.2
 
 ### Patch Changes
