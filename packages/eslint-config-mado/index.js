@@ -6,7 +6,37 @@ const rules = {
   'import/prefer-default-export': 'off',
   'no-underscore-dangle': 'off',
   'no-var': 'off',
+  'react-hooks/exhaustive-deps': [
+    'error',
+    { additionalHooks: 'useIsomorphicLayoutEffect' },
+  ],
+  'react/function-component-definition': [
+    'warn',
+    { namedComponents: ['function-declaration'] },
+  ],
+  'react/jsx-props-no-spreading': 'off',
+  'react/jsx-sort-props': [
+    'warn',
+    { callbacksLast: true, reservedFirst: true, shorthandLast: true },
+  ],
+  'react/no-array-index-key': 'off',
+  'react/no-danger': 'off',
+  'react/prop-types': 'off',
+  'react/require-default-props': 'off',
   'vars-on-top': 'off',
+};
+
+const settings = {
+  'jsx-a11y': {
+    components: {
+      Button: 'button',
+      Image: 'img',
+      Input: 'input',
+      Link: 'a',
+      NavLink: 'a',
+      TextField: 'input',
+    },
+  },
 };
 
 /**
@@ -58,6 +88,7 @@ module.exports = {
         'import/no-duplicates': ['error', { 'prefer-inline': true }],
         'typescript-sort-keys/interface': 'warn',
       },
+      settings,
     },
   ],
   parserOptions: {
@@ -81,4 +112,5 @@ module.exports = {
     'trim/argument': 'warn',
     'trim/class-name': 'warn',
   },
+  settings,
 };
