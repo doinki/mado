@@ -1,5 +1,11 @@
 # eslint-config-mado
 
+## 0.3.1
+
+### Patch Changes
+
+- 61616a4: Add react rules
+
 ## 0.3.0
 
 ### Minor Changes
