@@ -1,5 +1,11 @@
 # eslint-config-mado
 
+## 0.4.0
+
+### Minor Changes
+
+- 564fd35: Add @next/eslint-plugin-next and eslint-plugin-storybook
+
 ## 0.3.1
 
 ### Patch Changes
