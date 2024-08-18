@@ -28,6 +28,7 @@ describe('isPlainObject', () => {
     0,
     false,
     Object.create({}),
+    // eslint-disable-next-line func-names
     (function () {
       // eslint-disable-next-line prefer-rest-params
       return arguments;
