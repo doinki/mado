@@ -13,6 +13,8 @@
     "base.js",
     "CHANGELOG.md",
     "index.js",
+    "next.js",
+    "storybook.js",
     "tailwindcss.js"
   ],
   "homepage": "https://github.com/doinki/mado/tree/main/packages/eslint-config-mado#readme",
