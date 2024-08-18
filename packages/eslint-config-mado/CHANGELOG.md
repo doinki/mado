@@ -1,5 +1,11 @@
 # eslint-config-mado
 
+## 0.4.2
+
+### Patch Changes
+
+- a89a75a: Move tailwindcss to peerDependencies and mark as optional in package.json
+
 ## 0.4.1
 
 ### Patch Changes
