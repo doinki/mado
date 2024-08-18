@@ -1,5 +1,11 @@
 # eslint-config-mado
 
+## 0.4.1
+
+### Patch Changes
+
+- c8182cf: Update files entry in package.json to include next.js and storybook.js
+
 ## 0.4.0
 
 ### Minor Changes
