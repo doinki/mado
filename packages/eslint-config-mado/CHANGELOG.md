@@ -1,5 +1,11 @@
 # eslint-config-mado
 
+## 0.7.0
+
+### Minor Changes
+
+- f314c85: 🚀
+
 ## 0.6.0
 
 ### Minor Changes
