@@ -1,5 +1,0 @@
----
-'eslint-config-mado': minor
----
-
-🚀
