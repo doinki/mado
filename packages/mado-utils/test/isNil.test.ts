@@ -7,10 +7,7 @@ describe('isNil', () => {
     expect(isNil(a)).toBe(true);
   });
 
-  test.each([0, '', false, Symbol(''), {}, [], () => {}])(
-    'should return false',
-    (a) => {
-      expect(isNil(a)).toBe(false);
-    },
-  );
+  test.each([0, '', false, Symbol(''), {}, [], () => {}])('should return false', (a) => {
+    expect(isNil(a)).toBe(false);
+  });
 });

@@ -1,0 +1,57 @@
+import type { ConfigWithExtends } from '@eslint/config-helpers';
+// @ts-expect-error
+import eslintPluginJsxA11y from 'eslint-plugin-jsx-a11y';
+import eslintPluginReact from 'eslint-plugin-react';
+import eslintPluginReactHooks from 'eslint-plugin-react-hooks';
+
+export function generateConfig(): ConfigWithExtends {
+  return {
+    files: ['**/*.?(c|m)@(j|t)s?(x)'],
+    languageOptions: {
+      parserOptions: eslintPluginReact.configs['jsx-runtime'].parserOptions,
+    },
+    name: 'eslint-config-blog/react',
+    plugins: {
+      'jsx-a11y': eslintPluginJsxA11y,
+      react: eslintPluginReact,
+      'react-hooks': eslintPluginReactHooks,
+    },
+    rules: {
+      ...eslintPluginReact.configs.flat.recommended.rules,
+      ...eslintPluginReactHooks.configs['recommended-latest'].rules,
+      ...eslintPluginJsxA11y.flatConfigs.recommended.rules,
+      'react-hooks/exhaustive-deps': ['warn', { additionalHooks: 'useIsomorphicLayoutEffect' }],
+      'react/button-has-type': 'warn',
+      'react/forward-ref-uses-ref': 'warn',
+      'react/function-component-definition': [
+        'warn',
+        { namedComponents: ['function-declaration'], unnamedComponents: 'arrow-function' },
+      ],
+      'react/jsx-boolean-value': 'warn',
+      'react/jsx-curly-brace-presence': 'warn',
+      'react/jsx-no-constructed-context-values': 'warn',
+      'react/jsx-no-leaked-render': 'warn',
+      'react/jsx-no-useless-fragment': 'warn',
+      'react/jsx-sort-props': ['warn', { callbacksLast: true, reservedFirst: true, shorthandLast: true }],
+      'react/jsx-uses-react': 'off',
+      'react/no-danger': 'off',
+      'react/prop-types': 'off',
+      'react/react-in-jsx-scope': 'off',
+      'react/self-closing-comp': 'warn',
+    },
+    settings: {
+      'jsx-a11y': {
+        attributes: {
+          for: ['htmlFor', 'for'],
+        },
+        components: {
+          Button: 'button',
+          Link: 'a',
+        },
+      },
+      react: {
+        version: 'detect',
+      },
+    },
+  };
+}

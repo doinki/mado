@@ -1,4 +1,5 @@
-import { type DispatchWithoutAction, useReducer } from 'react';
+import type { DispatchWithoutAction } from 'react';
+import { useReducer } from 'react';
 
 const initialState = {};
 

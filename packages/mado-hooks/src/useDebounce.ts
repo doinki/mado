@@ -1,4 +1,5 @@
-import { type Cancelable, debounce } from '@mado/utils';
+import type { Cancelable } from '@mado/utils';
+import { debounce } from '@mado/utils';
 import { useEffect, useMemo } from 'react';
 
 import { useEvent } from './useEvent';

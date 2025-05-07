@@ -39,10 +39,7 @@ describe('storageAvailable', () => {
     window.sessionStorage = storage;
 
     storage.setItem.mockImplementation(() => {
-      throw new DOMException(
-        'NS_ERROR_DOM_QUOTA_REACHED',
-        'NS_ERROR_DOM_QUOTA_REACHED',
-      );
+      throw new DOMException('NS_ERROR_DOM_QUOTA_REACHED', 'NS_ERROR_DOM_QUOTA_REACHED');
     });
     expect(storageAvailable('localStorage')).toBe(true);
     expect(storageAvailable('sessionStorage')).toBe(true);

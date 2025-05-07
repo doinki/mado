@@ -1,2 +1,6 @@
+onlyBuiltDependencies:
+  - esbuild
+  - unrs-resolver
+
 packages:
-  - 'packages/*'
+  - packages/*

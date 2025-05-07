@@ -2,10 +2,7 @@ export interface Cancelable {
   cancel: () => void;
 }
 
-export function debounce<T extends (...args: any[]) => any>(
-  func: T,
-  wait = 166,
-): T & Cancelable {
+export function debounce<T extends (...args: any[]) => any>(func: T, wait = 166): T & Cancelable {
   let timeout: ReturnType<typeof setTimeout>;
 
   function debounced(...args: Parameters<T>) {

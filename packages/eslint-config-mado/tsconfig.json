@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "lib": ["ESNext"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "outDir": "dist",
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "ESNext"
+  },
+  "exclude": ["dist"]
+}

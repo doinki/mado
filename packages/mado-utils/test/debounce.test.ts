@@ -18,6 +18,7 @@ describe('debounce', () => {
     let actualContext;
     function collectContext(...args: any[]) {
       // @ts-ignore
+      // eslint-disable-next-line @typescript-eslint/no-this-alias
       actualContext = this;
       handler(...args);
     }

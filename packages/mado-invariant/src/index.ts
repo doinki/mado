@@ -17,14 +17,9 @@ export function isInvariantError(error: unknown): error is InvariantError {
 /**
  * @throws {InvariantError}
  */
-export function invariant(
-  condition: unknown,
-  message: string | (() => string),
-): asserts condition {
+export function invariant(condition: unknown, message: string | (() => string)): asserts condition {
   if (!condition) {
-    throw new InvariantError(
-      typeof message === 'function' ? message() : message,
-    );
+    throw new InvariantError(typeof message === 'function' ? message() : message);
   }
 }
 
@@ -37,6 +32,7 @@ export function invariantResponse(
   responseInit?: ResponseInit,
 ): asserts condition {
   if (!condition) {
+    // eslint-disable-next-line @typescript-eslint/only-throw-error
     throw new Response(typeof message === 'function' ? message() : message, {
       status: 400,
       ...responseInit,

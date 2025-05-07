@@ -1,5 +1,4 @@
-// eslint-disable-next-line import/extensions
-import { useSyncExternalStore } from 'use-sync-external-store/shim/index.js';
+import { useSyncExternalStore } from 'use-sync-external-store/shim';
 
 function subscribe(onStoreChange: VoidFunction): VoidFunction {
   document.addEventListener('visibilitychange', onStoreChange, {

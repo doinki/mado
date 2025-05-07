@@ -1,4 +1,5 @@
-declare module globalThis {
+declare namespace globalThis {
+  // eslint-disable-next-line no-var
   var __remember: Map<string, any> | undefined;
 }
 
@@ -13,5 +14,5 @@ export function remember<T>(name: string, getValue: () => T): T {
     ctx.__remember.set(name, getValue());
   }
 
-  return ctx.__remember.get(name);
+  return ctx.__remember.get(name) as T;
 }

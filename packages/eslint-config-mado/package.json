@@ -2,6 +2,112 @@
   "name": "eslint-config-mado",
   "version": "0.4.2",
   "license": "MIT",
+  "sideEffects": false,
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./import": {
+      "import": {
+        "types": "./dist/import.d.ts",
+        "default": "./dist/import.js"
+      },
+      "require": {
+        "types": "./dist/import.d.cts",
+        "default": "./dist/import.cjs"
+      }
+    },
+    "./javascript": {
+      "import": {
+        "types": "./dist/javascript.d.ts",
+        "default": "./dist/javascript.js"
+      },
+      "require": {
+        "types": "./dist/javascript.d.cts",
+        "default": "./dist/javascript.cjs"
+      }
+    },
+    "./prettier": {
+      "import": {
+        "types": "./dist/prettier.d.ts",
+        "default": "./dist/prettier.js"
+      },
+      "require": {
+        "types": "./dist/prettier.d.cts",
+        "default": "./dist/prettier.cjs"
+      }
+    },
+    "./react": {
+      "import": {
+        "types": "./dist/react.d.ts",
+        "default": "./dist/react.js"
+      },
+      "require": {
+        "types": "./dist/react.d.cts",
+        "default": "./dist/react.cjs"
+      }
+    },
+    "./sort": {
+      "import": {
+        "types": "./dist/sort.d.ts",
+        "default": "./dist/sort.js"
+      },
+      "require": {
+        "types": "./dist/sort.d.cts",
+        "default": "./dist/sort.cjs"
+      }
+    },
+    "./typescript": {
+      "import": {
+        "types": "./dist/typescript.d.ts",
+        "default": "./dist/typescript.js"
+      },
+      "require": {
+        "types": "./dist/typescript.d.cts",
+        "default": "./dist/typescript.cjs"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "tsup",
+    "lint": "eslint",
+    "publint": "publint"
+  },
+  "engines": {
+    "node": "^20.9.0 || >=21.1.0"
+  },
+  "peerDependencies": {
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0"
+  },
+  "dependencies": {
+    "@eslint/config-helpers": "^0.2.2",
+    "@eslint/js": "^9.26.0",
+    "eslint-config-prettier": "^10.1.3",
+    "eslint-import-resolver-typescript": "^4.3.4",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-prettier": "^5.4.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-sort-destructure-keys": "^2.0.0",
+    "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "eslint-plugin-typescript-sort-keys": "^3.3.0",
+    "typescript-eslint": "^8.32.0"
+  },
   "author": {
     "email": "doinki94@gmail.com",
     "name": "doinki",
@@ -10,12 +116,7 @@
   "bugs": "https://github.com/doinki/mado/issues",
   "description": "Eslint config",
   "files": [
-    "base.js",
-    "CHANGELOG.md",
-    "index.js",
-    "next.js",
-    "storybook.js",
-    "tailwindcss.js"
+    "dist"
   ],
   "homepage": "https://github.com/doinki/mado/tree/main/packages/eslint-config-mado#readme",
   "keywords": [
@@ -24,47 +125,9 @@
   "repository": {
     "directory": "packages/eslint-config-mado",
     "type": "git",
-    "url": "https://github.com/doinki/mado.git"
+    "url": "git+https://github.com/doinki/mado.git"
   },
-  "type": "commonjs",
-  "scripts": {
-    "lint": "eslint .",
-    "publint": "publint"
-  },
-  "peerDependencies": {
-    "eslint": "^8.2.0",
-    "tailwindcss": "^3.4.0"
-  },
-  "peerDependenciesMeta": {
-    "tailwindcss": {
-      "optional": true
-    }
-  },
-  "dependencies": {
-    "@next/eslint-plugin-next": "^14.2.5",
-    "@rushstack/eslint-patch": "^1.10.4",
-    "@typescript-eslint/eslint-plugin": "^7.18.0",
-    "@typescript-eslint/parser": "^7.18.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-airbnb-typescript": "^18.0.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-import-resolver-typescript": "^3.6.1",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-jsx-a11y": "^6.9.0",
-    "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-react": "^7.35.0",
-    "eslint-plugin-react-hooks": "^4.6.2",
-    "eslint-plugin-salt": "^2.0.2",
-    "eslint-plugin-simple-import-sort": "^12.1.1",
-    "eslint-plugin-sort-destructure-keys": "^2.0.0",
-    "eslint-plugin-sort-keys-fix": "^1.1.2",
-    "eslint-plugin-storybook": "^0.8.0",
-    "eslint-plugin-tailwindcss": "^3.17.4",
-    "eslint-plugin-trim": "^0.6.0",
-    "eslint-plugin-typescript-sort-keys": "^3.2.0",
-    "prettier": "^3.3.3"
-  },
-  "devDependencies": {
-    "tailwindcss": "^3.4.10"
+  "publishConfig": {
+    "access": "public"
   }
 }

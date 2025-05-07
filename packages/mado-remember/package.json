@@ -37,15 +37,15 @@
   "repository": {
     "directory": "packages/mado-remember",
     "type": "git",
-    "url": "https://github.com/doinki/mado.git"
+    "url": "git+https://github.com/doinki/mado.git"
   },
   "sideEffects": false,
   "type": "module",
   "scripts": {
     "build": "tsup",
     "test": "vitest run",
-    "lint": "eslint .",
+    "lint": "eslint",
     "publint": "publint",
-    "typecheck": "tsc"
+    "typecheck": "tsc --noEmit"
   }
 }

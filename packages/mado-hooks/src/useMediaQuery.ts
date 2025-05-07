@@ -1,6 +1,5 @@
 import { useMemo } from 'react';
-// eslint-disable-next-line import/extensions
-import { useSyncExternalStore } from 'use-sync-external-store/shim/index.js';
+import { useSyncExternalStore } from 'use-sync-external-store/shim';
 
 export function useMediaQuery(query: string, defaultMatches = false): boolean {
   const [subscribe, getSnapshot, getServerSnapshot] = useMemo(() => {

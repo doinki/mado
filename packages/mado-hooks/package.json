@@ -38,7 +38,7 @@
   "repository": {
     "directory": "packages/mado-hooks",
     "type": "git",
-    "url": "https://github.com/doinki/mado.git"
+    "url": "git+https://github.com/doinki/mado.git"
   },
   "sideEffects": false,
   "type": "module",
@@ -46,20 +46,20 @@
     "build": "tsup",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
-    "lint": "eslint .",
+    "lint": "eslint",
     "publint": "publint",
-    "typecheck": "tsc"
+    "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "dependencies": {
     "@mado/utils": "workspace:^",
-    "use-sync-external-store": "^1.2.2"
+    "use-sync-external-store": "^1.5.0"
   },
   "devDependencies": {
-    "@types/use-sync-external-store": "^0.0.6",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "@types/use-sync-external-store": "^1.5.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   }
 }

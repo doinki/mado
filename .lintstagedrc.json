@@ -1,4 +1,4 @@
 {
-  "*.{cjs,js,jsx,mjs,ts,tsx}": "eslint --fix",
-  "*.{json,md}": "prettier --write"
+  "*.?(c|m)@(j|t)s?(x)": "eslint --fix --flag unstable_config_lookup_from_file",
+  "*.{json,md,yaml,yml}": "prettier --write"
 }

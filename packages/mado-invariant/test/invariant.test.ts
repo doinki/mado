@@ -1,11 +1,6 @@
 import { describe, expect, test } from 'vitest';
 
-import {
-  invariant,
-  InvariantError,
-  invariantResponse,
-  isInvariantError,
-} from '../src';
+import { invariant, InvariantError, invariantResponse, isInvariantError } from '../src';
 
 describe('InvariantError', () => {
   test('should be an instance of Error', () => {
@@ -34,46 +29,51 @@ describe('isInvariantError', () => {
     expect(isInvariantError(new InvariantError(''))).toBe(true);
   });
 
-  test.each([
-    new Error(),
-    0,
-    false,
-    '',
-    Symbol(''),
-    null,
-    undefined,
-    {},
-    () => {},
-  ])('should return false if error is not an InvariantError', (a) => {
-    expect(isInvariantError(a)).toBe(false);
-  });
+  test.each([new Error(), 0, false, '', Symbol(''), null, undefined, {}, () => {}])(
+    'should return false if error is not an InvariantError',
+    (a) => {
+      expect(isInvariantError(a)).toBe(false);
+    },
+  );
 });
 
 describe('invariant', () => {
   test('should not throw if condition is truthy', () => {
-    expect(() => invariant(true, '')).not.toThrow();
+    expect(() => {
+      invariant(true, '');
+    }).not.toThrow();
   });
 
   test('should throw if condition is falsy', () => {
-    expect(() => invariant(false, '')).toThrow(InvariantError);
+    expect(() => {
+      invariant(false, '');
+    }).toThrow(InvariantError);
   });
 
   test('should throw with the given message', () => {
-    expect(() => invariant(false, 'message')).toThrow('message');
+    expect(() => {
+      invariant(false, 'message');
+    }).toThrow('message');
   });
 
   test('should throw with the given message function', () => {
-    expect(() => invariant(false, () => 'message')).toThrow('message');
+    expect(() => {
+      invariant(false, () => 'message');
+    }).toThrow('message');
   });
 });
 
 describe('invariantResponse', () => {
   test('should not throw if condition is truthy', () => {
-    expect(() => invariantResponse(true, '')).not.toThrow();
+    expect(() => {
+      invariantResponse(true, '');
+    }).not.toThrow();
   });
 
   test('should throw if condition is falsy', () => {
-    expect(() => invariantResponse(false, '')).toThrow(Response);
+    expect(() => {
+      invariantResponse(false, '');
+    }).toThrow(Response);
   });
 
   test('should throw with the given message', async () => {

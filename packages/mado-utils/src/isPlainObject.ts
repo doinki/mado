@@ -1,6 +1,6 @@
 import { isObjectLike } from './isObjectLike';
 
-export function isPlainObject<T extends object>(value: unknown): value is T {
+export function isPlainObject(value: unknown): value is object {
   if (!isObjectLike(value)) {
     return false;
   }
@@ -8,9 +8,7 @@ export function isPlainObject<T extends object>(value: unknown): value is T {
   const prototype = Object.getPrototypeOf(value);
 
   return (
-    (prototype === null ||
-      prototype === Object.prototype ||
-      Object.getPrototypeOf(prototype) === null) &&
+    (prototype === null || prototype === Object.prototype || Object.getPrototypeOf(prototype) === null) &&
     !(Symbol.toStringTag in value) &&
     !(Symbol.iterator in value)
   );
