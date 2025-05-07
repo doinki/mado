@@ -19,7 +19,10 @@ export function generateConfig(options?: { project?: string[] | string }): Confi
     },
     rules: {
       'import/consistent-type-specifier-style': ['error', 'prefer-top-level'],
+      'import/first': 'warn',
+      'import/newline-after-import': 'warn',
       'import/no-cycle': 'error',
+      'import/no-duplicates': 'warn',
       'import/no-unresolved': 'warn',
     },
     settings: {

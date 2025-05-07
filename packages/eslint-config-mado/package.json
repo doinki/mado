@@ -48,6 +48,16 @@
         "default": "./dist/prettier.cjs"
       }
     },
+    "./query": {
+      "import": {
+        "types": "./dist/query.d.ts",
+        "default": "./dist/query.js"
+      },
+      "require": {
+        "types": "./dist/query.d.cts",
+        "default": "./dist/query.cjs"
+      }
+    },
     "./react": {
       "import": {
         "types": "./dist/react.d.ts",
@@ -105,6 +115,7 @@
   "dependencies": {
     "@eslint/config-helpers": "^0.2.2",
     "@eslint/js": "^9.26.0",
+    "@tanstack/eslint-plugin-query": "^5.74.7",
     "eslint-config-prettier": "^10.1.3",
     "eslint-import-resolver-typescript": "^4.3.4",
     "eslint-plugin-import": "^2.31.0",
