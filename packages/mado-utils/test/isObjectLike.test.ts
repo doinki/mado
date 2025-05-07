@@ -7,7 +7,7 @@ describe('isObjectLike', () => {
     expect(isObjectLike(a)).toBe(true);
   });
 
-  test.each([null, undefined, false, 0, NaN, '', () => {}, Symbol('')])('should return false', (a) => {
+  test.each([null, undefined, false, 0, Number.NaN, '', () => {}, Symbol('')])('should return false', (a) => {
     expect(isObjectLike(a)).toBe(false);
   });
 });

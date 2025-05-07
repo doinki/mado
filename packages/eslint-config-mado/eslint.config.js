@@ -8,6 +8,7 @@ import * as jsConfig from './dist/javascript.js';
 import * as prettierConfig from './dist/prettier.js';
 import * as sortConfig from './dist/sort.js';
 import * as tsConfig from './dist/typescript.js';
+import * as unicornConfig from './dist/unicorn.js';
 
 const gitignorePath = join(import.meta.dirname, '..', '..', '.gitignore');
 
@@ -18,6 +19,7 @@ export default config(
     tsconfigRootDir: import.meta.dirname,
   }),
   importConfig.generateConfig(),
+  unicornConfig.generateConfig(),
   sortConfig.generateConfigs(),
   prettierConfig.generateConfig(),
 );

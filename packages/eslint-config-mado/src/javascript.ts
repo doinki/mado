@@ -3,11 +3,14 @@ import js from '@eslint/js';
 
 export function generateConfig(): ConfigWithExtends {
   return {
-    files: ['**/*.?(c|m)js?(x)'],
-    name: 'eslint-config-blog/js',
+    files: ['**/*.?(c|m)@(j|t)s?(x)'],
+    name: 'eslint-config-blog/javascript',
     plugins: {
       js,
     },
-    rules: js.configs.recommended.rules,
+    rules: {
+      ...js.configs.recommended.rules,
+      'object-shorthand': 'warn',
+    },
   };
 }

@@ -78,6 +78,16 @@
         "default": "./dist/typescript.cjs"
       }
     },
+    "./unicorn": {
+      "import": {
+        "types": "./dist/unicorn.d.ts",
+        "default": "./dist/unicorn.js"
+      },
+      "require": {
+        "types": "./dist/unicorn.d.cts",
+        "default": "./dist/unicorn.cjs"
+      }
+    },
     "./package.json": "./package.json"
   },
   "scripts": {
@@ -106,6 +116,7 @@
     "eslint-plugin-sort-destructure-keys": "^2.0.0",
     "eslint-plugin-sort-keys-fix": "^1.1.2",
     "eslint-plugin-typescript-sort-keys": "^3.3.0",
+    "eslint-plugin-unicorn": "^59.0.1",
     "typescript-eslint": "^8.32.0"
   },
   "author": {

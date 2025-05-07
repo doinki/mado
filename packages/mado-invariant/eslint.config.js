@@ -7,6 +7,7 @@ import * as jsConfig from 'eslint-config-mado/javascript';
 import * as prettierConfig from 'eslint-config-mado/prettier';
 import * as sortConfig from 'eslint-config-mado/sort';
 import * as tsConfig from 'eslint-config-mado/typescript';
+import * as unicornConfig from 'eslint-config-mado/unicorn';
 
 const gitignorePath = join(import.meta.dirname, '..', '..', '.gitignore');
 
@@ -19,6 +20,7 @@ export default config(
   importConfig.generateConfig({
     project: join(import.meta.dirname, '..', 'packages', '*', 'tsconfig.json'),
   }),
+  unicornConfig.generateConfig(),
   sortConfig.generateConfigs(),
   prettierConfig.generateConfig(),
 );

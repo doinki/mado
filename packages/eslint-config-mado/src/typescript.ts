@@ -25,7 +25,7 @@ export function generateConfig(options: GenerateConfigOptions): ConfigWithExtend
       },
       sourceType: 'module',
     },
-    name: 'eslint-config-blog/ts',
+    name: 'eslint-config-blog/typescript',
     plugins: {
       '@typescript-eslint': plugin,
     },
