@@ -7,7 +7,7 @@ export function generateConfig(): ConfigWithExtends {
     name: 'eslint-config-blog/prettier',
     rules: {
       ...eslintPluginPrettierRecommended.rules,
-      'prettier/prettier': ['error', { printWidth: 120, singleQuote: true }],
+      'prettier/prettier': 'error',
     },
   };
 }

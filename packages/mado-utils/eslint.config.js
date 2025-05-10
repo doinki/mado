@@ -21,6 +21,6 @@ export default config(
     project: join(import.meta.dirname, '..', 'packages', '*', 'tsconfig.json'),
   }),
   unicornConfig.generateConfig(),
-  sortConfig.generateConfigs(),
+  sortConfig.generateConfig(),
   prettierConfig.generateConfig(),
 );

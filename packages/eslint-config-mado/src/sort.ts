@@ -7,10 +7,10 @@ import eslintPluginSortKeysFix from 'eslint-plugin-sort-keys-fix';
 // @ts-expect-error
 import eslintPluginTypescriptSortKeys from 'eslint-plugin-typescript-sort-keys';
 
-export function generateConfigs(): ConfigWithExtends[] {
+export function generateConfig(): ConfigWithExtends[] {
   return [
     {
-      files: ['**/*.?(c|m)@(j|t)s?(x)'],
+      files: ['**/*.?(c|m)@(j|t)sx?'],
       name: 'eslint-config-blog/sort-js',
       plugins: {
         'simple-import-sort': eslintPluginSimpleImportSort,
@@ -25,7 +25,7 @@ export function generateConfigs(): ConfigWithExtends[] {
       },
     },
     {
-      files: ['**/*.?(c|m)ts?(x)'],
+      files: ['**/*.?(c|m)tsx?'],
       name: 'eslint-config-blog/sort-ts',
       plugins: {
         'typescript-sort-keys': eslintPluginTypescriptSortKeys,

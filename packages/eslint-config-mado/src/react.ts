@@ -3,10 +3,11 @@ import type { ConfigWithExtends } from '@eslint/config-helpers';
 import eslintPluginJsxA11y from 'eslint-plugin-jsx-a11y';
 import eslintPluginReact from 'eslint-plugin-react';
 import eslintPluginReactHooks from 'eslint-plugin-react-hooks';
+import eslintPluginTrim from 'eslint-plugin-trim';
 
 export function generateConfig(): ConfigWithExtends {
   return {
-    files: ['**/*.?(c|m)@(j|t)s?(x)'],
+    files: ['**/*.?(c|m)@(j|t)sx?'],
     languageOptions: {
       parserOptions: eslintPluginReact.configs['jsx-runtime'].parserOptions,
     },
@@ -15,11 +16,13 @@ export function generateConfig(): ConfigWithExtends {
       'jsx-a11y': eslintPluginJsxA11y,
       react: eslintPluginReact,
       'react-hooks': eslintPluginReactHooks,
+      trim: eslintPluginTrim.configs.flat.recommended.plugins.trim,
     },
     rules: {
       ...eslintPluginReact.configs.flat.recommended.rules,
       ...eslintPluginReactHooks.configs['recommended-latest'].rules,
       ...eslintPluginJsxA11y.flatConfigs.recommended.rules,
+      ...eslintPluginTrim.configs.flat.recommended.rules,
       'react-hooks/exhaustive-deps': ['warn', { additionalHooks: 'useIsomorphicLayoutEffect' }],
       'react/button-has-type': 'warn',
       'react/forward-ref-uses-ref': 'warn',

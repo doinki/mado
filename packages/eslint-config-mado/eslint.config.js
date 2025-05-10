@@ -20,6 +20,6 @@ export default config(
   }),
   importConfig.generateConfig(),
   unicornConfig.generateConfig(),
-  sortConfig.generateConfigs(),
+  sortConfig.generateConfig(),
   prettierConfig.generateConfig(),
 );

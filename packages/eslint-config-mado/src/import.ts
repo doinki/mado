@@ -8,7 +8,7 @@ const allExtensions = [...typeScriptExtensions, ...javaScriptExtensions];
 
 export function generateConfig(options?: { project?: string[] | string }): ConfigWithExtends {
   return {
-    files: ['**/*.?(c|m)@(j|t)s?(x)'],
+    files: ['**/*.?(c|m)@(j|t)sx?'],
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',

@@ -21,6 +21,6 @@ export default config(
   importConfig.generateConfig(),
   reactConfig.generateConfig(),
   unicornConfig.generateConfig(),
-  sortConfig.generateConfigs(),
+  sortConfig.generateConfig(),
   prettierConfig.generateConfig(),
 );

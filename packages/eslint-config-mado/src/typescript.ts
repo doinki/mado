@@ -15,7 +15,7 @@ export interface GenerateConfigOptions {
 
 export function generateConfig(options: GenerateConfigOptions): ConfigWithExtends {
   return {
-    files: ['**/*.?(c|m)ts?(x)'],
+    files: ['**/*.?(c|m)tsx?'],
     languageOptions: {
       parser,
       parserOptions: {
