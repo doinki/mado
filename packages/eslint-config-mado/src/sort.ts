@@ -10,7 +10,7 @@ import eslintPluginTypescriptSortKeys from 'eslint-plugin-typescript-sort-keys';
 export function generateConfig(): ConfigWithExtends[] {
   return [
     {
-      files: ['**/*.?(c|m)@(j|t)sx?'],
+      files: ['**/*.?(c|m)@(j|t)s?(x)'],
       name: 'eslint-config-blog/sort-js',
       plugins: {
         'simple-import-sort': eslintPluginSimpleImportSort,
@@ -25,7 +25,7 @@ export function generateConfig(): ConfigWithExtends[] {
       },
     },
     {
-      files: ['**/*.?(c|m)tsx?'],
+      files: ['**/*.?(c|m)ts?(x)'],
       name: 'eslint-config-blog/sort-ts',
       plugins: {
         'typescript-sort-keys': eslintPluginTypescriptSortKeys,

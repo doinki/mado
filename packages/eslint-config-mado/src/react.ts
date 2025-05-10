@@ -7,7 +7,7 @@ import eslintPluginTrim from 'eslint-plugin-trim';
 
 export function generateConfig(): ConfigWithExtends {
   return {
-    files: ['**/*.?(c|m)@(j|t)sx?'],
+    files: ['**/*.?(c|m)@(j|t)s?(x)'],
     languageOptions: {
       parserOptions: eslintPluginReact.configs['jsx-runtime'].parserOptions,
     },

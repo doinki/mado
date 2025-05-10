@@ -3,7 +3,7 @@ import eslintPluginUnicorn from 'eslint-plugin-unicorn';
 
 export function generateConfig(): ConfigWithExtends {
   return {
-    files: ['**/*.?(c|m)@(j|t)sx?'],
+    files: ['**/*.?(c|m)@(j|t)s?(x)'],
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',

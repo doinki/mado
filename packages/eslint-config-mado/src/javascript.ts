@@ -3,7 +3,7 @@ import js from '@eslint/js';
 
 export function generateConfig(): ConfigWithExtends {
   return {
-    files: ['**/*.?(c|m)@(j|t)sx?'],
+    files: ['**/*.?(c|m)@(j|t)s?(x)'],
     name: 'eslint-config-blog/javascript',
     plugins: {
       js,
