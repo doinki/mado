@@ -1,5 +1,11 @@
 # eslint-config-mado
 
+## 0.9.0
+
+### Minor Changes
+
+- c541950: 🔧
+
 ## 0.8.1
 
 ### Patch Changes
