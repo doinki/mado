@@ -1,5 +1,11 @@
 # eslint-config-mado
 
+## 0.10.0
+
+### Minor Changes
+
+- ec54dcb: 🔧
+
 ## 0.9.0
 
 ### Minor Changes
