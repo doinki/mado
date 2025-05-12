@@ -5,13 +5,13 @@ import eslintPluginReact from 'eslint-plugin-react';
 import eslintPluginReactHooks from 'eslint-plugin-react-hooks';
 import eslintPluginTrim from 'eslint-plugin-trim';
 
-export function generateConfig(): ConfigWithExtends {
+export function generateConfig(options?: { files?: Array<string | string[]> }): ConfigWithExtends {
   return {
-    files: ['**/*.?(c|m)@(j|t)s?(x)'],
+    files: options?.files || ['**/*.?(c|m)@(j|t)s?(x)'],
     languageOptions: {
       parserOptions: eslintPluginReact.configs['jsx-runtime'].parserOptions,
     },
-    name: 'eslint-config-blog/react',
+    name: 'mado/react',
     plugins: {
       'jsx-a11y': eslintPluginJsxA11y,
       react: eslintPluginReact,

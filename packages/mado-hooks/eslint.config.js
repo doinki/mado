@@ -1,7 +1,6 @@
 import { join } from 'node:path';
 
-import { includeIgnoreFile } from '@eslint/compat';
-import { config } from 'eslint-config-mado';
+import { config, includeIgnoreFile } from 'eslint-config-mado';
 import * as importConfig from 'eslint-config-mado/import';
 import * as jsConfig from 'eslint-config-mado/javascript';
 import * as prettierConfig from 'eslint-config-mado/prettier';

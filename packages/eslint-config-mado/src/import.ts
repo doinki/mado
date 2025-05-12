@@ -6,14 +6,17 @@ const typeScriptExtensions = ['.ts', '.cts', '.mts', '.tsx', '.ctsx', '.mtsx'];
 const javaScriptExtensions = ['.js', '.cjs', '.mjs', '.jsx', '.cjsx', '.mjsx'];
 const allExtensions = [...typeScriptExtensions, ...javaScriptExtensions];
 
-export function generateConfig(options?: { project?: string[] | string }): ConfigWithExtends {
+export function generateConfig(options?: {
+  files?: Array<string | string[]>;
+  project?: string[] | string;
+}): ConfigWithExtends {
   return {
-    files: ['**/*.?(c|m)@(j|t)s?(x)'],
+    files: options?.files || ['**/*.?(c|m)@(j|t)s?(x)'],
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
     },
-    name: 'eslint-config-blog/import',
+    name: 'mado/import',
     plugins: {
       import: eslintPluginImport,
     },

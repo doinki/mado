@@ -1,14 +1,14 @@
 import type { ConfigWithExtends } from '@eslint/config-helpers';
 import eslintPluginUnicorn from 'eslint-plugin-unicorn';
 
-export function generateConfig(): ConfigWithExtends {
+export function generateConfig(options?: { files?: Array<string | string[]> }): ConfigWithExtends {
   return {
-    files: ['**/*.?(c|m)@(j|t)s?(x)'],
+    files: options?.files || ['**/*.?(c|m)@(j|t)s?(x)'],
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
     },
-    name: 'eslint-config-blog/unicorn',
+    name: 'mado/unicorn',
     plugins: {
       unicorn: eslintPluginUnicorn,
     },

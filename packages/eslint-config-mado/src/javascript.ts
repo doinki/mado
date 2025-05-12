@@ -1,10 +1,10 @@
 import type { ConfigWithExtends } from '@eslint/config-helpers';
 import js from '@eslint/js';
 
-export function generateConfig(): ConfigWithExtends {
+export function generateConfig(options?: { files?: Array<string | string[]> }): ConfigWithExtends {
   return {
-    files: ['**/*.?(c|m)@(j|t)s?(x)'],
-    name: 'eslint-config-blog/javascript',
+    files: options?.files || ['**/*.?(c|m)@(j|t)s?(x)'],
+    name: 'mado/javascript',
     plugins: {
       js,
     },

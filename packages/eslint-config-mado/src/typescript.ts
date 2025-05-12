@@ -2,6 +2,8 @@ import type { ConfigWithExtends } from 'typescript-eslint';
 import { parser, plugin } from 'typescript-eslint';
 
 export interface GenerateConfigOptions {
+  files?: Array<string | string[]>;
+
   /**
    * @example './tsconfig.eslint.json'
    */
@@ -10,22 +12,25 @@ export interface GenerateConfigOptions {
   /**
    * @example import.meta.dirname
    */
-  tsconfigRootDir: string;
+  tsconfigRootDir?: string;
 }
 
-export function generateConfig(options: GenerateConfigOptions): ConfigWithExtends {
+export function generateConfig(options: GenerateConfigOptions = {}): ConfigWithExtends {
+  const { files, project, tsconfigRootDir } = options;
+
   return {
-    files: ['**/*.?(c|m)ts?(x)'],
+    files: files || ['**/*.?(c|m)ts?(x)'],
     languageOptions: {
       parser,
       parserOptions: {
-        ...options,
+        project,
         projectService: true,
+        tsconfigRootDir,
         warnOnUnsupportedTypeScriptVersion: false,
       },
       sourceType: 'module',
     },
-    name: 'eslint-config-blog/typescript',
+    name: 'mado/typescript',
     plugins: {
       '@typescript-eslint': plugin,
     },
@@ -39,7 +44,6 @@ export function generateConfig(options: GenerateConfigOptions): ConfigWithExtend
       '@typescript-eslint/consistent-type-imports': 'warn',
       '@typescript-eslint/default-param-last': 'warn',
       '@typescript-eslint/method-signature-style': 'warn',
-      '@typescript-eslint/no-confusing-void-expression': 'warn',
       '@typescript-eslint/no-empty-function': 'off',
       '@typescript-eslint/no-empty-object-type': 'off',
       '@typescript-eslint/no-explicit-any': 'off',
