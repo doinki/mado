@@ -1,11 +1,11 @@
-import type { ConfigWithExtends } from '@eslint/config-helpers';
 // @ts-expect-error
 import eslintPluginJsxA11y from 'eslint-plugin-jsx-a11y';
 import eslintPluginReact from 'eslint-plugin-react';
 import eslintPluginReactHooks from 'eslint-plugin-react-hooks';
 import eslintPluginTrim from 'eslint-plugin-trim';
+import type { InfiniteDepthConfigWithExtends } from 'typescript-eslint';
 
-export function generateConfig(options?: { files?: Array<string | string[]> }): ConfigWithExtends {
+export function generateConfig(options?: { files?: Array<string | string[]> }): InfiniteDepthConfigWithExtends {
   return {
     files: options?.files || ['**/*.?(c|m)@(j|t)s?(x)'],
     languageOptions: {

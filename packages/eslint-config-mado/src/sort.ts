@@ -1,4 +1,3 @@
-import type { ConfigWithExtends } from '@eslint/config-helpers';
 import eslintPluginSimpleImportSort from 'eslint-plugin-simple-import-sort';
 // @ts-expect-error
 import eslintPluginSortDestructureKeys from 'eslint-plugin-sort-destructure-keys';
@@ -6,11 +5,12 @@ import eslintPluginSortDestructureKeys from 'eslint-plugin-sort-destructure-keys
 import eslintPluginSortKeysFix from 'eslint-plugin-sort-keys-fix';
 // @ts-expect-error
 import eslintPluginTypescriptSortKeys from 'eslint-plugin-typescript-sort-keys';
+import type { InfiniteDepthConfigWithExtends } from 'typescript-eslint';
 
 export function generateConfig(options?: {
   files?: Array<string | string[]>;
   tsFiles?: Array<string | string[]>;
-}): ConfigWithExtends[] {
+}): InfiniteDepthConfigWithExtends {
   return [
     {
       files: options?.files || ['**/*.?(c|m)@(j|t)s?(x)'],

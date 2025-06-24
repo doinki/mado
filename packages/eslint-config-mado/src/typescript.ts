@@ -1,4 +1,4 @@
-import type { ConfigWithExtends } from 'typescript-eslint';
+import type { InfiniteDepthConfigWithExtends } from 'typescript-eslint';
 import { parser, plugin } from 'typescript-eslint';
 
 export interface GenerateConfigOptions {
@@ -15,7 +15,7 @@ export interface GenerateConfigOptions {
   tsconfigRootDir?: string;
 }
 
-export function generateConfig(options: GenerateConfigOptions = {}): ConfigWithExtends {
+export function generateConfig(options: GenerateConfigOptions = {}): InfiniteDepthConfigWithExtends {
   const { files, project, tsconfigRootDir } = options;
 
   return {

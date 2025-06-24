@@ -1,6 +1,5 @@
-import type { ConfigWithExtends } from '@eslint/config-helpers';
-// @ts-expect-error
 import eslintPluginImport from 'eslint-plugin-import';
+import type { InfiniteDepthConfigWithExtends } from 'typescript-eslint';
 
 const typeScriptExtensions = ['.ts', '.cts', '.mts', '.tsx', '.ctsx', '.mtsx'];
 const javaScriptExtensions = ['.js', '.cjs', '.mjs', '.jsx', '.cjsx', '.mjsx'];
@@ -9,7 +8,7 @@ const allExtensions = [...typeScriptExtensions, ...javaScriptExtensions];
 export function generateConfig(options?: {
   files?: Array<string | string[]>;
   project?: string[] | string;
-}): ConfigWithExtends {
+}): InfiniteDepthConfigWithExtends {
   return {
     files: options?.files || ['**/*.?(c|m)@(j|t)s?(x)'],
     languageOptions: {

@@ -1,7 +1,7 @@
-import type { ConfigWithExtends } from '@eslint/config-helpers';
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
+import type { InfiniteDepthConfigWithExtends } from 'typescript-eslint';
 
-export function generateConfig(): ConfigWithExtends {
+export function generateConfig(): InfiniteDepthConfigWithExtends {
   return {
     ...eslintPluginPrettierRecommended,
     name: 'mado/prettier',
