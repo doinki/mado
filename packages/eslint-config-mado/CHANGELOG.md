@@ -1,5 +1,11 @@
 # eslint-config-mado
 
+## 0.10.1
+
+### Patch Changes
+
+- c98c286: fix(eslint): Update generateConfig return type
+
 ## 0.10.0
 
 ### Minor Changes
