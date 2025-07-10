@@ -2,6 +2,8 @@
   "name": "@mado/invariant",
   "version": "0.1.0",
   "license": "MIT",
+  "sideEffects": false,
+  "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -26,9 +28,7 @@
   "bugs": "https://github.com/doinki/mado/issues",
   "description": "A tiny invariant function",
   "files": [
-    "dist",
-    "src",
-    "CHANGELOG.md"
+    "dist"
   ],
   "homepage": "https://github.com/doinki/mado/tree/main/packages/mado-invariant#readme",
   "keywords": [
@@ -39,8 +39,6 @@
     "type": "git",
     "url": "git+https://github.com/doinki/mado.git"
   },
-  "sideEffects": false,
-  "type": "module",
   "scripts": {
     "build": "tsup",
     "test": "vitest run",
