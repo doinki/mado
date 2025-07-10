@@ -2,6 +2,8 @@
   "name": "@mado/utils",
   "version": "0.3.0",
   "license": "MIT",
+  "sideEffects": false,
+  "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -25,9 +27,7 @@
   },
   "bugs": "https://github.com/doinki/mado/issues",
   "files": [
-    "dist",
-    "src",
-    "CHANGELOG.md"
+    "dist"
   ],
   "homepage": "https://github.com/doinki/mado/tree/main/packages/mado-utils#readme",
   "repository": {
@@ -35,8 +35,6 @@
     "type": "git",
     "url": "git+https://github.com/doinki/mado.git"
   },
-  "sideEffects": false,
-  "type": "module",
   "scripts": {
     "build": "tsup",
     "test": "vitest run",

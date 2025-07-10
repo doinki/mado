@@ -1,25 +1,37 @@
-import { describe, expect, test } from 'vitest';
+import { describe, expect, it } from 'vitest';
 
 import { capitalize } from '../src';
 
 describe('capitalize', () => {
-  test('should capitalize the first letter of a string', () => {
+  it('should capitalize the first letter of a lowercase string', () => {
     expect(capitalize('hello')).toBe('Hello');
   });
 
-  test('should return an empty string if provided an empty string', () => {
+  it('should return an empty string when given an empty string', () => {
     expect(capitalize('')).toBe('');
   });
 
-  test('should not modify a string that starts with a number', () => {
-    expect(capitalize('123hello')).toBe('123hello');
-  });
-
-  test('should not modify a string that starts with an uppercase letter', () => {
+  it('should not modify a string that already starts with an uppercase letter', () => {
     expect(capitalize('Hello')).toBe('Hello');
   });
 
-  test('should not modify a string that starts with a special character', () => {
+  it('should not modify a string that starts with a number', () => {
+    expect(capitalize('123hello')).toBe('123hello');
+  });
+
+  it('should not modify a string that starts with a special character', () => {
     expect(capitalize('!hello')).toBe('!hello');
+  });
+
+  it('should not modify a string that starts with emoji characters', () => {
+    expect(capitalize('🦇 man')).toBe('🦇 man');
+  });
+
+  it('should not modify a string that starts with a Korean character', () => {
+    expect(capitalize('안녕하세요.')).toBe('안녕하세요.');
+  });
+
+  it('should capitalize the first letter if it is a lowercase accented character', () => {
+    expect(capitalize('àpple')).toBe('Àpple');
   });
 });

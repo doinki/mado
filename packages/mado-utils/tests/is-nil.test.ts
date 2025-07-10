@@ -1,13 +1,13 @@
-import { describe, expect, test } from 'vitest';
+import { describe, expect, it } from 'vitest';
 
 import { isNil } from '../src';
 
 describe('isNil', () => {
-  test.each([null, undefined])('should return true', (a) => {
+  it.each([null, undefined])('should return true', (a) => {
     expect(isNil(a)).toBe(true);
   });
 
-  test.each([0, '', false, Symbol(''), {}, [], () => {}])('should return false', (a) => {
+  it.each([0, 0n, Number.NaN, '', false, Symbol(''), {}, [], () => {}])('should return false', (a) => {
     expect(isNil(a)).toBe(false);
   });
 });

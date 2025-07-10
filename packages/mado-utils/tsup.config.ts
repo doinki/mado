@@ -10,6 +10,6 @@ export default defineConfig({
   esbuildPlugins: [extension()],
   format: ['cjs', 'esm'],
   sourcemap: true,
-  target: ['chrome80', 'edge80', 'safari13.1', 'firefox74', 'opera67'],
+  target: ['chrome67', 'edge79', 'safari14', 'firefox68'],
   treeshake: true,
 });

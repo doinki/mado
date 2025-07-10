@@ -1,4 +1,4 @@
-import { afterEach, beforeEach, describe, expect, test, vi } from 'vitest';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
 import { debounce } from '../src';
 
@@ -11,13 +11,13 @@ describe('debounce', () => {
     vi.useRealTimers();
   });
 
-  test('should delay execution and maintain the correct context and arguments', () => {
+  it('should delay execution and maintain the correct context and arguments', () => {
     const handler = vi.fn();
     const expectedContext = { foo: 'bar' };
 
     let actualContext;
     function collectContext(...args: any[]) {
-      // @ts-ignore
+      // @ts-expect-error
       // eslint-disable-next-line @typescript-eslint/no-this-alias
       actualContext = this;
       handler(...args);
@@ -35,7 +35,7 @@ describe('debounce', () => {
     expect(actualContext).toBe(expectedContext);
   });
 
-  test('should cancel the delayed execution when cancel is called', () => {
+  it('should cancel the delayed execution when cancel is called', () => {
     const handler = vi.fn();
     const debounced = debounce(handler);
 
