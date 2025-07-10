@@ -1,4 +1,4 @@
-import { isObjectLike } from './isObjectLike';
+import { isObjectLike } from './is-object-like';
 
 export function isPlainObject(value: unknown): value is object {
   if (!isObjectLike(value)) {

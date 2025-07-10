@@ -2,7 +2,7 @@ import type { Cancelable } from '@mado/utils';
 import { debounce } from '@mado/utils';
 import { useEffect, useMemo } from 'react';
 
-import { useEvent } from './useEvent';
+import { useEvent } from './use-event';
 
 export function useDebounce<T extends any[], U>(
   fn: (...args: T) => U,

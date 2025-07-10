@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 
-import { useIsomorphicLayoutEffect } from './useIsomorphicLayoutEffect';
+import { useIsomorphicLayoutEffect } from './use-isomorphic-layout-effect';
 
 export function useEvent<T extends unknown[], U>(fn: (...args: T) => U): (...args: T) => U {
   const ref = useRef(fn);
