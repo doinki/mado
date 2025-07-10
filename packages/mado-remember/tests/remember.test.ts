@@ -1,9 +1,9 @@
-import { describe, expect, test } from 'vitest';
+import { describe, expect, it } from 'vitest';
 
 import { remember } from '../src';
 
 describe('remember', () => {
-  test('should retain the initial value for a key even after the value generator changes', () => {
+  it('should retain the initial value for a key even after the value generator changes', () => {
     const rose = Symbol('rose');
 
     let returnValue = rose;
