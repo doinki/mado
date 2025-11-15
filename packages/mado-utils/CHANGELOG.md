@@ -1,5 +1,11 @@
 # @mado/utils
 
+## 0.4.0
+
+### Minor Changes
+
+- f2fd1b8: refactor: mado-invariant와 mado-remember를 mado-utils로 통합
+
 ## 0.3.0
 
 ### Minor Changes
