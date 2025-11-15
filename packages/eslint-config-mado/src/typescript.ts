@@ -1,5 +1,7 @@
-import type { InfiniteDepthConfigWithExtends } from 'typescript-eslint';
+import type { ConfigWithExtends } from '@eslint/config-helpers';
 import { parser, plugin } from 'typescript-eslint';
+
+import { allTsFiles } from './constant';
 
 export interface GenerateConfigOptions {
   files?: Array<string | string[]>;
@@ -15,11 +17,17 @@ export interface GenerateConfigOptions {
   tsconfigRootDir?: string;
 }
 
-export function generateConfig(options: GenerateConfigOptions = {}): InfiniteDepthConfigWithExtends {
-  const { files, project, tsconfigRootDir } = options;
-
+export function defineConfig({
+  files = allTsFiles,
+  project,
+  tsconfigRootDir,
+}: {
+  files?: Array<string | string[]>;
+  project?: string | boolean | string[] | null;
+  tsconfigRootDir?: string;
+} = {}): ConfigWithExtends {
   return {
-    files: files || ['**/*.?(c|m)ts?(x)'],
+    files,
     languageOptions: {
       parser,
       parserOptions: {

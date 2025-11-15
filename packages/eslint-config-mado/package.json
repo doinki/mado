@@ -78,6 +78,16 @@
         "default": "./dist/sort.cjs"
       }
     },
+    "./turbo": {
+      "import": {
+        "types": "./dist/turbo.d.ts",
+        "default": "./dist/turbo.js"
+      },
+      "require": {
+        "types": "./dist/turbo.d.cts",
+        "default": "./dist/turbo.cjs"
+      }
+    },
     "./typescript": {
       "import": {
         "types": "./dist/typescript.d.ts",
@@ -113,24 +123,25 @@
     "prettier": "^3.0.0"
   },
   "dependencies": {
-    "@eslint/compat": "^1.3.1",
-    "@eslint/config-helpers": "^0.2.3",
-    "@eslint/js": "^9.30.1",
-    "@tanstack/eslint-plugin-query": "^5.81.2",
-    "eslint-config-prettier": "^10.1.5",
+    "@eslint/compat": "^2.0.0",
+    "@eslint/config-helpers": "^0.5.0",
+    "@eslint/js": "^9.39.1",
+    "@tanstack/eslint-plugin-query": "^5.91.2",
+    "eslint-config-prettier": "^10.1.8",
     "eslint-import-resolver-typescript": "^4.4.4",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
-    "eslint-plugin-prettier": "^5.5.1",
+    "eslint-plugin-prettier": "^5.5.4",
     "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "eslint-plugin-sort-destructure-keys": "^2.0.0",
     "eslint-plugin-sort-keys-fix": "^1.1.2",
     "eslint-plugin-trim": "^1.0.1",
+    "eslint-plugin-turbo": "^2.6.1",
     "eslint-plugin-typescript-sort-keys": "^3.3.0",
-    "eslint-plugin-unicorn": "^59.0.1",
-    "typescript-eslint": "^8.36.0"
+    "eslint-plugin-unicorn": "^62.0.0",
+    "typescript-eslint": "^8.46.4"
   },
   "author": {
     "email": "doinki94@gmail.com",

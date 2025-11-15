@@ -1,2 +1,2 @@
-export { includeIgnoreFile } from '@eslint/compat';
-export { config } from 'typescript-eslint';
+export * from '@eslint/compat';
+export * from 'eslint/config';

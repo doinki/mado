@@ -1,10 +1,11 @@
 import type { ConfigWithExtends } from '@eslint/config-helpers';
 import eslintPluginUnicorn from 'eslint-plugin-unicorn';
-import type { InfiniteDepthConfigWithExtends } from 'typescript-eslint';
 
-export function generateConfig(options?: { files?: Array<string | string[]> }): InfiniteDepthConfigWithExtends {
+import { allFiles } from './constant';
+
+export function defineConfig({ files = allFiles }: { files?: Array<string | string[]> } = {}): ConfigWithExtends {
   return {
-    files: options?.files || ['**/*.?(c|m)@(j|t)s?(x)'],
+    files,
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
@@ -17,7 +18,7 @@ export function generateConfig(options?: { files?: Array<string | string[]> }): 
   };
 }
 
-// v59.0.1
+// v62.0.0
 // https://github.com/sindresorhus/eslint-plugin-unicorn
 const rules = {
   'unicorn/better-regex': 'warn',
@@ -44,6 +45,8 @@ const rules = {
   'unicorn/no-array-for-each': 'off',
   'unicorn/no-array-method-this-argument': 'off',
   'unicorn/no-array-reduce': 'off',
+  'unicorn/no-array-reverse': 'off',
+  'unicorn/no-array-sort': 'off',
   'unicorn/no-await-expression-member': 'off',
   'unicorn/no-await-in-promise-methods': 'warn',
   'unicorn/no-console-spaces': 'warn',
@@ -51,6 +54,7 @@ const rules = {
   'unicorn/no-empty-file': 'off',
   'unicorn/no-for-loop': 'warn',
   'unicorn/no-hex-escape': 'off',
+  'unicorn/no-immediate-mutation': 'warn',
   'unicorn/no-instanceof-builtins': 'warn',
   'unicorn/no-invalid-fetch-options': 'warn',
   'unicorn/no-invalid-remove-event-listener': 'warn',
@@ -79,6 +83,8 @@ const rules = {
   'unicorn/no-unreadable-array-destructuring': 'off',
   'unicorn/no-unreadable-iife': 'off',
   'unicorn/no-unused-properties': 'off',
+  'unicorn/no-useless-collection-argument': 'warn',
+  'unicorn/no-useless-error-capture-stack-trace': 'warn',
   'unicorn/no-useless-fallback-in-spread': 'warn',
   'unicorn/no-useless-length-check': 'warn',
   'unicorn/no-useless-promise-resolve-reject': 'warn',
@@ -95,7 +101,10 @@ const rules = {
   'unicorn/prefer-array-index-of': 'warn',
   'unicorn/prefer-array-some': 'warn',
   'unicorn/prefer-at': 'warn',
+  'unicorn/prefer-bigint-literals': 'warn',
   'unicorn/prefer-blob-reading-methods': 'off',
+  'unicorn/prefer-class-fields': 'warn',
+  'unicorn/prefer-classlist-toggle': 'warn',
   'unicorn/prefer-code-point': 'warn',
   'unicorn/prefer-date-now': 'warn',
   'unicorn/prefer-default-parameters': 'off',
@@ -126,6 +135,7 @@ const rules = {
   'unicorn/prefer-query-selector': 'off',
   'unicorn/prefer-reflect-apply': 'off',
   'unicorn/prefer-regexp-test': 'warn',
+  'unicorn/prefer-response-static-json': 'warn',
   'unicorn/prefer-set-has': 'warn',
   'unicorn/prefer-set-size': 'warn',
   'unicorn/prefer-single-call': 'warn',
@@ -143,6 +153,8 @@ const rules = {
   'unicorn/prevent-abbreviations': 'off',
   'unicorn/relative-url-style': 'warn',
   'unicorn/require-array-join-separator': 'off',
+  'unicorn/require-module-attributes': 'off',
+  'unicorn/require-module-specifiers': 'off',
   'unicorn/require-number-to-fixed-digits-argument': 'off',
   'unicorn/require-post-message-target-origin': 'warn',
   'unicorn/string-content': 'off',

@@ -1,16 +1,21 @@
+import type { ConfigWithExtends } from '@eslint/config-helpers';
 import eslintPluginImport from 'eslint-plugin-import';
-import type { InfiniteDepthConfigWithExtends } from 'typescript-eslint';
+
+import { allFiles } from './constant';
 
 const typeScriptExtensions = ['.ts', '.cts', '.mts', '.tsx', '.ctsx', '.mtsx'];
 const javaScriptExtensions = ['.js', '.cjs', '.mjs', '.jsx', '.cjsx', '.mjsx'];
 const allExtensions = [...typeScriptExtensions, ...javaScriptExtensions];
 
-export function generateConfig(options?: {
+export function defineConfig({
+  files = allFiles,
+  project,
+}: {
   files?: Array<string | string[]>;
   project?: string[] | string;
-}): InfiniteDepthConfigWithExtends {
+} = {}): ConfigWithExtends {
   return {
-    files: options?.files || ['**/*.?(c|m)@(j|t)s?(x)'],
+    files,
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
@@ -21,6 +26,7 @@ export function generateConfig(options?: {
     },
     rules: {
       'import/consistent-type-specifier-style': ['error', 'prefer-top-level'],
+      'import/export': 'warn',
       'import/first': 'warn',
       'import/newline-after-import': 'warn',
       'import/no-cycle': 'error',
@@ -39,7 +45,7 @@ export function generateConfig(options?: {
         },
         typescript: {
           alwaysTryTypes: true,
-          ...options,
+          project,
         },
       },
     },

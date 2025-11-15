@@ -1,7 +1,7 @@
+import type { ConfigWithExtends } from '@eslint/config-helpers';
 import eslintPluginQuery from '@tanstack/eslint-plugin-query';
-import type { InfiniteDepthConfigWithExtends } from 'typescript-eslint';
 
-export function generateConfig(): InfiniteDepthConfigWithExtends {
+export function defineConfig(): ConfigWithExtends[] {
   return [
     ...eslintPluginQuery.configs['flat/recommended'],
     {

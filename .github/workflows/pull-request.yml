@@ -15,11 +15,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/pnpm-install
-      - run: pnpm lint
+      - run: pnpm exec turbo run lint
 
   test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/pnpm-install
-      - run: pnpm test
+      - run: pnpm exec turbo run test
+
+  typecheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/pnpm-install
+      - run: pnpm exec turbo run typecheck
