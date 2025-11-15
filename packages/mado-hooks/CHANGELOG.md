@@ -1,5 +1,12 @@
 # @mado/hooks
 
+## 0.4.1
+
+### Patch Changes
+
+- Updated dependencies [f2fd1b8]
+  - @mado/utils@0.4.0
+
 ## 0.4.0
 
 ### Minor Changes
