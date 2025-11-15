@@ -1,5 +1,11 @@
 # eslint-config-mado
 
+## 0.11.0
+
+### Minor Changes
+
+- b897c3d: refactor(eslint): ♻️
+
 ## 0.10.1
 
 ### Patch Changes
