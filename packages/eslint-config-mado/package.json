@@ -113,7 +113,8 @@
   "scripts": {
     "build": "tsup",
     "lint": "eslint",
-    "publint": "publint"
+    "publint": "publint",
+    "typecheck": "tsc --noEmit"
   },
   "engines": {
     "node": "^20.9.0 || >=21.1.0"

@@ -6,7 +6,8 @@ export function storageAvailable(type: 'localStorage' | 'sessionStorage'): boole
 
   try {
     storage = window[type];
-    const x = '__storage_test__';
+
+    const x = `__${type}__`;
     storage.setItem(x, x);
     storage.removeItem(x);
 

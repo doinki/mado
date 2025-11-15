@@ -15,12 +15,15 @@
     "@types/react-dom": "^19.2.3",
     "esbuild-plugin-extension": "^0.0.4",
     "eslint": "^9.39.1",
+    "eslint-config-mado": "workspace:*",
     "husky": "^9.1.7",
+    "jsdom": "^27.2.0",
     "lint-staged": "^16.2.6",
     "prettier": "^3.6.2",
     "publint": "^0.3.15",
     "tsup": "^8.5.1",
     "turbo": "^2.6.1",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.9"
   }
 }

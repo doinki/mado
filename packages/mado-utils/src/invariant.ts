@@ -3,10 +3,6 @@ export class InvariantError extends Error {
     super(message);
 
     this.name = 'InvariantError';
-
-    if (Error.captureStackTrace) {
-      Error.captureStackTrace(this, InvariantError);
-    }
   }
 }
 

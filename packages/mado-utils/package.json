@@ -20,6 +20,14 @@
     },
     "./package.json": "./package.json"
   },
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint",
+    "publint": "publint",
+    "typecheck": "tsc --noEmit"
+  },
   "author": {
     "email": "doinki94@gmail.com",
     "name": "doinki",
@@ -35,12 +43,7 @@
     "type": "git",
     "url": "git+https://github.com/doinki/mado.git"
   },
-  "scripts": {
-    "build": "tsup",
-    "test": "vitest run",
-    "test:coverage": "vitest run --coverage",
-    "lint": "eslint",
-    "publint": "publint",
-    "typecheck": "tsc --noEmit"
+  "publishConfig": {
+    "access": "public"
   }
 }

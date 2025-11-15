@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { invariant, InvariantError, invariantResponse, isInvariantError } from '../src';
+import { invariant, InvariantError, invariantResponse, isInvariantError } from '../src/invariant';
 
 describe('InvariantError', () => {
   it('should be an instance of Error', () => {
