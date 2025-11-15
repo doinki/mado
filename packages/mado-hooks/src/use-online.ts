@@ -1,4 +1,4 @@
-import { useSyncExternalStore } from 'use-sync-external-store/shim';
+import { useSyncExternalStore } from 'react';
 
 function subscribe(onStoreChange: VoidFunction): VoidFunction {
   window.addEventListener('online', onStoreChange, {
@@ -18,11 +18,6 @@ function getSnapshot(): boolean {
   return navigator.onLine;
 }
 
-/* istanbul ignore next -- @preserve */
-function getServerSnapshot(): boolean {
-  return true;
-}
-
-export function useOnline(): boolean {
-  return useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
+export function useOnline(defaultOnline = true): boolean {
+  return useSyncExternalStore(subscribe, getSnapshot, () => defaultOnline);
 }

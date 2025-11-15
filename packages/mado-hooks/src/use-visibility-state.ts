@@ -1,4 +1,4 @@
-import { useSyncExternalStore } from 'use-sync-external-store/shim';
+import { useSyncExternalStore } from 'react';
 
 function subscribe(onStoreChange: VoidFunction): VoidFunction {
   document.addEventListener('visibilitychange', onStoreChange, {
@@ -14,11 +14,8 @@ function getSnapshot(): DocumentVisibilityState {
   return document.visibilityState;
 }
 
-/* istanbul ignore next -- @preserve */
-function getServerSnapshot(): DocumentVisibilityState {
-  return 'visible';
-}
-
-export function useVisibilityState(): DocumentVisibilityState {
-  return useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
+export function useVisibilityState(
+  defaultVisibilityState: DocumentVisibilityState = 'visible',
+): DocumentVisibilityState {
+  return useSyncExternalStore(subscribe, getSnapshot, () => defaultVisibilityState);
 }

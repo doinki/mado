@@ -1,5 +1,4 @@
-import { useMemo } from 'react';
-import { useSyncExternalStore } from 'use-sync-external-store/shim';
+import { useMemo, useSyncExternalStore } from 'react';
 
 export function useMediaQuery(query: string, defaultMatches = false): boolean {
   const [subscribe, getSnapshot, getServerSnapshot] = useMemo(() => {
@@ -23,9 +22,7 @@ export function useMediaQuery(query: string, defaultMatches = false): boolean {
           mediaQueryList.removeListener(onStoreChange);
         };
       },
-      () => {
-        return mediaQueryList.matches;
-      },
+      () => mediaQueryList.matches,
       getDefaultSnapshot,
     ];
   }, [defaultMatches, query]);

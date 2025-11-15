@@ -9,5 +9,6 @@ export function useEvent<T extends unknown[], U>(fn: (...args: T) => U): (...arg
     ref.current = fn;
   });
 
+  // eslint-disable-next-line react-hooks/refs
   return useRef((...args: T) => (0, ref.current)(...args)).current;
 }

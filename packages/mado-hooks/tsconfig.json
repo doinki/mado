@@ -4,14 +4,14 @@
     "esModuleInterop": true,
     "jsx": "react-jsx",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
+    "module": "esnext",
+    "moduleResolution": "bundler",
     "noEmit": true,
     "paths": {
       "@mado/utils": ["../mado-utils/src"]
     },
     "skipLibCheck": true,
     "strict": true,
-    "target": "ES2019"
+    "target": "es2020"
   }
 }
