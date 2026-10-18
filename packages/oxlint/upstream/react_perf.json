@@ -1,0 +1,42 @@
+[
+  {
+    "scope": "react_perf",
+    "value": "jsx-no-jsx-as-prop",
+    "category": "perf",
+    "version": "0.2.3",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react_perf/jsx-no-jsx-as-prop.html"
+  },
+  {
+    "scope": "react_perf",
+    "value": "jsx-no-new-array-as-prop",
+    "category": "perf",
+    "version": "0.2.3",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react_perf/jsx-no-new-array-as-prop.html"
+  },
+  {
+    "scope": "react_perf",
+    "value": "jsx-no-new-function-as-prop",
+    "category": "perf",
+    "version": "0.2.3",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react_perf/jsx-no-new-function-as-prop.html"
+  },
+  {
+    "scope": "react_perf",
+    "value": "jsx-no-new-object-as-prop",
+    "category": "perf",
+    "version": "0.2.3",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react_perf/jsx-no-new-object-as-prop.html"
+  }
+]

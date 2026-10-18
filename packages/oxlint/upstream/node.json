@@ -1,0 +1,112 @@
+[
+  {
+    "scope": "node",
+    "value": "callback-return",
+    "category": "style",
+    "version": "1.67.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/node/callback-return.html"
+  },
+  {
+    "scope": "node",
+    "value": "exports-style",
+    "category": "style",
+    "version": "1.76.0",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/node/exports-style.html"
+  },
+  {
+    "scope": "node",
+    "value": "global-require",
+    "category": "style",
+    "version": "1.36.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/node/global-require.html"
+  },
+  {
+    "scope": "node",
+    "value": "handle-callback-err",
+    "category": "restriction",
+    "version": "1.56.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/node/handle-callback-err.html"
+  },
+  {
+    "scope": "node",
+    "value": "no-exports-assign",
+    "category": "suspicious",
+    "version": "0.9.3",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/node/no-exports-assign.html"
+  },
+  {
+    "scope": "node",
+    "value": "no-mixed-requires",
+    "category": "style",
+    "version": "1.71.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/node/no-mixed-requires.html"
+  },
+  {
+    "scope": "node",
+    "value": "no-new-require",
+    "category": "restriction",
+    "version": "0.10.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/node/no-new-require.html"
+  },
+  {
+    "scope": "node",
+    "value": "no-path-concat",
+    "category": "restriction",
+    "version": "1.49.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/node/no-path-concat.html"
+  },
+  {
+    "scope": "node",
+    "value": "no-process-env",
+    "category": "restriction",
+    "version": "1.23.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/node/no-process-env.html"
+  },
+  {
+    "scope": "node",
+    "value": "no-sync",
+    "category": "style",
+    "version": "1.71.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/node/no-sync.html"
+  },
+  {
+    "scope": "node",
+    "value": "no-top-level-await",
+    "category": "restriction",
+    "version": "1.75.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/node/no-top-level-await.html"
+  }
+]

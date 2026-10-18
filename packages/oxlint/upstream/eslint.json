@@ -1,0 +1,1872 @@
+[
+  {
+    "scope": "eslint",
+    "value": "accessor-pairs",
+    "category": "pedantic",
+    "version": "1.33.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/accessor-pairs.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "array-callback-return",
+    "category": "pedantic",
+    "version": "0.0.3",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/array-callback-return.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "arrow-body-style",
+    "category": "style",
+    "version": "1.4.0",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/arrow-body-style.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "block-scoped-var",
+    "category": "suspicious",
+    "version": "0.16.9",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/block-scoped-var.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "capitalized-comments",
+    "category": "style",
+    "version": "1.34.0",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/capitalized-comments.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "class-methods-use-this",
+    "category": "restriction",
+    "version": "1.16.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/class-methods-use-this.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "complexity",
+    "category": "restriction",
+    "version": "1.37.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/complexity.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "constructor-super",
+    "category": "correctness",
+    "version": "0.0.3",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/constructor-super.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "curly",
+    "category": "style",
+    "version": "0.15.13",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/curly.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "default-case",
+    "category": "restriction",
+    "version": "0.4.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/default-case.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "default-case-last",
+    "category": "style",
+    "version": "0.0.16",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/default-case-last.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "default-param-last",
+    "category": "style",
+    "version": "0.2.15",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/default-param-last.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "eqeqeq",
+    "category": "pedantic",
+    "version": "0.0.3",
+    "type_aware": false,
+    "fix": "conditional_dangerous_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/eqeqeq.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "for-direction",
+    "category": "correctness",
+    "version": "0.0.3",
+    "type_aware": false,
+    "fix": "fixable_dangerous_fix",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/for-direction.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "func-name-matching",
+    "category": "style",
+    "version": "1.62.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/func-name-matching.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "func-names",
+    "category": "style",
+    "version": "0.7.0",
+    "type_aware": false,
+    "fix": "conditional_safe_fix_or_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/func-names.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "func-style",
+    "category": "style",
+    "version": "0.15.11",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/func-style.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "getter-return",
+    "category": "correctness",
+    "version": "0.0.3",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/getter-return.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "grouped-accessor-pairs",
+    "category": "style",
+    "version": "0.15.12",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/grouped-accessor-pairs.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "guard-for-in",
+    "category": "style",
+    "version": "0.2.14",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/guard-for-in.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "id-denylist",
+    "category": "style",
+    "version": "1.76.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/id-denylist.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "id-length",
+    "category": "style",
+    "version": "1.4.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/id-length.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "id-match",
+    "category": "style",
+    "version": "1.66.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/id-match.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "init-declarations",
+    "category": "style",
+    "version": "0.15.11",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/init-declarations.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "logical-assignment-operators",
+    "category": "style",
+    "version": "1.63.0",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/logical-assignment-operators.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "max-classes-per-file",
+    "category": "pedantic",
+    "version": "0.3.4",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/max-classes-per-file.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "max-depth",
+    "category": "pedantic",
+    "version": "0.15.12",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/max-depth.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "max-lines",
+    "category": "pedantic",
+    "version": "0.2.14",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/max-lines.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "max-lines-per-function",
+    "category": "pedantic",
+    "version": "0.15.12",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/max-lines-per-function.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "max-nested-callbacks",
+    "category": "pedantic",
+    "version": "0.15.12",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/max-nested-callbacks.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "max-params",
+    "category": "style",
+    "version": "0.2.14",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/max-params.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "max-statements",
+    "category": "style",
+    "version": "1.35.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/max-statements.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "new-cap",
+    "category": "style",
+    "version": "0.15.5",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/new-cap.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-alert",
+    "category": "restriction",
+    "version": "0.9.3",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-alert.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-array-constructor",
+    "category": "pedantic",
+    "version": "0.0.3",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-array-constructor.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-async-promise-executor",
+    "category": "correctness",
+    "version": "0.0.3",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-async-promise-executor.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-await-in-loop",
+    "category": "perf",
+    "version": "0.3.2",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-await-in-loop.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-bitwise",
+    "category": "restriction",
+    "version": "0.0.3",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-bitwise.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-caller",
+    "category": "correctness",
+    "version": "0.0.3",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-caller.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-case-declarations",
+    "category": "pedantic",
+    "version": "0.0.4",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-case-declarations.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-class-assign",
+    "category": "correctness",
+    "version": "0.0.3",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-class-assign.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-compare-neg-zero",
+    "category": "correctness",
+    "version": "0.0.3",
+    "type_aware": false,
+    "fix": "conditional_safe_fix_or_suggestion",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-compare-neg-zero.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-cond-assign",
+    "category": "correctness",
+    "version": "0.0.5",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-cond-assign.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-console",
+    "category": "restriction",
+    "version": "0.0.13",
+    "type_aware": false,
+    "fix": "conditional_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-console.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-const-assign",
+    "category": "correctness",
+    "version": "0.0.3",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-const-assign.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-constant-binary-expression",
+    "category": "correctness",
+    "version": "0.0.3",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-constant-binary-expression.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-constant-condition",
+    "category": "correctness",
+    "version": "0.0.3",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-constant-condition.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-constructor-return",
+    "category": "pedantic",
+    "version": "0.4.3",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-constructor-return.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-continue",
+    "category": "style",
+    "version": "0.2.14",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-continue.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-control-regex",
+    "category": "correctness",
+    "version": "0.0.7",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-control-regex.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-debugger",
+    "category": "correctness",
+    "version": "0.0.3",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-debugger.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-delete-var",
+    "category": "correctness",
+    "version": "0.0.4",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-delete-var.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-div-regex",
+    "category": "restriction",
+    "version": "0.4.2",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-div-regex.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-dupe-class-members",
+    "category": "correctness",
+    "version": "0.0.3",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-dupe-class-members.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-dupe-else-if",
+    "category": "correctness",
+    "version": "0.0.5",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-dupe-else-if.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-dupe-keys",
+    "category": "correctness",
+    "version": "0.0.3",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-dupe-keys.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-duplicate-case",
+    "category": "correctness",
+    "version": "0.0.3",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-duplicate-case.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-duplicate-imports",
+    "category": "style",
+    "version": "0.13.2",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-duplicate-imports.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-else-return",
+    "category": "pedantic",
+    "version": "0.9.10",
+    "type_aware": false,
+    "fix": "conditional_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-else-return.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-empty",
+    "category": "restriction",
+    "version": "0.0.3",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-empty.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-empty-character-class",
+    "category": "correctness",
+    "version": "0.0.7",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-empty-character-class.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-empty-function",
+    "category": "restriction",
+    "version": "0.3.3",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-empty-function.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-empty-pattern",
+    "category": "correctness",
+    "version": "0.0.3",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-empty-pattern.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-empty-static-block",
+    "category": "correctness",
+    "version": "0.0.19",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-empty-static-block.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-eq-null",
+    "category": "restriction",
+    "version": "0.2.14",
+    "type_aware": false,
+    "fix": "fixable_dangerous_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-eq-null.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-eval",
+    "category": "correctness",
+    "version": "0.0.3",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-eval.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-ex-assign",
+    "category": "correctness",
+    "version": "0.0.4",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-ex-assign.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-extend-native",
+    "category": "suspicious",
+    "version": "0.9.7",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-extend-native.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-extra-bind",
+    "category": "suspicious",
+    "version": "1.1.0",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-extra-bind.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-extra-boolean-cast",
+    "category": "correctness",
+    "version": "0.0.8",
+    "type_aware": false,
+    "fix": "conditional_safe_fix_or_suggestion",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-extra-boolean-cast.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-extra-label",
+    "category": "style",
+    "version": "0.15.4",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-extra-label.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-fallthrough",
+    "category": "pedantic",
+    "version": "0.0.14",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-fallthrough.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-func-assign",
+    "category": "correctness",
+    "version": "0.0.3",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-func-assign.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-global-assign",
+    "category": "correctness",
+    "version": "0.0.7",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-global-assign.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-implicit-coercion",
+    "category": "style",
+    "version": "1.33.0",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-implicit-coercion.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-implicit-globals",
+    "category": "restriction",
+    "version": "1.65.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-implicit-globals.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-implied-eval",
+    "category": "suspicious",
+    "version": "1.66.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-implied-eval.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-import-assign",
+    "category": "correctness",
+    "version": "0.0.5",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-import-assign.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-inline-comments",
+    "category": "pedantic",
+    "version": "1.34.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-inline-comments.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-inner-declarations",
+    "category": "pedantic",
+    "version": "0.0.5",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-inner-declarations.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-invalid-regexp",
+    "category": "correctness",
+    "version": "0.9.4",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-invalid-regexp.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-irregular-whitespace",
+    "category": "correctness",
+    "version": "0.1.1",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-irregular-whitespace.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-iterator",
+    "category": "correctness",
+    "version": "0.2.15",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-iterator.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-label-var",
+    "category": "style",
+    "version": "0.6.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-label-var.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-labels",
+    "category": "style",
+    "version": "0.15.4",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-labels.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-lone-blocks",
+    "category": "style",
+    "version": "0.15.6",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-lone-blocks.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-lonely-if",
+    "category": "pedantic",
+    "version": "0.16.0",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-lonely-if.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-loop-func",
+    "category": "pedantic",
+    "version": "1.33.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-loop-func.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-loss-of-precision",
+    "category": "correctness",
+    "version": "0.0.7",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-loss-of-precision.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-magic-numbers",
+    "category": "style",
+    "version": "0.9.3",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-magic-numbers.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-misleading-character-class",
+    "category": "correctness",
+    "version": "1.17.0",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-misleading-character-class.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-multi-assign",
+    "category": "style",
+    "version": "0.15.4",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-multi-assign.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-multi-str",
+    "category": "style",
+    "version": "0.5.3",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-multi-str.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-negated-condition",
+    "category": "pedantic",
+    "version": "0.0.18",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-negated-condition.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-nested-ternary",
+    "category": "style",
+    "version": "0.15.4",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-nested-ternary.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-new",
+    "category": "suspicious",
+    "version": "0.4.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-new.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-new-func",
+    "category": "style",
+    "version": "0.9.2",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-new-func.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-new-native-nonconstructor",
+    "category": "correctness",
+    "version": "0.3.3",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-new-native-nonconstructor.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-new-wrappers",
+    "category": "pedantic",
+    "version": "0.2.10",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-new-wrappers.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-nonoctal-decimal-escape",
+    "category": "correctness",
+    "version": "0.2.10",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-nonoctal-decimal-escape.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-obj-calls",
+    "category": "correctness",
+    "version": "0.0.7",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-obj-calls.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-object-constructor",
+    "category": "pedantic",
+    "version": "0.13.2",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-object-constructor.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-param-reassign",
+    "category": "restriction",
+    "version": "1.20.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-param-reassign.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-plusplus",
+    "category": "restriction",
+    "version": "0.9.5",
+    "type_aware": false,
+    "fix": "conditional_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-plusplus.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-promise-executor-return",
+    "category": "pedantic",
+    "version": "1.33.0",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-promise-executor-return.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-proto",
+    "category": "restriction",
+    "version": "0.2.14",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-proto.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-prototype-builtins",
+    "category": "pedantic",
+    "version": "0.0.5",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-prototype-builtins.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-redeclare",
+    "category": "pedantic",
+    "version": "0.0.13",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-redeclare.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-regex-spaces",
+    "category": "restriction",
+    "version": "0.0.18",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-regex-spaces.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-restricted-exports",
+    "category": "nursery",
+    "version": "1.59.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-restricted-exports.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-restricted-globals",
+    "category": "restriction",
+    "version": "0.4.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-restricted-globals.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-restricted-imports",
+    "category": "restriction",
+    "version": "0.15.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-restricted-imports.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-restricted-properties",
+    "category": "restriction",
+    "version": "1.63.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-restricted-properties.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-return-assign",
+    "category": "style",
+    "version": "0.9.10",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-return-assign.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-script-url",
+    "category": "style",
+    "version": "0.2.15",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-script-url.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-self-assign",
+    "category": "correctness",
+    "version": "0.0.5",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-self-assign.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-self-compare",
+    "category": "pedantic",
+    "version": "0.0.3",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-self-compare.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-sequences",
+    "category": "restriction",
+    "version": "1.33.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-sequences.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-setter-return",
+    "category": "correctness",
+    "version": "0.0.3",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-setter-return.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-shadow",
+    "category": "suspicious",
+    "version": "1.48.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-shadow.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-shadow-restricted-names",
+    "category": "correctness",
+    "version": "0.0.3",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-shadow-restricted-names.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-sparse-arrays",
+    "category": "correctness",
+    "version": "0.0.4",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-sparse-arrays.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-template-curly-in-string",
+    "category": "style",
+    "version": "0.2.14",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-template-curly-in-string.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-ternary",
+    "category": "style",
+    "version": "0.2.14",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-ternary.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-this-before-super",
+    "category": "correctness",
+    "version": "0.2.6",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-this-before-super.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-throw-literal",
+    "category": "pedantic",
+    "version": "0.9.10",
+    "type_aware": false,
+    "fix": "conditional_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-throw-literal.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-unassigned-vars",
+    "category": "correctness",
+    "version": "1.10.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-unassigned-vars.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-undef",
+    "category": "nursery",
+    "version": "0.0.8",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-undef.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-undefined",
+    "category": "restriction",
+    "version": "0.5.3",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-undefined.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-underscore-dangle",
+    "category": "suspicious",
+    "version": "1.62.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-underscore-dangle.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-unexpected-multiline",
+    "category": "suspicious",
+    "version": "0.9.7",
+    "type_aware": false,
+    "fix": "fixable_dangerous_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-unexpected-multiline.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-unmodified-loop-condition",
+    "category": "suspicious",
+    "version": "1.48.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-unmodified-loop-condition.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-unneeded-ternary",
+    "category": "suspicious",
+    "version": "0.15.12",
+    "type_aware": false,
+    "fix": "fixable_dangerous_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-unneeded-ternary.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-unreachable",
+    "category": "correctness",
+    "version": "0.4.4",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-unreachable.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-unreachable-loop",
+    "category": "nursery",
+    "version": "1.79.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-unreachable-loop.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-unsafe-finally",
+    "category": "correctness",
+    "version": "0.0.5",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-unsafe-finally.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-unsafe-negation",
+    "category": "correctness",
+    "version": "0.0.3",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-unsafe-negation.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-unsafe-optional-chaining",
+    "category": "correctness",
+    "version": "0.0.5",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-unsafe-optional-chaining.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-unused-expressions",
+    "category": "correctness",
+    "version": "0.14.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-unused-expressions.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-unused-labels",
+    "category": "correctness",
+    "version": "0.0.3",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-unused-labels.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-unused-private-class-members",
+    "category": "correctness",
+    "version": "0.1.1",
+    "type_aware": false,
+    "fix": "pending",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-unused-private-class-members.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-unused-vars",
+    "category": "correctness",
+    "version": "0.7.0",
+    "type_aware": false,
+    "fix": "conditional_dangerous_fix_or_suggestion",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-unused-vars.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-use-before-define",
+    "category": "restriction",
+    "version": "1.49.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-use-before-define.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-useless-assignment",
+    "category": "nursery",
+    "version": "1.59.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-useless-assignment.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-useless-backreference",
+    "category": "correctness",
+    "version": "0.16.10",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-useless-backreference.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-useless-call",
+    "category": "perf",
+    "version": "0.15.9",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-useless-call.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-useless-catch",
+    "category": "correctness",
+    "version": "0.0.5",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-useless-catch.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-useless-computed-key",
+    "category": "style",
+    "version": "1.16.0",
+    "type_aware": false,
+    "fix": "conditional_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-useless-computed-key.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-useless-concat",
+    "category": "suspicious",
+    "version": "0.4.2",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-useless-concat.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-useless-constructor",
+    "category": "suspicious",
+    "version": "0.4.4",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-useless-constructor.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-useless-escape",
+    "category": "correctness",
+    "version": "0.0.5",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-useless-escape.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-useless-rename",
+    "category": "correctness",
+    "version": "0.2.14",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-useless-rename.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-useless-return",
+    "category": "pedantic",
+    "version": "1.32.0",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-useless-return.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-var",
+    "category": "restriction",
+    "version": "0.1.1",
+    "type_aware": false,
+    "fix": "conditional_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-var.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-void",
+    "category": "restriction",
+    "version": "0.2.5",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-void.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-warning-comments",
+    "category": "pedantic",
+    "version": "1.24.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-warning-comments.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "no-with",
+    "category": "correctness",
+    "version": "0.2.14",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-with.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "object-shorthand",
+    "category": "style",
+    "version": "1.59.0",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/object-shorthand.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "one-var",
+    "category": "style",
+    "version": "1.78.0",
+    "type_aware": false,
+    "fix": "conditional_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/one-var.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "operator-assignment",
+    "category": "style",
+    "version": "0.15.13",
+    "type_aware": false,
+    "fix": "fixable_dangerous_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/operator-assignment.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "prefer-arrow-callback",
+    "category": "style",
+    "version": "1.65.0",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/prefer-arrow-callback.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "prefer-const",
+    "category": "style",
+    "version": "1.43.0",
+    "type_aware": false,
+    "fix": "conditional_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/prefer-const.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "prefer-destructuring",
+    "category": "style",
+    "version": "1.10.0",
+    "type_aware": false,
+    "fix": "conditional_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/prefer-destructuring.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "prefer-exponentiation-operator",
+    "category": "style",
+    "version": "0.4.0",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/prefer-exponentiation-operator.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "prefer-named-capture-group",
+    "category": "style",
+    "version": "1.68.0",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/prefer-named-capture-group.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "prefer-numeric-literals",
+    "category": "style",
+    "version": "0.7.0",
+    "type_aware": false,
+    "fix": "conditional_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/prefer-numeric-literals.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "prefer-object-has-own",
+    "category": "style",
+    "version": "0.11.0",
+    "type_aware": false,
+    "fix": "conditional_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/prefer-object-has-own.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "prefer-object-spread",
+    "category": "style",
+    "version": "0.15.9",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/prefer-object-spread.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "prefer-promise-reject-errors",
+    "category": "pedantic",
+    "version": "0.15.7",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/prefer-promise-reject-errors.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "prefer-regex-literals",
+    "category": "style",
+    "version": "1.64.0",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/prefer-regex-literals.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "prefer-rest-params",
+    "category": "style",
+    "version": "0.15.4",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/prefer-rest-params.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "prefer-spread",
+    "category": "style",
+    "version": "0.0.17",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/prefer-spread.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "prefer-template",
+    "category": "style",
+    "version": "1.12.0",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/prefer-template.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "preserve-caught-error",
+    "category": "suspicious",
+    "version": "1.16.0",
+    "type_aware": false,
+    "fix": "conditional_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/preserve-caught-error.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "radix",
+    "category": "pedantic",
+    "version": "0.3.3",
+    "type_aware": false,
+    "fix": "conditional_dangerous_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/radix.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "require-await",
+    "category": "pedantic",
+    "version": "0.4.2",
+    "type_aware": false,
+    "fix": "fixable_dangerous_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/require-await.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "require-unicode-regexp",
+    "category": "pedantic",
+    "version": "1.63.0",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/require-unicode-regexp.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "require-yield",
+    "category": "correctness",
+    "version": "0.0.4",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/require-yield.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "sort-imports",
+    "category": "style",
+    "version": "0.4.4",
+    "type_aware": false,
+    "fix": "conditional_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/sort-imports.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "sort-keys",
+    "category": "style",
+    "version": "0.9.4",
+    "type_aware": false,
+    "fix": "conditional_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/sort-keys.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "sort-vars",
+    "category": "pedantic",
+    "version": "0.9.3",
+    "type_aware": false,
+    "fix": "conditional_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/sort-vars.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "symbol-description",
+    "category": "pedantic",
+    "version": "0.4.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/symbol-description.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "unicode-bom",
+    "category": "restriction",
+    "version": "0.3.3",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/unicode-bom.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "use-isnan",
+    "category": "correctness",
+    "version": "0.0.3",
+    "type_aware": false,
+    "fix": "conditional_fix",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/use-isnan.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "valid-typeof",
+    "category": "correctness",
+    "version": "0.0.3",
+    "type_aware": false,
+    "fix": "conditional_fix",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/valid-typeof.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "vars-on-top",
+    "category": "style",
+    "version": "0.15.4",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/vars-on-top.html"
+  },
+  {
+    "scope": "eslint",
+    "value": "yoda",
+    "category": "style",
+    "version": "0.14.1",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/yoda.html"
+  }
+]

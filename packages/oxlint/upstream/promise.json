@@ -1,0 +1,162 @@
+[
+  {
+    "scope": "promise",
+    "value": "always-return",
+    "category": "suspicious",
+    "version": "1.13.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/promise/always-return.html"
+  },
+  {
+    "scope": "promise",
+    "value": "avoid-new",
+    "category": "style",
+    "version": "0.6.1",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/promise/avoid-new.html"
+  },
+  {
+    "scope": "promise",
+    "value": "catch-or-return",
+    "category": "restriction",
+    "version": "0.9.2",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/promise/catch-or-return.html"
+  },
+  {
+    "scope": "promise",
+    "value": "no-callback-in-promise",
+    "category": "correctness",
+    "version": "0.10.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/promise/no-callback-in-promise.html"
+  },
+  {
+    "scope": "promise",
+    "value": "no-multiple-resolved",
+    "category": "suspicious",
+    "version": "1.19.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/promise/no-multiple-resolved.html"
+  },
+  {
+    "scope": "promise",
+    "value": "no-nesting",
+    "category": "style",
+    "version": "0.15.13",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/promise/no-nesting.html"
+  },
+  {
+    "scope": "promise",
+    "value": "no-new-statics",
+    "category": "correctness",
+    "version": "0.6.1",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/promise/no-new-statics.html"
+  },
+  {
+    "scope": "promise",
+    "value": "no-promise-in-callback",
+    "category": "suspicious",
+    "version": "0.13.1",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/promise/no-promise-in-callback.html"
+  },
+  {
+    "scope": "promise",
+    "value": "no-return-in-finally",
+    "category": "nursery",
+    "version": "0.7.1",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/promise/no-return-in-finally.html"
+  },
+  {
+    "scope": "promise",
+    "value": "no-return-wrap",
+    "category": "style",
+    "version": "0.15.14",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/promise/no-return-wrap.html"
+  },
+  {
+    "scope": "promise",
+    "value": "param-names",
+    "category": "style",
+    "version": "0.6.1",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/promise/param-names.html"
+  },
+  {
+    "scope": "promise",
+    "value": "prefer-await-to-callbacks",
+    "category": "style",
+    "version": "0.9.10",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/promise/prefer-await-to-callbacks.html"
+  },
+  {
+    "scope": "promise",
+    "value": "prefer-await-to-then",
+    "category": "style",
+    "version": "0.7.1",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/promise/prefer-await-to-then.html"
+  },
+  {
+    "scope": "promise",
+    "value": "prefer-catch",
+    "category": "style",
+    "version": "0.15.14",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/promise/prefer-catch.html"
+  },
+  {
+    "scope": "promise",
+    "value": "spec-only",
+    "category": "restriction",
+    "version": "0.9.2",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/promise/spec-only.html"
+  },
+  {
+    "scope": "promise",
+    "value": "valid-params",
+    "category": "correctness",
+    "version": "0.7.1",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/promise/valid-params.html"
+  }
+]

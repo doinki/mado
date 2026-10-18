@@ -1,0 +1,272 @@
+[
+  {
+    "scope": "oxc",
+    "value": "approx-constant",
+    "category": "suspicious",
+    "version": "0.1.1",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/oxc/approx-constant.html"
+  },
+  {
+    "scope": "oxc",
+    "value": "bad-array-method-on-arguments",
+    "category": "correctness",
+    "version": "0.0.3",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/oxc/bad-array-method-on-arguments.html"
+  },
+  {
+    "scope": "oxc",
+    "value": "bad-bitwise-operator",
+    "category": "restriction",
+    "version": "0.0.3",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/oxc/bad-bitwise-operator.html"
+  },
+  {
+    "scope": "oxc",
+    "value": "bad-char-at-comparison",
+    "category": "correctness",
+    "version": "0.0.22",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/oxc/bad-char-at-comparison.html"
+  },
+  {
+    "scope": "oxc",
+    "value": "bad-comparison-sequence",
+    "category": "correctness",
+    "version": "0.0.3",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/oxc/bad-comparison-sequence.html"
+  },
+  {
+    "scope": "oxc",
+    "value": "bad-match-all-arg",
+    "category": "correctness",
+    "version": "1.76.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/oxc/bad-match-all-arg.html"
+  },
+  {
+    "scope": "oxc",
+    "value": "bad-min-max-func",
+    "category": "correctness",
+    "version": "0.0.3",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/oxc/bad-min-max-func.html"
+  },
+  {
+    "scope": "oxc",
+    "value": "bad-object-literal-comparison",
+    "category": "correctness",
+    "version": "0.1.1",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/oxc/bad-object-literal-comparison.html"
+  },
+  {
+    "scope": "oxc",
+    "value": "bad-replace-all-arg",
+    "category": "correctness",
+    "version": "0.0.22",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/oxc/bad-replace-all-arg.html"
+  },
+  {
+    "scope": "oxc",
+    "value": "branches-sharing-code",
+    "category": "pedantic",
+    "version": "1.22.0",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/oxc/branches-sharing-code.html"
+  },
+  {
+    "scope": "oxc",
+    "value": "const-comparisons",
+    "category": "correctness",
+    "version": "0.0.22",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/oxc/const-comparisons.html"
+  },
+  {
+    "scope": "oxc",
+    "value": "double-comparisons",
+    "category": "correctness",
+    "version": "0.0.22",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/oxc/double-comparisons.html"
+  },
+  {
+    "scope": "oxc",
+    "value": "erasing-op",
+    "category": "correctness",
+    "version": "0.1.1",
+    "type_aware": false,
+    "fix": "fixable_dangerous_fix",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/oxc/erasing-op.html"
+  },
+  {
+    "scope": "oxc",
+    "value": "misrefactored-assign-op",
+    "category": "suspicious",
+    "version": "0.1.1",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/oxc/misrefactored-assign-op.html"
+  },
+  {
+    "scope": "oxc",
+    "value": "missing-throw",
+    "category": "correctness",
+    "version": "0.0.3",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/oxc/missing-throw.html"
+  },
+  {
+    "scope": "oxc",
+    "value": "no-accumulating-spread",
+    "category": "perf",
+    "version": "0.0.19",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/oxc/no-accumulating-spread.html"
+  },
+  {
+    "scope": "oxc",
+    "value": "no-async-await",
+    "category": "restriction",
+    "version": "0.4.2",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/oxc/no-async-await.html"
+  },
+  {
+    "scope": "oxc",
+    "value": "no-async-endpoint-handlers",
+    "category": "suspicious",
+    "version": "0.9.2",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/oxc/no-async-endpoint-handlers.html"
+  },
+  {
+    "scope": "oxc",
+    "value": "no-barrel-file",
+    "category": "restriction",
+    "version": "0.3.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/oxc/no-barrel-file.html"
+  },
+  {
+    "scope": "oxc",
+    "value": "no-const-enum",
+    "category": "restriction",
+    "version": "0.4.2",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/oxc/no-const-enum.html"
+  },
+  {
+    "scope": "oxc",
+    "value": "no-map-spread",
+    "category": "perf",
+    "version": "0.11.0",
+    "type_aware": false,
+    "fix": "conditional_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/oxc/no-map-spread.html"
+  },
+  {
+    "scope": "oxc",
+    "value": "no-optional-chaining",
+    "category": "restriction",
+    "version": "0.5.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/oxc/no-optional-chaining.html"
+  },
+  {
+    "scope": "oxc",
+    "value": "no-rest-spread-properties",
+    "category": "restriction",
+    "version": "0.4.2",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/oxc/no-rest-spread-properties.html"
+  },
+  {
+    "scope": "oxc",
+    "value": "no-this-in-exported-function",
+    "category": "suspicious",
+    "version": "1.33.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/oxc/no-this-in-exported-function.html"
+  },
+  {
+    "scope": "oxc",
+    "value": "number-arg-out-of-range",
+    "category": "correctness",
+    "version": "0.0.3",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/oxc/number-arg-out-of-range.html"
+  },
+  {
+    "scope": "oxc",
+    "value": "only-used-in-recursion",
+    "category": "correctness",
+    "version": "0.1.1",
+    "type_aware": false,
+    "fix": "fixable_dangerous_fix",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/oxc/only-used-in-recursion.html"
+  },
+  {
+    "scope": "oxc",
+    "value": "uninvoked-array-callback",
+    "category": "correctness",
+    "version": "0.0.3",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/oxc/uninvoked-array-callback.html"
+  }
+]

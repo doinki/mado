@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "conventional-commits": {
+      "source": "doinki/skills",
+      "sourceType": "github",
+      "skillPath": "skills/conventional-commits/SKILL.md",
+      "computedHash": "04afe5e3c3547fde0a7db4816fcfd969d30f1f42bcc9fbb4ba5aa5bc15000610"
+    }
+  }
+}

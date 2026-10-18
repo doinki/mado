@@ -1,9 +1,28 @@
 {
   "name": "eslint-config-mado",
   "version": "0.11.0",
+  "description": "Eslint config",
+  "keywords": [
+    "eslint"
+  ],
+  "homepage": "https://github.com/doinki/mado/tree/main/packages/eslint-config-mado#readme",
+  "bugs": "https://github.com/doinki/mado/issues",
   "license": "MIT",
-  "sideEffects": false,
+  "author": {
+    "name": "doinki",
+    "email": "doinki94@gmail.com",
+    "url": "https://github.com/doinki"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doinki/mado.git",
+    "directory": "packages/eslint-config-mado"
+  },
+  "files": [
+    "dist"
+  ],
   "type": "module",
+  "sideEffects": false,
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -110,18 +129,14 @@
     },
     "./package.json": "./package.json"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsup",
     "lint": "eslint",
     "publint": "publint",
     "typecheck": "tsc --noEmit"
-  },
-  "engines": {
-    "node": "^20.9.0 || >=21.1.0"
-  },
-  "peerDependencies": {
-    "eslint": "^9.0.0",
-    "prettier": "^3.0.0"
   },
   "dependencies": {
     "@eslint/compat": "^2.0.0",
@@ -144,26 +159,11 @@
     "eslint-plugin-unicorn": "^62.0.0",
     "typescript-eslint": "^8.46.4"
   },
-  "author": {
-    "email": "doinki94@gmail.com",
-    "name": "doinki",
-    "url": "https://github.com/doinki"
+  "peerDependencies": {
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0"
   },
-  "bugs": "https://github.com/doinki/mado/issues",
-  "description": "Eslint config",
-  "files": [
-    "dist"
-  ],
-  "homepage": "https://github.com/doinki/mado/tree/main/packages/eslint-config-mado#readme",
-  "keywords": [
-    "eslint"
-  ],
-  "repository": {
-    "directory": "packages/eslint-config-mado",
-    "type": "git",
-    "url": "git+https://github.com/doinki/mado.git"
-  },
-  "publishConfig": {
-    "access": "public"
+  "engines": {
+    "node": "^20.9.0 || >=21.1.0"
   }
 }

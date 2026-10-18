@@ -1,0 +1,1382 @@
+[
+  {
+    "scope": "unicorn",
+    "value": "catch-error-name",
+    "category": "style",
+    "version": "0.0.14",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/catch-error-name.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "consistent-assert",
+    "category": "pedantic",
+    "version": "0.16.9",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/consistent-assert.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "consistent-date-clone",
+    "category": "style",
+    "version": "0.15.13",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/consistent-date-clone.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "consistent-empty-array-spread",
+    "category": "pedantic",
+    "version": "0.10.1",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/consistent-empty-array-spread.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "consistent-existence-index-check",
+    "category": "style",
+    "version": "0.12.0",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/consistent-existence-index-check.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "consistent-function-scoping",
+    "category": "suspicious",
+    "version": "0.8.0",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/consistent-function-scoping.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "consistent-template-literal-escape",
+    "category": "style",
+    "version": "1.60.0",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/consistent-template-literal-escape.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "custom-error-definition",
+    "category": "style",
+    "version": "1.57.0",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/custom-error-definition.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "empty-brace-spaces",
+    "category": "style",
+    "version": "0.0.18",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/empty-brace-spaces.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "error-message",
+    "category": "style",
+    "version": "0.0.14",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/error-message.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "escape-case",
+    "category": "pedantic",
+    "version": "0.0.19",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/escape-case.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "explicit-length-check",
+    "category": "pedantic",
+    "version": "0.0.19",
+    "type_aware": false,
+    "fix": "conditional_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/explicit-length-check.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "explicit-timer-delay",
+    "category": "style",
+    "version": "1.73.0",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/explicit-timer-delay.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "filename-case",
+    "category": "style",
+    "version": "0.0.14",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/filename-case.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "import-style",
+    "category": "restriction",
+    "version": "1.67.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/import-style.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "max-nested-calls",
+    "category": "style",
+    "version": "1.71.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/max-nested-calls.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "new-for-builtins",
+    "category": "pedantic",
+    "version": "0.0.16",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/new-for-builtins.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-abusive-eslint-disable",
+    "category": "restriction",
+    "version": "0.0.18",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-abusive-eslint-disable.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-accessor-recursion",
+    "category": "suspicious",
+    "version": "0.16.5",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-accessor-recursion.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-anonymous-default-export",
+    "category": "restriction",
+    "version": "0.3.3",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-anonymous-default-export.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-array-callback-reference",
+    "category": "pedantic",
+    "version": "1.19.0",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-array-callback-reference.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-array-fill-with-reference-type",
+    "category": "suspicious",
+    "version": "1.70.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-array-fill-with-reference-type.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-array-for-each",
+    "category": "restriction",
+    "version": "0.0.19",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-array-for-each.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-array-method-this-argument",
+    "category": "style",
+    "version": "0.16.12",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-array-method-this-argument.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-array-reduce",
+    "category": "restriction",
+    "version": "0.0.19",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-array-reduce.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-array-reverse",
+    "category": "suspicious",
+    "version": "1.15.0",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-array-reverse.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-array-sort",
+    "category": "suspicious",
+    "version": "1.15.0",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-array-sort.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-await-expression-member",
+    "category": "style",
+    "version": "0.0.19",
+    "type_aware": false,
+    "fix": "fixable_dangerous_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-await-expression-member.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-await-in-promise-methods",
+    "category": "correctness",
+    "version": "0.2.18",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-await-in-promise-methods.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-confusing-array-with",
+    "category": "suspicious",
+    "version": "1.73.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-confusing-array-with.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-console-spaces",
+    "category": "style",
+    "version": "0.0.14",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-console-spaces.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-document-cookie",
+    "category": "restriction",
+    "version": "0.0.18",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-document-cookie.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-empty-file",
+    "category": "correctness",
+    "version": "0.0.15",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-empty-file.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-hex-escape",
+    "category": "pedantic",
+    "version": "0.0.18",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-hex-escape.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-immediate-mutation",
+    "category": "pedantic",
+    "version": "1.35.0",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-immediate-mutation.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-instanceof-array",
+    "category": "pedantic",
+    "version": "0.0.8",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-instanceof-array.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-instanceof-builtins",
+    "category": "suspicious",
+    "version": "0.16.12",
+    "type_aware": false,
+    "fix": "conditional_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-instanceof-builtins.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-invalid-fetch-options",
+    "category": "correctness",
+    "version": "0.15.12",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-invalid-fetch-options.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-invalid-remove-event-listener",
+    "category": "correctness",
+    "version": "0.0.16",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-invalid-remove-event-listener.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-length-as-slice-end",
+    "category": "restriction",
+    "version": "0.7.0",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-length-as-slice-end.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-lonely-if",
+    "category": "pedantic",
+    "version": "0.0.18",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-lonely-if.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-magic-array-flat-depth",
+    "category": "restriction",
+    "version": "0.4.2",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-magic-array-flat-depth.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-negated-condition",
+    "category": "pedantic",
+    "version": "0.0.18",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-negated-condition.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-negation-in-equality-check",
+    "category": "pedantic",
+    "version": "0.5.3",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-negation-in-equality-check.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-nested-ternary",
+    "category": "style",
+    "version": "0.0.18",
+    "type_aware": false,
+    "fix": "conditional_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-nested-ternary.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-new-array",
+    "category": "correctness",
+    "version": "0.0.16",
+    "type_aware": false,
+    "fix": "fixable_dangerous_suggestion",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-new-array.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-new-buffer",
+    "category": "pedantic",
+    "version": "0.0.16",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-new-buffer.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-null",
+    "category": "style",
+    "version": "0.0.21",
+    "type_aware": false,
+    "fix": "conditional_dangerous_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-null.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-object-as-default-parameter",
+    "category": "pedantic",
+    "version": "0.0.16",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-object-as-default-parameter.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-process-exit",
+    "category": "restriction",
+    "version": "0.2.9",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-process-exit.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-single-promise-in-promise-methods",
+    "category": "correctness",
+    "version": "0.2.18",
+    "type_aware": false,
+    "fix": "conditional_fix",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-single-promise-in-promise-methods.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-static-only-class",
+    "category": "pedantic",
+    "version": "0.0.16",
+    "type_aware": false,
+    "fix": "fixable_dangerous_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-static-only-class.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-thenable",
+    "category": "correctness",
+    "version": "0.0.13",
+    "type_aware": false,
+    "fix": "none",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-thenable.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-this-assignment",
+    "category": "pedantic",
+    "version": "0.0.18",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-this-assignment.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-typeof-undefined",
+    "category": "pedantic",
+    "version": "0.0.18",
+    "type_aware": false,
+    "fix": "fixable_safe_fix_or_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-typeof-undefined.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-unnecessary-array-flat-depth",
+    "category": "pedantic",
+    "version": "0.16.12",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-unnecessary-array-flat-depth.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-unnecessary-array-splice-count",
+    "category": "pedantic",
+    "version": "1.20.0",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-unnecessary-array-splice-count.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-unnecessary-await",
+    "category": "correctness",
+    "version": "0.0.12",
+    "type_aware": false,
+    "fix": "conditional_fix",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-unnecessary-await.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-unnecessary-slice-end",
+    "category": "pedantic",
+    "version": "0.16.10",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-unnecessary-slice-end.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-unreadable-array-destructuring",
+    "category": "style",
+    "version": "0.0.19",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-unreadable-array-destructuring.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-unreadable-iife",
+    "category": "pedantic",
+    "version": "0.0.19",
+    "type_aware": false,
+    "fix": "conditional_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-unreadable-iife.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-useless-collection-argument",
+    "category": "style",
+    "version": "1.28.0",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-useless-collection-argument.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-useless-error-capture-stack-trace",
+    "category": "restriction",
+    "version": "1.20.0",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-useless-error-capture-stack-trace.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-useless-fallback-in-spread",
+    "category": "correctness",
+    "version": "0.0.16",
+    "type_aware": false,
+    "fix": "conditional_fix",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-useless-fallback-in-spread.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-useless-iterator-to-array",
+    "category": "nursery",
+    "version": "1.59.0",
+    "type_aware": false,
+    "fix": "fixable_safe_fix_or_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-useless-iterator-to-array.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-useless-length-check",
+    "category": "correctness",
+    "version": "0.0.19",
+    "type_aware": false,
+    "fix": "pending",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-useless-length-check.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-useless-promise-resolve-reject",
+    "category": "pedantic",
+    "version": "0.0.18",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-useless-promise-resolve-reject.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-useless-spread",
+    "category": "correctness",
+    "version": "0.0.19",
+    "type_aware": false,
+    "fix": "fixable_dangerous_fix",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-useless-spread.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-useless-switch-case",
+    "category": "pedantic",
+    "version": "0.0.18",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-useless-switch-case.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-useless-undefined",
+    "category": "pedantic",
+    "version": "0.6.1",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-useless-undefined.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "no-zero-fractions",
+    "category": "style",
+    "version": "0.0.18",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-zero-fractions.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "number-literal-case",
+    "category": "style",
+    "version": "0.0.18",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/number-literal-case.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "numeric-separators-style",
+    "category": "style",
+    "version": "0.0.19",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/numeric-separators-style.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-add-event-listener",
+    "category": "suspicious",
+    "version": "0.0.16",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-add-event-listener.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-array-find",
+    "category": "perf",
+    "version": "0.16.12",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-array-find.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-array-flat",
+    "category": "pedantic",
+    "version": "0.0.20",
+    "type_aware": false,
+    "fix": "conditional_dangerous_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-array-flat.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-array-flat-map",
+    "category": "perf",
+    "version": "0.0.14",
+    "type_aware": false,
+    "fix": "fixable_safe_fix_or_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-array-flat-map.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-array-index-of",
+    "category": "style",
+    "version": "0.16.12",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-array-index-of.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-array-some",
+    "category": "pedantic",
+    "version": "0.0.18",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-array-some.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-at",
+    "category": "pedantic",
+    "version": "1.20.0",
+    "type_aware": false,
+    "fix": "fixable_dangerous_fix_or_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-at.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-bigint-literals",
+    "category": "style",
+    "version": "1.30.0",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-bigint-literals.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-blob-reading-methods",
+    "category": "pedantic",
+    "version": "0.0.16",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-blob-reading-methods.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-class-fields",
+    "category": "style",
+    "version": "1.20.0",
+    "type_aware": false,
+    "fix": "conditional_safe_fix_or_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-class-fields.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-classlist-toggle",
+    "category": "style",
+    "version": "1.20.0",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-classlist-toggle.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-code-point",
+    "category": "pedantic",
+    "version": "0.0.16",
+    "type_aware": false,
+    "fix": "fixable_dangerous_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-code-point.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-date-now",
+    "category": "pedantic",
+    "version": "0.0.16",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-date-now.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-default-parameters",
+    "category": "style",
+    "version": "1.33.0",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-default-parameters.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-dom-node-append",
+    "category": "pedantic",
+    "version": "0.0.18",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-dom-node-append.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-dom-node-dataset",
+    "category": "pedantic",
+    "version": "0.0.18",
+    "type_aware": false,
+    "fix": "conditional_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-dom-node-dataset.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-dom-node-remove",
+    "category": "pedantic",
+    "version": "0.0.18",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-dom-node-remove.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-dom-node-text-content",
+    "category": "style",
+    "version": "0.0.21",
+    "type_aware": false,
+    "fix": "conditional_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-dom-node-text-content.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-event-target",
+    "category": "pedantic",
+    "version": "0.0.18",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-event-target.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-export-from",
+    "category": "style",
+    "version": "1.70.0",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-export-from.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-global-this",
+    "category": "style",
+    "version": "0.16.12",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-global-this.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-import-meta-properties",
+    "category": "pedantic",
+    "version": "1.59.0",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-import-meta-properties.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-includes",
+    "category": "style",
+    "version": "0.0.18",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-includes.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-keyboard-event-key",
+    "category": "style",
+    "version": "1.33.0",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-keyboard-event-key.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-logical-operator-over-ternary",
+    "category": "style",
+    "version": "0.0.15",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-logical-operator-over-ternary.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-math-min-max",
+    "category": "pedantic",
+    "version": "0.10.1",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-math-min-max.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-math-trunc",
+    "category": "pedantic",
+    "version": "0.0.18",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-math-trunc.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-modern-dom-apis",
+    "category": "style",
+    "version": "0.0.20",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-modern-dom-apis.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-modern-math-apis",
+    "category": "restriction",
+    "version": "0.1.1",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-modern-math-apis.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-module",
+    "category": "restriction",
+    "version": "1.50.0",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-module.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-native-coercion-functions",
+    "category": "pedantic",
+    "version": "0.0.19",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-native-coercion-functions.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-negative-index",
+    "category": "style",
+    "version": "0.13.2",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-negative-index.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-node-protocol",
+    "category": "restriction",
+    "version": "0.0.19",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-node-protocol.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-number-coercion",
+    "category": "pedantic",
+    "version": "1.71.0",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-number-coercion.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-number-properties",
+    "category": "restriction",
+    "version": "0.0.19",
+    "type_aware": false,
+    "fix": "fixable_dangerous_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-number-properties.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-object-from-entries",
+    "category": "style",
+    "version": "0.16.12",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-object-from-entries.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-optional-catch-binding",
+    "category": "style",
+    "version": "0.0.17",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-optional-catch-binding.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-prototype-methods",
+    "category": "pedantic",
+    "version": "0.0.21",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-prototype-methods.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-query-selector",
+    "category": "pedantic",
+    "version": "0.0.15",
+    "type_aware": false,
+    "fix": "conditional_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-query-selector.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-reflect-apply",
+    "category": "style",
+    "version": "0.0.19",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-reflect-apply.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-regexp-test",
+    "category": "pedantic",
+    "version": "0.0.16",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-regexp-test.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-response-static-json",
+    "category": "style",
+    "version": "1.29.0",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-response-static-json.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-set-has",
+    "category": "perf",
+    "version": "0.13.2",
+    "type_aware": false,
+    "fix": "fixable_dangerous_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-set-has.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-set-size",
+    "category": "correctness",
+    "version": "0.0.19",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-set-size.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-single-call",
+    "category": "pedantic",
+    "version": "1.70.0",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-single-call.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-spread",
+    "category": "style",
+    "version": "0.0.17",
+    "type_aware": false,
+    "fix": "conditional_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-spread.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-string-raw",
+    "category": "style",
+    "version": "0.12.0",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-string-raw.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-string-replace-all",
+    "category": "pedantic",
+    "version": "0.0.18",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-string-replace-all.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-string-slice",
+    "category": "pedantic",
+    "version": "0.0.18",
+    "type_aware": false,
+    "fix": "conditional_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-string-slice.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-string-starts-ends-with",
+    "category": "correctness",
+    "version": "0.0.18",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": true,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-string-starts-ends-with.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-string-trim-start-end",
+    "category": "style",
+    "version": "0.0.16",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-string-trim-start-end.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-structured-clone",
+    "category": "style",
+    "version": "0.9.0",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-structured-clone.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-ternary",
+    "category": "style",
+    "version": "1.50.0",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-ternary.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-top-level-await",
+    "category": "pedantic",
+    "version": "1.20.0",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-top-level-await.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "prefer-type-error",
+    "category": "pedantic",
+    "version": "0.0.16",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-type-error.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "relative-url-style",
+    "category": "style",
+    "version": "1.44.0",
+    "type_aware": false,
+    "fix": "fixable_safe_fix_or_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/relative-url-style.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "require-array-join-separator",
+    "category": "style",
+    "version": "0.0.19",
+    "type_aware": false,
+    "fix": "conditional_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/require-array-join-separator.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "require-module-attributes",
+    "category": "style",
+    "version": "1.35.0",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/require-module-attributes.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "require-module-specifiers",
+    "category": "suspicious",
+    "version": "1.20.0",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/require-module-specifiers.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "require-number-to-fixed-digits-argument",
+    "category": "pedantic",
+    "version": "0.0.15",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/require-number-to-fixed-digits-argument.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "require-post-message-target-origin",
+    "category": "suspicious",
+    "version": "0.15.15",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/require-post-message-target-origin.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "switch-case-braces",
+    "category": "style",
+    "version": "0.0.15",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/switch-case-braces.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "switch-case-break-position",
+    "category": "style",
+    "version": "1.59.0",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/switch-case-break-position.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "text-encoding-identifier-case",
+    "category": "style",
+    "version": "0.0.15",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/text-encoding-identifier-case.html"
+  },
+  {
+    "scope": "unicorn",
+    "value": "throw-new-error",
+    "category": "style",
+    "version": "0.0.14",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/throw-new-error.html"
+  }
+]

@@ -1,18 +1,6 @@
----
-alwaysApply: false
----
-
-- Check and adhere to the Conventional Commits specification.
-- Run `git diff --staged` to clearly understand the intent and full context of the changes.
-- Do not include an optional scope.
-- Write the Commit Message in Korean and provide it in plaintext format.
-  - ```plaintext
-    [Generated commit message]
-    ```
-
----
-
 # Conventional Commits 1.0.0
+
+> https://github.com/conventional-commits/conventionalcommits.org
 
 ## Summary
 
@@ -77,7 +65,7 @@ feat(api)!: send an email to the customer when a product is shipped
 ### Commit message with both `!` and BREAKING CHANGE footer
 
 ```
-chore!: drop support for Node 6
+feat!: drop support for Node 6
 
 BREAKING CHANGE: use JavaScript features not available in Node 6.
 ```
@@ -138,7 +126,7 @@ The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL 
    `!` immediately before the `:`. If `!` is used, `BREAKING CHANGE:` MAY be omitted from the footer section,
    and the commit description SHALL be used to describe the breaking change.
 1. Types other than `feat` and `fix` MAY be used in your commit messages, e.g., _docs: update ref docs._
-1. The units of information that make up Conventional Commits MUST NOT be treated as case sensitive by implementors, with the exception of BREAKING CHANGE which MUST be uppercase.
+1. The units of information that make up Conventional Commits MUST NOT be treated as case-sensitive by implementors, with the exception of BREAKING CHANGE which MUST be uppercase.
 1. BREAKING-CHANGE MUST be synonymous with BREAKING CHANGE, when used as a token in a footer.
 
 ## Why Use Conventional Commits

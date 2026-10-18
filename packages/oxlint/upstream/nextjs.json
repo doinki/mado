@@ -1,0 +1,212 @@
+[
+  {
+    "scope": "nextjs",
+    "value": "google-font-display",
+    "category": "correctness",
+    "version": "0.2.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/google-font-display.html"
+  },
+  {
+    "scope": "nextjs",
+    "value": "google-font-preconnect",
+    "category": "correctness",
+    "version": "0.2.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/google-font-preconnect.html"
+  },
+  {
+    "scope": "nextjs",
+    "value": "inline-script-id",
+    "category": "correctness",
+    "version": "0.2.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/inline-script-id.html"
+  },
+  {
+    "scope": "nextjs",
+    "value": "next-script-for-ga",
+    "category": "correctness",
+    "version": "0.2.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/next-script-for-ga.html"
+  },
+  {
+    "scope": "nextjs",
+    "value": "no-assign-module-variable",
+    "category": "correctness",
+    "version": "0.2.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/no-assign-module-variable.html"
+  },
+  {
+    "scope": "nextjs",
+    "value": "no-async-client-component",
+    "category": "correctness",
+    "version": "0.2.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/no-async-client-component.html"
+  },
+  {
+    "scope": "nextjs",
+    "value": "no-before-interactive-script-outside-document",
+    "category": "correctness",
+    "version": "0.2.7",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/no-before-interactive-script-outside-document.html"
+  },
+  {
+    "scope": "nextjs",
+    "value": "no-css-tags",
+    "category": "correctness",
+    "version": "0.2.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/no-css-tags.html"
+  },
+  {
+    "scope": "nextjs",
+    "value": "no-document-import-in-page",
+    "category": "correctness",
+    "version": "0.2.1",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/no-document-import-in-page.html"
+  },
+  {
+    "scope": "nextjs",
+    "value": "no-duplicate-head",
+    "category": "correctness",
+    "version": "0.3.3",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/no-duplicate-head.html"
+  },
+  {
+    "scope": "nextjs",
+    "value": "no-head-element",
+    "category": "correctness",
+    "version": "0.2.1",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/no-head-element.html"
+  },
+  {
+    "scope": "nextjs",
+    "value": "no-head-import-in-document",
+    "category": "correctness",
+    "version": "0.2.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/no-head-import-in-document.html"
+  },
+  {
+    "scope": "nextjs",
+    "value": "no-html-link-for-pages",
+    "category": "correctness",
+    "version": "1.7.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/no-html-link-for-pages.html"
+  },
+  {
+    "scope": "nextjs",
+    "value": "no-img-element",
+    "category": "correctness",
+    "version": "0.2.0",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/no-img-element.html"
+  },
+  {
+    "scope": "nextjs",
+    "value": "no-page-custom-font",
+    "category": "correctness",
+    "version": "0.3.3",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/no-page-custom-font.html"
+  },
+  {
+    "scope": "nextjs",
+    "value": "no-script-component-in-head",
+    "category": "correctness",
+    "version": "0.2.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/no-script-component-in-head.html"
+  },
+  {
+    "scope": "nextjs",
+    "value": "no-styled-jsx-in-document",
+    "category": "correctness",
+    "version": "0.3.3",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/no-styled-jsx-in-document.html"
+  },
+  {
+    "scope": "nextjs",
+    "value": "no-sync-scripts",
+    "category": "correctness",
+    "version": "0.2.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/no-sync-scripts.html"
+  },
+  {
+    "scope": "nextjs",
+    "value": "no-title-in-document-head",
+    "category": "correctness",
+    "version": "0.2.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/no-title-in-document-head.html"
+  },
+  {
+    "scope": "nextjs",
+    "value": "no-typos",
+    "category": "correctness",
+    "version": "0.2.1",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/no-typos.html"
+  },
+  {
+    "scope": "nextjs",
+    "value": "no-unwanted-polyfillio",
+    "category": "correctness",
+    "version": "0.2.7",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/no-unwanted-polyfillio.html"
+  }
+]

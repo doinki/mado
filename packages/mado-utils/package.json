@@ -1,9 +1,24 @@
 {
   "name": "@mado/utils",
   "version": "0.4.0",
+  "homepage": "https://github.com/doinki/mado/tree/main/packages/mado-utils#readme",
+  "bugs": "https://github.com/doinki/mado/issues",
   "license": "MIT",
-  "sideEffects": false,
+  "author": {
+    "name": "doinki",
+    "email": "doinki94@gmail.com",
+    "url": "https://github.com/doinki"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doinki/mado.git",
+    "directory": "packages/mado-utils"
+  },
+  "files": [
+    "dist"
+  ],
   "type": "module",
+  "sideEffects": false,
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -20,6 +35,9 @@
     },
     "./package.json": "./package.json"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsup",
     "test": "vitest run",
@@ -27,23 +45,5 @@
     "lint": "eslint",
     "publint": "publint",
     "typecheck": "tsc --noEmit"
-  },
-  "author": {
-    "email": "doinki94@gmail.com",
-    "name": "doinki",
-    "url": "https://github.com/doinki"
-  },
-  "bugs": "https://github.com/doinki/mado/issues",
-  "files": [
-    "dist"
-  ],
-  "homepage": "https://github.com/doinki/mado/tree/main/packages/mado-utils#readme",
-  "repository": {
-    "directory": "packages/mado-utils",
-    "type": "git",
-    "url": "git+https://github.com/doinki/mado.git"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

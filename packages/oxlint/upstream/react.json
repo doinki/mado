@@ -1,0 +1,852 @@
+[
+  {
+    "scope": "react",
+    "value": "button-has-type",
+    "category": "restriction",
+    "version": "0.1.1",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/button-has-type.html"
+  },
+  {
+    "scope": "react",
+    "value": "capitalized-calls",
+    "category": "suspicious",
+    "version": "1.79.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/capitalized-calls.html"
+  },
+  {
+    "scope": "react",
+    "value": "checked-requires-onchange-or-readonly",
+    "category": "pedantic",
+    "version": "0.2.15",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/checked-requires-onchange-or-readonly.html"
+  },
+  {
+    "scope": "react",
+    "value": "display-name",
+    "category": "pedantic",
+    "version": "1.42.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/display-name.html"
+  },
+  {
+    "scope": "react",
+    "value": "error-boundaries",
+    "category": "correctness",
+    "version": "1.79.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/error-boundaries.html"
+  },
+  {
+    "scope": "react",
+    "value": "exhaustive-deps",
+    "category": "correctness",
+    "version": "0.12.0",
+    "type_aware": false,
+    "fix": "fixable_dangerous_fix_or_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/exhaustive-deps.html"
+  },
+  {
+    "scope": "react",
+    "value": "exhaustive-effect-dependencies",
+    "category": "suspicious",
+    "version": "1.79.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/exhaustive-effect-dependencies.html"
+  },
+  {
+    "scope": "react",
+    "value": "forbid-component-props",
+    "category": "restriction",
+    "version": "1.62.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/forbid-component-props.html"
+  },
+  {
+    "scope": "react",
+    "value": "forbid-dom-props",
+    "category": "restriction",
+    "version": "1.24.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/forbid-dom-props.html"
+  },
+  {
+    "scope": "react",
+    "value": "forbid-elements",
+    "category": "restriction",
+    "version": "0.16.11",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/forbid-elements.html"
+  },
+  {
+    "scope": "react",
+    "value": "forward-ref-uses-ref",
+    "category": "correctness",
+    "version": "0.16.9",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/forward-ref-uses-ref.html"
+  },
+  {
+    "scope": "react",
+    "value": "function-component-definition",
+    "category": "style",
+    "version": "1.75.0",
+    "type_aware": false,
+    "fix": "conditional_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/function-component-definition.html"
+  },
+  {
+    "scope": "react",
+    "value": "globals",
+    "category": "correctness",
+    "version": "1.79.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/globals.html"
+  },
+  {
+    "scope": "react",
+    "value": "hook-use-state",
+    "category": "style",
+    "version": "1.59.0",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/hook-use-state.html"
+  },
+  {
+    "scope": "react",
+    "value": "hooks",
+    "category": "suspicious",
+    "version": "1.79.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/hooks.html"
+  },
+  {
+    "scope": "react",
+    "value": "iframe-missing-sandbox",
+    "category": "suspicious",
+    "version": "0.10.0",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/iframe-missing-sandbox.html"
+  },
+  {
+    "scope": "react",
+    "value": "immutability",
+    "category": "correctness",
+    "version": "1.79.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/immutability.html"
+  },
+  {
+    "scope": "react",
+    "value": "incompatible-library",
+    "category": "correctness",
+    "version": "1.79.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/incompatible-library.html"
+  },
+  {
+    "scope": "react",
+    "value": "invariant",
+    "category": "restriction",
+    "version": "1.79.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/invariant.html"
+  },
+  {
+    "scope": "react",
+    "value": "jsx-boolean-value",
+    "category": "style",
+    "version": "0.7.0",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/jsx-boolean-value.html"
+  },
+  {
+    "scope": "react",
+    "value": "jsx-curly-brace-presence",
+    "category": "style",
+    "version": "0.7.0",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/jsx-curly-brace-presence.html"
+  },
+  {
+    "scope": "react",
+    "value": "jsx-filename-extension",
+    "category": "restriction",
+    "version": "0.15.14",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/jsx-filename-extension.html"
+  },
+  {
+    "scope": "react",
+    "value": "jsx-fragments",
+    "category": "style",
+    "version": "1.12.0",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/jsx-fragments.html"
+  },
+  {
+    "scope": "react",
+    "value": "jsx-handler-names",
+    "category": "style",
+    "version": "1.13.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/jsx-handler-names.html"
+  },
+  {
+    "scope": "react",
+    "value": "jsx-key",
+    "category": "correctness",
+    "version": "0.0.14",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/jsx-key.html"
+  },
+  {
+    "scope": "react",
+    "value": "jsx-max-depth",
+    "category": "style",
+    "version": "1.36.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/jsx-max-depth.html"
+  },
+  {
+    "scope": "react",
+    "value": "jsx-no-comment-textnodes",
+    "category": "suspicious",
+    "version": "0.0.14",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/jsx-no-comment-textnodes.html"
+  },
+  {
+    "scope": "react",
+    "value": "jsx-no-constructed-context-values",
+    "category": "perf",
+    "version": "1.48.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/jsx-no-constructed-context-values.html"
+  },
+  {
+    "scope": "react",
+    "value": "jsx-no-duplicate-props",
+    "category": "correctness",
+    "version": "0.0.14",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/jsx-no-duplicate-props.html"
+  },
+  {
+    "scope": "react",
+    "value": "jsx-no-literals",
+    "category": "restriction",
+    "version": "1.70.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/jsx-no-literals.html"
+  },
+  {
+    "scope": "react",
+    "value": "jsx-no-script-url",
+    "category": "suspicious",
+    "version": "0.13.2",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/jsx-no-script-url.html"
+  },
+  {
+    "scope": "react",
+    "value": "jsx-no-target-blank",
+    "category": "pedantic",
+    "version": "0.2.5",
+    "type_aware": false,
+    "fix": "conditional_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/jsx-no-target-blank.html"
+  },
+  {
+    "scope": "react",
+    "value": "jsx-no-undef",
+    "category": "correctness",
+    "version": "0.1.1",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/jsx-no-undef.html"
+  },
+  {
+    "scope": "react",
+    "value": "jsx-no-useless-fragment",
+    "category": "pedantic",
+    "version": "0.0.14",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/jsx-no-useless-fragment.html"
+  },
+  {
+    "scope": "react",
+    "value": "jsx-pascal-case",
+    "category": "style",
+    "version": "1.19.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/jsx-pascal-case.html"
+  },
+  {
+    "scope": "react",
+    "value": "jsx-props-no-spread-multi",
+    "category": "correctness",
+    "version": "0.7.2",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/jsx-props-no-spread-multi.html"
+  },
+  {
+    "scope": "react",
+    "value": "jsx-props-no-spreading",
+    "category": "style",
+    "version": "1.33.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/jsx-props-no-spreading.html"
+  },
+  {
+    "scope": "react",
+    "value": "memo-dependencies",
+    "category": "suspicious",
+    "version": "1.79.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/memo-dependencies.html"
+  },
+  {
+    "scope": "react",
+    "value": "no-array-index-key",
+    "category": "perf",
+    "version": "0.13.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/no-array-index-key.html"
+  },
+  {
+    "scope": "react",
+    "value": "no-children-prop",
+    "category": "correctness",
+    "version": "0.0.14",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/no-children-prop.html"
+  },
+  {
+    "scope": "react",
+    "value": "no-clone-element",
+    "category": "restriction",
+    "version": "1.53.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/no-clone-element.html"
+  },
+  {
+    "scope": "react",
+    "value": "no-danger",
+    "category": "restriction",
+    "version": "0.0.14",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/no-danger.html"
+  },
+  {
+    "scope": "react",
+    "value": "no-danger-with-children",
+    "category": "correctness",
+    "version": "0.9.6",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/no-danger-with-children.html"
+  },
+  {
+    "scope": "react",
+    "value": "no-deriving-state-in-effects",
+    "category": "perf",
+    "version": "1.79.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/no-deriving-state-in-effects.html"
+  },
+  {
+    "scope": "react",
+    "value": "no-did-mount-set-state",
+    "category": "correctness",
+    "version": "1.36.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/no-did-mount-set-state.html"
+  },
+  {
+    "scope": "react",
+    "value": "no-did-update-set-state",
+    "category": "correctness",
+    "version": "1.62.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/no-did-update-set-state.html"
+  },
+  {
+    "scope": "react",
+    "value": "no-direct-mutation-state",
+    "category": "correctness",
+    "version": "0.2.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/no-direct-mutation-state.html"
+  },
+  {
+    "scope": "react",
+    "value": "no-find-dom-node",
+    "category": "correctness",
+    "version": "0.0.15",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/no-find-dom-node.html"
+  },
+  {
+    "scope": "react",
+    "value": "no-is-mounted",
+    "category": "correctness",
+    "version": "0.0.19",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/no-is-mounted.html"
+  },
+  {
+    "scope": "react",
+    "value": "no-multi-comp",
+    "category": "restriction",
+    "version": "1.43.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/no-multi-comp.html"
+  },
+  {
+    "scope": "react",
+    "value": "no-namespace",
+    "category": "suspicious",
+    "version": "0.15.13",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/no-namespace.html"
+  },
+  {
+    "scope": "react",
+    "value": "no-object-type-as-default-prop",
+    "category": "perf",
+    "version": "1.66.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/no-object-type-as-default-prop.html"
+  },
+  {
+    "scope": "react",
+    "value": "no-react-children",
+    "category": "restriction",
+    "version": "1.53.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/no-react-children.html"
+  },
+  {
+    "scope": "react",
+    "value": "no-redundant-should-component-update",
+    "category": "style",
+    "version": "1.33.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/no-redundant-should-component-update.html"
+  },
+  {
+    "scope": "react",
+    "value": "no-render-return-value",
+    "category": "correctness",
+    "version": "0.0.15",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/no-render-return-value.html"
+  },
+  {
+    "scope": "react",
+    "value": "no-set-state",
+    "category": "style",
+    "version": "0.5.2",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/no-set-state.html"
+  },
+  {
+    "scope": "react",
+    "value": "no-string-refs",
+    "category": "correctness",
+    "version": "0.0.15",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/no-string-refs.html"
+  },
+  {
+    "scope": "react",
+    "value": "no-this-in-sfc",
+    "category": "correctness",
+    "version": "1.37.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/no-this-in-sfc.html"
+  },
+  {
+    "scope": "react",
+    "value": "no-unescaped-entities",
+    "category": "pedantic",
+    "version": "0.0.15",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/no-unescaped-entities.html"
+  },
+  {
+    "scope": "react",
+    "value": "no-unknown-property",
+    "category": "restriction",
+    "version": "0.2.0",
+    "type_aware": false,
+    "fix": "fixable_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/no-unknown-property.html"
+  },
+  {
+    "scope": "react",
+    "value": "no-unsafe",
+    "category": "correctness",
+    "version": "1.35.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/no-unsafe.html"
+  },
+  {
+    "scope": "react",
+    "value": "no-unstable-nested-components",
+    "category": "suspicious",
+    "version": "1.66.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/no-unstable-nested-components.html"
+  },
+  {
+    "scope": "react",
+    "value": "no-will-update-set-state",
+    "category": "correctness",
+    "version": "1.37.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/no-will-update-set-state.html"
+  },
+  {
+    "scope": "react",
+    "value": "only-export-components",
+    "category": "restriction",
+    "version": "1.23.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/only-export-components.html"
+  },
+  {
+    "scope": "react",
+    "value": "prefer-es6-class",
+    "category": "style",
+    "version": "0.5.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/prefer-es6-class.html"
+  },
+  {
+    "scope": "react",
+    "value": "prefer-function-component",
+    "category": "restriction",
+    "version": "1.59.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/prefer-function-component.html"
+  },
+  {
+    "scope": "react",
+    "value": "preserve-manual-memoization",
+    "category": "correctness",
+    "version": "1.79.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/preserve-manual-memoization.html"
+  },
+  {
+    "scope": "react",
+    "value": "purity",
+    "category": "correctness",
+    "version": "1.79.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/purity.html"
+  },
+  {
+    "scope": "react",
+    "value": "react-in-jsx-scope",
+    "category": "suspicious",
+    "version": "0.0.20",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/react-in-jsx-scope.html"
+  },
+  {
+    "scope": "react",
+    "value": "refs",
+    "category": "correctness",
+    "version": "1.79.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/refs.html"
+  },
+  {
+    "scope": "react",
+    "value": "require-render-return",
+    "category": "nursery",
+    "version": "0.2.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/require-render-return.html"
+  },
+  {
+    "scope": "react",
+    "value": "rule-suppression",
+    "category": "restriction",
+    "version": "1.79.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/rule-suppression.html"
+  },
+  {
+    "scope": "react",
+    "value": "rules-of-hooks",
+    "category": "pedantic",
+    "version": "0.3.3",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/rules-of-hooks.html"
+  },
+  {
+    "scope": "react",
+    "value": "self-closing-comp",
+    "category": "style",
+    "version": "0.9.3",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/self-closing-comp.html"
+  },
+  {
+    "scope": "react",
+    "value": "set-state-in-effect",
+    "category": "correctness",
+    "version": "1.79.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/set-state-in-effect.html"
+  },
+  {
+    "scope": "react",
+    "value": "set-state-in-render",
+    "category": "correctness",
+    "version": "1.79.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/set-state-in-render.html"
+  },
+  {
+    "scope": "react",
+    "value": "state-in-constructor",
+    "category": "style",
+    "version": "1.26.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/state-in-constructor.html"
+  },
+  {
+    "scope": "react",
+    "value": "static-components",
+    "category": "correctness",
+    "version": "1.79.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/static-components.html"
+  },
+  {
+    "scope": "react",
+    "value": "style-prop-object",
+    "category": "suspicious",
+    "version": "0.11.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/style-prop-object.html"
+  },
+  {
+    "scope": "react",
+    "value": "syntax",
+    "category": "restriction",
+    "version": "1.79.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/syntax.html"
+  },
+  {
+    "scope": "react",
+    "value": "todo",
+    "category": "restriction",
+    "version": "1.79.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/todo.html"
+  },
+  {
+    "scope": "react",
+    "value": "unsupported-syntax",
+    "category": "restriction",
+    "version": "1.79.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/unsupported-syntax.html"
+  },
+  {
+    "scope": "react",
+    "value": "use-memo",
+    "category": "correctness",
+    "version": "1.79.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/use-memo.html"
+  },
+  {
+    "scope": "react",
+    "value": "void-dom-elements-no-children",
+    "category": "correctness",
+    "version": "0.2.11",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/void-dom-elements-no-children.html"
+  },
+  {
+    "scope": "react",
+    "value": "void-use-memo",
+    "category": "correctness",
+    "version": "1.79.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/void-use-memo.html"
+  }
+]

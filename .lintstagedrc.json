@@ -1,4 +1,3 @@
 {
-  "*.?(c|m)@(j|t)s?(x)": "eslint --fix --flag unstable_config_lookup_from_file",
-  "*.@(json|md|yml|yaml)": "prettier --write"
+  "*": "oxfmt"
 }

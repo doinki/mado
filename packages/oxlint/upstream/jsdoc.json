@@ -1,0 +1,232 @@
+[
+  {
+    "scope": "jsdoc",
+    "value": "check-access",
+    "category": "restriction",
+    "version": "0.2.16",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsdoc/check-access.html"
+  },
+  {
+    "scope": "jsdoc",
+    "value": "check-property-names",
+    "category": "correctness",
+    "version": "0.2.18",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsdoc/check-property-names.html"
+  },
+  {
+    "scope": "jsdoc",
+    "value": "check-tag-names",
+    "category": "correctness",
+    "version": "0.3.2",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsdoc/check-tag-names.html"
+  },
+  {
+    "scope": "jsdoc",
+    "value": "empty-tags",
+    "category": "restriction",
+    "version": "0.2.16",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsdoc/empty-tags.html"
+  },
+  {
+    "scope": "jsdoc",
+    "value": "implements-on-classes",
+    "category": "correctness",
+    "version": "0.3.2",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsdoc/implements-on-classes.html"
+  },
+  {
+    "scope": "jsdoc",
+    "value": "no-blank-blocks",
+    "category": "style",
+    "version": "1.78.0",
+    "type_aware": false,
+    "fix": "conditional_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsdoc/no-blank-blocks.html"
+  },
+  {
+    "scope": "jsdoc",
+    "value": "no-defaults",
+    "category": "correctness",
+    "version": "0.3.2",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsdoc/no-defaults.html"
+  },
+  {
+    "scope": "jsdoc",
+    "value": "require-param",
+    "category": "pedantic",
+    "version": "0.4.3",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsdoc/require-param.html"
+  },
+  {
+    "scope": "jsdoc",
+    "value": "require-param-description",
+    "category": "pedantic",
+    "version": "0.4.4",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsdoc/require-param-description.html"
+  },
+  {
+    "scope": "jsdoc",
+    "value": "require-param-name",
+    "category": "pedantic",
+    "version": "0.4.3",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsdoc/require-param-name.html"
+  },
+  {
+    "scope": "jsdoc",
+    "value": "require-param-type",
+    "category": "pedantic",
+    "version": "0.4.4",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsdoc/require-param-type.html"
+  },
+  {
+    "scope": "jsdoc",
+    "value": "require-property",
+    "category": "correctness",
+    "version": "0.2.18",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsdoc/require-property.html"
+  },
+  {
+    "scope": "jsdoc",
+    "value": "require-property-description",
+    "category": "correctness",
+    "version": "0.2.18",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsdoc/require-property-description.html"
+  },
+  {
+    "scope": "jsdoc",
+    "value": "require-property-name",
+    "category": "correctness",
+    "version": "0.2.18",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsdoc/require-property-name.html"
+  },
+  {
+    "scope": "jsdoc",
+    "value": "require-property-type",
+    "category": "correctness",
+    "version": "0.2.18",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsdoc/require-property-type.html"
+  },
+  {
+    "scope": "jsdoc",
+    "value": "require-returns",
+    "category": "pedantic",
+    "version": "0.4.0",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsdoc/require-returns.html"
+  },
+  {
+    "scope": "jsdoc",
+    "value": "require-returns-description",
+    "category": "pedantic",
+    "version": "0.4.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsdoc/require-returns-description.html"
+  },
+  {
+    "scope": "jsdoc",
+    "value": "require-returns-type",
+    "category": "pedantic",
+    "version": "0.4.3",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsdoc/require-returns-type.html"
+  },
+  {
+    "scope": "jsdoc",
+    "value": "require-throws-description",
+    "category": "style",
+    "version": "1.65.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsdoc/require-throws-description.html"
+  },
+  {
+    "scope": "jsdoc",
+    "value": "require-throws-type",
+    "category": "pedantic",
+    "version": "1.65.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsdoc/require-throws-type.html"
+  },
+  {
+    "scope": "jsdoc",
+    "value": "require-yields",
+    "category": "correctness",
+    "version": "0.3.2",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsdoc/require-yields.html"
+  },
+  {
+    "scope": "jsdoc",
+    "value": "require-yields-description",
+    "category": "style",
+    "version": "1.68.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsdoc/require-yields-description.html"
+  },
+  {
+    "scope": "jsdoc",
+    "value": "require-yields-type",
+    "category": "pedantic",
+    "version": "1.65.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsdoc/require-yields-type.html"
+  }
+]

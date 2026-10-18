@@ -1,0 +1,332 @@
+[
+  {
+    "scope": "import",
+    "value": "consistent-type-specifier-style",
+    "category": "style",
+    "version": "0.16.11",
+    "type_aware": false,
+    "fix": "conditional_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/import/consistent-type-specifier-style.html"
+  },
+  {
+    "scope": "import",
+    "value": "default",
+    "category": "correctness",
+    "version": "0.0.13",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/import/default.html"
+  },
+  {
+    "scope": "import",
+    "value": "export",
+    "category": "nursery",
+    "version": "0.0.21",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/import/export.html"
+  },
+  {
+    "scope": "import",
+    "value": "exports-last",
+    "category": "style",
+    "version": "0.15.14",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/import/exports-last.html"
+  },
+  {
+    "scope": "import",
+    "value": "extensions",
+    "category": "restriction",
+    "version": "1.2.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/import/extensions.html"
+  },
+  {
+    "scope": "import",
+    "value": "first",
+    "category": "style",
+    "version": "0.11.1",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/import/first.html"
+  },
+  {
+    "scope": "import",
+    "value": "group-exports",
+    "category": "style",
+    "version": "0.16.6",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/import/group-exports.html"
+  },
+  {
+    "scope": "import",
+    "value": "max-dependencies",
+    "category": "pedantic",
+    "version": "0.5.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/import/max-dependencies.html"
+  },
+  {
+    "scope": "import",
+    "value": "named",
+    "category": "nursery",
+    "version": "0.0.13",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/import/named.html"
+  },
+  {
+    "scope": "import",
+    "value": "namespace",
+    "category": "correctness",
+    "version": "0.2.11",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/import/namespace.html"
+  },
+  {
+    "scope": "import",
+    "value": "newline-after-import",
+    "category": "style",
+    "version": "1.66.0",
+    "type_aware": false,
+    "fix": "fixable_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/import/newline-after-import.html"
+  },
+  {
+    "scope": "import",
+    "value": "no-absolute-path",
+    "category": "suspicious",
+    "version": "0.15.13",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/import/no-absolute-path.html"
+  },
+  {
+    "scope": "import",
+    "value": "no-amd",
+    "category": "restriction",
+    "version": "0.0.16",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/import/no-amd.html"
+  },
+  {
+    "scope": "import",
+    "value": "no-anonymous-default-export",
+    "category": "style",
+    "version": "0.15.14",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/import/no-anonymous-default-export.html"
+  },
+  {
+    "scope": "import",
+    "value": "no-commonjs",
+    "category": "restriction",
+    "version": "0.11.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/import/no-commonjs.html"
+  },
+  {
+    "scope": "import",
+    "value": "no-cycle",
+    "category": "restriction",
+    "version": "0.0.13",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/import/no-cycle.html"
+  },
+  {
+    "scope": "import",
+    "value": "no-default-export",
+    "category": "restriction",
+    "version": "0.2.14",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/import/no-default-export.html"
+  },
+  {
+    "scope": "import",
+    "value": "no-duplicates",
+    "category": "style",
+    "version": "0.2.11",
+    "type_aware": false,
+    "fix": "conditional_fix",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/import/no-duplicates.html"
+  },
+  {
+    "scope": "import",
+    "value": "no-dynamic-require",
+    "category": "restriction",
+    "version": "0.9.3",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/import/no-dynamic-require.html"
+  },
+  {
+    "scope": "import",
+    "value": "no-empty-named-blocks",
+    "category": "suspicious",
+    "version": "0.16.1",
+    "type_aware": false,
+    "fix": "fixable_safe_fix_or_suggestion",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/import/no-empty-named-blocks.html"
+  },
+  {
+    "scope": "import",
+    "value": "no-mutable-exports",
+    "category": "style",
+    "version": "0.15.13",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/import/no-mutable-exports.html"
+  },
+  {
+    "scope": "import",
+    "value": "no-named-as-default",
+    "category": "suspicious",
+    "version": "0.2.3",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/import/no-named-as-default.html"
+  },
+  {
+    "scope": "import",
+    "value": "no-named-as-default-member",
+    "category": "suspicious",
+    "version": "0.2.1",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/import/no-named-as-default-member.html"
+  },
+  {
+    "scope": "import",
+    "value": "no-named-default",
+    "category": "style",
+    "version": "0.15.3",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/import/no-named-default.html"
+  },
+  {
+    "scope": "import",
+    "value": "no-named-export",
+    "category": "style",
+    "version": "1.19.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/import/no-named-export.html"
+  },
+  {
+    "scope": "import",
+    "value": "no-namespace",
+    "category": "style",
+    "version": "0.12.0",
+    "type_aware": false,
+    "fix": "pending",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/import/no-namespace.html"
+  },
+  {
+    "scope": "import",
+    "value": "no-nodejs-modules",
+    "category": "style",
+    "version": "1.43.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/import/no-nodejs-modules.html"
+  },
+  {
+    "scope": "import",
+    "value": "no-relative-parent-imports",
+    "category": "restriction",
+    "version": "1.43.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/import/no-relative-parent-imports.html"
+  },
+  {
+    "scope": "import",
+    "value": "no-self-import",
+    "category": "suspicious",
+    "version": "0.0.13",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/import/no-self-import.html"
+  },
+  {
+    "scope": "import",
+    "value": "no-unassigned-import",
+    "category": "suspicious",
+    "version": "0.16.11",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/import/no-unassigned-import.html"
+  },
+  {
+    "scope": "import",
+    "value": "no-webpack-loader-syntax",
+    "category": "restriction",
+    "version": "0.7.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/import/no-webpack-loader-syntax.html"
+  },
+  {
+    "scope": "import",
+    "value": "prefer-default-export",
+    "category": "style",
+    "version": "1.4.0",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/import/prefer-default-export.html"
+  },
+  {
+    "scope": "import",
+    "value": "unambiguous",
+    "category": "restriction",
+    "version": "0.11.1",
+    "type_aware": false,
+    "fix": "none",
+    "default": false,
+    "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/import/unambiguous.html"
+  }
+]
