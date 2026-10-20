@@ -57,7 +57,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "rimraf dist && rollup -c",
+    "build": "rimraf dist && rollup -c --environment NODE_ENV:production",
     "crawl": "node scripts/crawl.js",
     "generate": "node scripts/generate.js",
     "publint": "publint",

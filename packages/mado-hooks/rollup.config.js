@@ -6,13 +6,7 @@ export default defineConfig({
   babel: {
     plugins: [['babel-plugin-react-compiler', { target: '18' }]],
     presets: [
-      [
-        '@babel/preset-env',
-        {
-          bugfixes: true,
-          targets: { browsers: ['chrome 80', 'safari 13.1', 'firefox 74', 'opera 67'] },
-        },
-      ],
+      ['@babel/preset-env', { bugfixes: true }],
       ['@babel/preset-react', { runtime: 'automatic' }],
       '@babel/preset-typescript',
     ],

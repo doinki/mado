@@ -39,7 +39,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "rimraf dist && rollup -c",
+    "build": "rimraf dist && rollup -c --environment NODE_ENV:production",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
     "publint": "publint",

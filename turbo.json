@@ -1,6 +1,6 @@
 {
   "$schema": "https://turborepo.com/schema.json",
-  "globalDependencies": ["rollup.base.js"],
+  "globalDependencies": [".browserslistrc", "rollup.base.js"],
   "tasks": {
     "build": {
       "dependsOn": ["^build"]
