@@ -22,7 +22,7 @@ jobs:
       - uses: actions/setup-node@v7
         with:
           node-version-file: .nvmrc
-      - run: node packages/oxlint/scripts/crawl.js
+      - run: node packages/mado-oxlint/scripts/crawl.js
       - name: Create or update pull request
         uses: peter-evans/create-pull-request@v8
         with:
@@ -31,5 +31,5 @@ jobs:
           title: 'chore(oxlint): Sync upstream rules'
           body: |
             Syncs rule metadata from the `main` branch of `oxc-project/website`.
-            Stores each scope's rules in a separate JSON file under `packages/oxlint/upstream`.
-          add-paths: packages/oxlint/upstream
+            Stores each scope's rules in a separate JSON file under `packages/mado-oxlint/upstream`.
+          add-paths: packages/mado-oxlint/upstream

@@ -8,7 +8,7 @@
     "oxc",
     "oxlint"
   ],
-  "homepage": "https://github.com/doinki/mado/tree/main/packages/oxlint#readme",
+  "homepage": "https://github.com/doinki/mado/tree/main/packages/mado-oxlint#readme",
   "bugs": "https://github.com/doinki/mado/issues",
   "license": "MIT",
   "author": {
@@ -19,7 +19,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/doinki/mado.git",
-    "directory": "packages/oxlint"
+    "directory": "packages/mado-oxlint"
   },
   "files": [
     "dist",

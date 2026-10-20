@@ -276,16 +276,7 @@ importers:
         specifier: ^6.5.1
         version: 6.5.1(rollup@4.64.12)(typescript@5.9.3)
 
-  packages/mado-utils:
-    devDependencies:
-      '@vitest/coverage-istanbul':
-        specifier: ^5.0.5
-        version: 5.0.5(vitest@5.0.5)
-      happy-dom:
-        specifier: ^21.0.3
-        version: 21.0.3
-
-  packages/oxlint:
+  packages/mado-oxlint:
     dependencies:
       eslint-plugin-perfectionist:
         specifier: ^5.13.0
@@ -300,6 +291,15 @@ importers:
       oxlint:
         specifier: ^1.89.0
         version: 1.89.0
+
+  packages/mado-utils:
+    devDependencies:
+      '@vitest/coverage-istanbul':
+        specifier: ^5.0.5
+        version: 5.0.5(vitest@5.0.5)
+      happy-dom:
+        specifier: ^21.0.3
+        version: 21.0.3
 
 packages:
 
