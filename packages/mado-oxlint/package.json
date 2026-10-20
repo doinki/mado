@@ -57,13 +57,14 @@
     "access": "public"
   },
   "scripts": {
-    "build": "tsup",
+    "build": "rimraf dist && rollup -c",
     "crawl": "node scripts/crawl.js",
     "generate": "node scripts/generate.js",
     "publint": "publint",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@babel/runtime": "^7.29.10",
     "eslint-plugin-perfectionist": "^5.13.0",
     "eslint-plugin-simple-import-sort": "^14.0.0",
     "eslint-plugin-trim": "^1.0.3"
