@@ -290,6 +290,9 @@ importers:
       eslint-plugin-simple-import-sort:
         specifier: ^14.0.0
         version: 14.0.0(eslint@10.13.0)
+      eslint-plugin-trim:
+        specifier: ^1.0.3
+        version: 1.0.3(eslint@10.13.0)
     devDependencies:
       oxlint:
         specifier: ^1.89.0
@@ -2212,6 +2215,18 @@ packages:
     resolution: {integrity: sha512-NUJO0+XFCkk+o5EsAJruTgnfMEpeWrPWeJS15UVF60GgXmqz1BJ9/3hzlvG7lkL8Bubzos5cCLptThbFfPnSMQ==}
     peerDependencies:
       eslint: '>=5.0.0'
+
+  eslint-plugin-trim@1.0.3:
+    resolution: {integrity: sha512-Ei6OMe4yeseB12fvxf1JueBp9RGnhohFKqrP5MUw4YfazCvj87MbhORcKsJR8uw5CcDe3RgUsZpm8gr/DWP4xA==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      '@typescript-eslint/parser': '>=3'
+      eslint: '>=6'
+    peerDependenciesMeta:
+      '@typescript-eslint/parser':
+        optional: true
+      eslint:
+        optional: true
 
   eslint-scope@9.1.2:
     resolution: {integrity: sha512-xS90H51cKw0jltxmvmHy2Iai1LIqrfbw57b79w/J7MfvDfkIkFZ+kj6zC3BjtUwh150HsSSdxXZcsuv72miDFQ==}
@@ -5164,6 +5179,10 @@ snapshots:
 
   eslint-plugin-simple-import-sort@14.0.0(eslint@10.13.0):
     dependencies:
+      eslint: 10.13.0
+
+  eslint-plugin-trim@1.0.3(eslint@10.13.0):
+    optionalDependencies:
       eslint: 10.13.0
 
   eslint-scope@9.1.2:

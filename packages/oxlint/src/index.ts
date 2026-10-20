@@ -1,7 +1,7 @@
 import type { OxlintConfig } from 'oxlint';
 
 const config: OxlintConfig = {
-  jsPlugins: ['eslint-plugin-perfectionist', 'eslint-plugin-simple-import-sort'],
+  jsPlugins: ['eslint-plugin-perfectionist', 'eslint-plugin-simple-import-sort', 'eslint-plugin-trim'],
   rules: {
     'perfectionist/sort-heritage-clauses': 'warn',
     'perfectionist/sort-interfaces': 'warn',
@@ -12,6 +12,8 @@ const config: OxlintConfig = {
     'perfectionist/sort-union-types': 'warn',
     'simple-import-sort/exports': 'warn',
     'simple-import-sort/imports': 'warn',
+    'trim/argument': 'warn',
+    'trim/class-name': 'warn',
   },
 };
 
