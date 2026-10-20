@@ -1,5 +1,11 @@
 # @mado/oxlint
 
+## 0.2.1
+
+### Patch Changes
+
+- [`cbcf54a`](https://github.com/doinki/mado/commit/cbcf54a06f8ceb05434944fd7eb40888ffd5c8c2) Thanks [@doinki](https://github.com/doinki)! - Switch the build from tsup to Rollup and Babel, and add `@babel/runtime` as a dependency so that Babel helpers are imported instead of inlined. The exported configurations are unchanged. The package source has moved to `packages/mado-oxlint`.
+
 ## 0.2.0
 
 ### Minor Changes

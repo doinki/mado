@@ -1,5 +1,13 @@
 # @mado/hooks
 
+## 0.6.1
+
+### Patch Changes
+
+- [`cbcf54a`](https://github.com/doinki/mado/commit/cbcf54a06f8ceb05434944fd7eb40888ffd5c8c2) Thanks [@doinki](https://github.com/doinki)! - Stop publishing the `src` directory and remove redundant side-effect imports from the build output. Source maps still include the original sources.
+- Updated dependencies [[`cbcf54a`](https://github.com/doinki/mado/commit/cbcf54a06f8ceb05434944fd7eb40888ffd5c8c2)]:
+  - @mado/utils@0.4.1
+
 ## 0.6.0
 
 ### Minor Changes
