@@ -49,7 +49,6 @@
     "build": "rimraf dist && rollup -c",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
-    "lint": "eslint",
     "publint": "publint",
     "typecheck": "tsc --noEmit"
   },
