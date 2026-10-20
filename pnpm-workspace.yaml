@@ -1,6 +1,7 @@
+minimumReleaseAge: 10
+
 packages:
   - packages/*
 
-onlyBuiltDependencies:
-  - esbuild
-  - unrs-resolver
+allowBuilds:
+  esbuild: true

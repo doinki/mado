@@ -1,19 +1,10 @@
-import { afterEach, beforeAll, describe, expect, it, vi } from 'vitest';
+import { afterEach, describe, expect, it, vi } from 'vitest';
 
 import { storageAvailable } from '../src';
 
-let originalLocalStorage: Storage;
-let originalSessionStorage: Storage;
-
 describe('storageAvailable', () => {
-  beforeAll(() => {
-    originalLocalStorage = window.localStorage;
-    originalSessionStorage = window.sessionStorage;
-  });
-
   afterEach(() => {
-    window.localStorage = originalLocalStorage;
-    window.sessionStorage = originalSessionStorage;
+    vi.restoreAllMocks();
   });
 
   it('should return true if storage is available', () => {
@@ -23,9 +14,9 @@ describe('storageAvailable', () => {
 
   it('should return false if storage is not available', () => {
     // @ts-expect-error
-    window.localStorage = undefined;
+    vi.spyOn(window, 'localStorage', 'get').mockReturnValue(undefined);
     // @ts-expect-error
-    window.sessionStorage = undefined;
+    vi.spyOn(window, 'sessionStorage', 'get').mockReturnValue(undefined);
 
     expect(storageAvailable('localStorage')).toBe(false);
     expect(storageAvailable('sessionStorage')).toBe(false);
@@ -39,9 +30,9 @@ describe('storageAvailable', () => {
     };
 
     // @ts-expect-error
-    window.localStorage = storage;
+    vi.spyOn(window, 'localStorage', 'get').mockReturnValue(storage);
     // @ts-expect-error
-    window.sessionStorage = storage;
+    vi.spyOn(window, 'sessionStorage', 'get').mockReturnValue(storage);
 
     storage.setItem.mockImplementation(() => {
       throw new DOMException('', 'QuotaExceededError');

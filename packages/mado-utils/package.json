@@ -44,5 +44,9 @@
     "test:coverage": "vitest run --coverage",
     "publint": "publint",
     "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@vitest/coverage-istanbul": "^5.0.5",
+    "happy-dom": "^21.0.3"
   }
 }

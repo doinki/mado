@@ -53,24 +53,28 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@babel/runtime": "^7.28.4",
+    "@babel/runtime": "^7.29.10",
     "@mado/utils": "workspace:^",
     "react-compiler-runtime": "^1.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.28.5",
-    "@babel/plugin-transform-runtime": "^7.28.5",
-    "@babel/preset-env": "^7.28.5",
-    "@babel/preset-react": "^7.28.5",
-    "@babel/preset-typescript": "^7.28.5",
+    "@babel/core": "^7.29.7",
+    "@babel/plugin-transform-runtime": "^7.29.7",
+    "@babel/preset-env": "^7.29.7",
+    "@babel/preset-react": "^7.29.7",
+    "@babel/preset-typescript": "^7.29.7",
     "@rollup/plugin-babel": "^6.1.0",
     "@rollup/plugin-node-resolve": "^16.0.3",
     "@rollup/plugin-terser": "^0.4.4",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@vitest/coverage-istanbul": "^5.0.5",
     "babel-plugin-react-compiler": "^1.0.0",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0",
-    "rollup": "^4.53.2",
-    "rollup-plugin-dts": "^6.2.3"
+    "happy-dom": "^21.0.3",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "rollup": "^4.64.12",
+    "rollup-plugin-dts": "^6.5.1"
   },
   "peerDependencies": {
     "react": "^18.0.0 || ^19.0.0"
