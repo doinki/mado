@@ -50,6 +50,6 @@
   },
   "devDependencies": {
     "@vitest/coverage-istanbul": "^5.0.5",
-    "happy-dom": "^21.0.3"
+    "happy-dom": "^21.0.4"
   }
 }
