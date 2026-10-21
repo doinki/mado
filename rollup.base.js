@@ -2,6 +2,7 @@ import { readFileSync } from 'node:fs';
 
 import babel from '@rollup/plugin-babel';
 import resolve from '@rollup/plugin-node-resolve';
+import terser from '@rollup/plugin-terser';
 import { defineConfig as defineRollupConfig } from 'rollup';
 import dts from 'rollup-plugin-dts';
 
@@ -39,6 +40,7 @@ export function defineConfig({
           ...babelOptions,
         }),
         ...plugins,
+        terser({ compress: false, mangle: false }),
       ],
     },
     {

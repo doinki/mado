@@ -1,5 +1,3 @@
-import terser from '@rollup/plugin-terser';
-
 import { defineConfig } from '../../rollup.base.js';
 
 export default defineConfig({
@@ -11,5 +9,4 @@ export default defineConfig({
       '@babel/preset-typescript',
     ],
   },
-  plugins: [terser({ compress: false, mangle: false })],
 });

@@ -190,6 +190,9 @@ importers:
       '@rollup/plugin-node-resolve':
         specifier: ^16.0.3
         version: 16.0.3(rollup@4.64.12)
+      '@rollup/plugin-terser':
+        specifier: ^1.0.0
+        version: 1.0.0(rollup@4.64.12)
       '@types/node':
         specifier: ^26.6.5
         version: 26.6.5
@@ -248,9 +251,6 @@ importers:
       '@babel/preset-react':
         specifier: ^7.29.7
         version: 7.29.7(@babel/core@7.29.7)
-      '@rollup/plugin-terser':
-        specifier: ^1.0.0
-        version: 1.0.0(rollup@4.64.12)
       '@testing-library/jest-dom':
         specifier: ^7.0.1
         version: 7.0.1(@testing-library/dom@10.4.2)(vitest@5.0.5)
