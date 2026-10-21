@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
     "esModuleInterop": true,
     "jsx": "react-jsx",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
@@ -13,5 +12,6 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "es2020"
-  }
+  },
+  "exclude": ["dist"]
 }

@@ -4,5 +4,6 @@
   "editor.codeActionsOnSave": {
     "source.format.oxc": "always",
     "source.fixAll.oxc": "always"
-  }
+  },
+  "js/ts.experimental.useTsgo": true
 }

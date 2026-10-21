@@ -1,13 +1,12 @@
 {
   "compilerOptions": {
-    "declaration": true,
     "lib": ["ESNext"],
     "module": "esnext",
     "moduleResolution": "bundler",
-    "outDir": "dist",
+    "noEmit": true,
     "skipLibCheck": true,
     "strict": true,
     "target": "es2023"
   },
-  "include": ["src"]
+  "exclude": ["dist"]
 }
