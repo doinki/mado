@@ -135,7 +135,7 @@
     "category": "style",
     "version": "0.15.14",
     "type_aware": false,
-    "fix": "pending",
+    "fix": "conditional_suggestion",
     "default": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/promise/prefer-catch.html"
   },
