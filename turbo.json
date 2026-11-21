@@ -1,10 +1,19 @@
 {
   "$schema": "https://turborepo.com/schema.json",
-  "globalDependencies": [".browserslistrc", "rollup.base.js"],
   "tasks": {
     "build": {
+      "dependsOn": ["^build"],
+      "inputs": ["$TURBO_DEFAULT$", "$TURBO_ROOT$/.browserslistrc", "$TURBO_ROOT$/rollup.base.js"],
+      "outputs": ["dist/**"]
+    },
+    "publint": {
+      "dependsOn": ["build"]
+    },
+    "test": {
       "dependsOn": ["^build"]
     },
-    "publint": {}
+    "typecheck": {
+      "dependsOn": ["^typecheck"]
+    }
   }
 }
