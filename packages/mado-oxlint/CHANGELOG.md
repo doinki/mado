@@ -1,5 +1,17 @@
 # @mado/oxlint
 
+## 0.5.0
+
+### Minor Changes
+
+- [`a7644fb`](https://github.com/doinki/mado/commit/a7644fb91bdb547d1a5c9148386fc4ab986cfc9e) Thanks [@doinki](https://github.com/doinki)! - The default `@mado/oxlint` configuration now includes the import preset. It reports runtime import cycles as errors and allows cycles formed only by type imports.
+
+  The preset warns about duplicate imports, imports placed after other statements, missing blank lines after imports, and empty named import blocks. It prefers top-level `import type` declarations, grouped named exports, named values for default exports, and default imports written as `import value from './module'`. Duplicate import checks treat different query strings as distinct module requests.
+
+- [`f7826d4`](https://github.com/doinki/mado/commit/f7826d4860895d8b6ecf19a3f48c1802a8d5aa03) Thanks [@doinki](https://github.com/doinki)! - The default `@mado/oxlint` configuration now includes the Node.js and Promise presets.
+
+  The Node.js preset reports errors for reassigning `exports` or calling `new` on `require`. It warns about ignored callback errors, callback calls that may let execution continue, use of `exports` in place of `module.exports`, and paths built by concatenating strings with `__dirname` or `__filename`.
+
 ## 0.4.0
 
 ### Minor Changes
