@@ -1,6 +1,9 @@
 import type { OxlintConfig } from 'oxlint';
 
+import oxc from './oxc.ts';
+
 const config: OxlintConfig = {
+  extends: [oxc],
   jsPlugins: ['eslint-plugin-perfectionist', 'eslint-plugin-simple-import-sort', 'eslint-plugin-trim'],
   rules: {
     'perfectionist/sort-heritage-clauses': 'warn',

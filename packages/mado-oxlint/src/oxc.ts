@@ -2,37 +2,37 @@ import type { OxlintConfig } from 'oxlint';
 
 const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/oxc/approx-constant.html
-  'oxc/approx-constant': 'off',
+  'oxc/approx-constant': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/oxc/bad-array-method-on-arguments.html
-  'oxc/bad-array-method-on-arguments': 'off',
+  'oxc/bad-array-method-on-arguments': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/oxc/bad-bitwise-operator.html
-  'oxc/bad-bitwise-operator': 'off',
+  'oxc/bad-bitwise-operator': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/oxc/bad-char-at-comparison.html
-  'oxc/bad-char-at-comparison': 'off',
+  'oxc/bad-char-at-comparison': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/oxc/bad-comparison-sequence.html
-  'oxc/bad-comparison-sequence': 'off',
+  'oxc/bad-comparison-sequence': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/oxc/bad-match-all-arg.html
-  'oxc/bad-match-all-arg': 'off',
+  'oxc/bad-match-all-arg': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/oxc/bad-min-max-func.html
-  'oxc/bad-min-max-func': 'off',
+  'oxc/bad-min-max-func': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/oxc/bad-object-literal-comparison.html
-  'oxc/bad-object-literal-comparison': 'off',
+  'oxc/bad-object-literal-comparison': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/oxc/bad-replace-all-arg.html
-  'oxc/bad-replace-all-arg': 'off',
+  'oxc/bad-replace-all-arg': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/oxc/branches-sharing-code.html
-  'oxc/branches-sharing-code': 'off',
+  'oxc/branches-sharing-code': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/oxc/const-comparisons.html
-  'oxc/const-comparisons': 'off',
+  'oxc/const-comparisons': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/oxc/double-comparisons.html
-  'oxc/double-comparisons': 'off',
+  'oxc/double-comparisons': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/oxc/erasing-op.html
-  'oxc/erasing-op': 'off',
+  'oxc/erasing-op': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/oxc/misrefactored-assign-op.html
-  'oxc/misrefactored-assign-op': 'off',
+  'oxc/misrefactored-assign-op': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/oxc/missing-throw.html
-  'oxc/missing-throw': 'off',
+  'oxc/missing-throw': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/oxc/no-accumulating-spread.html
-  'oxc/no-accumulating-spread': 'off',
+  'oxc/no-accumulating-spread': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/oxc/no-async-await.html
   'oxc/no-async-await': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/oxc/no-async-endpoint-handlers.html
@@ -40,7 +40,7 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/oxc/no-barrel-file.html
   'oxc/no-barrel-file': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/oxc/no-const-enum.html
-  'oxc/no-const-enum': 'off',
+  'oxc/no-const-enum': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/oxc/no-map-spread.html
   'oxc/no-map-spread': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/oxc/no-optional-chaining.html
@@ -48,13 +48,13 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/oxc/no-rest-spread-properties.html
   'oxc/no-rest-spread-properties': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/oxc/no-this-in-exported-function.html
-  'oxc/no-this-in-exported-function': 'off',
+  'oxc/no-this-in-exported-function': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/oxc/number-arg-out-of-range.html
-  'oxc/number-arg-out-of-range': 'off',
+  'oxc/number-arg-out-of-range': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/oxc/only-used-in-recursion.html
-  'oxc/only-used-in-recursion': 'off',
+  'oxc/only-used-in-recursion': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/oxc/uninvoked-array-callback.html
-  'oxc/uninvoked-array-callback': 'off',
+  'oxc/uninvoked-array-callback': 'error',
 };
 
 export default {

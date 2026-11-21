@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
+    "allowImportingTsExtensions": true,
     "lib": ["ESNext"],
     "module": "esnext",
     "moduleResolution": "bundler",
     "noEmit": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "es2023"
+    "target": "esnext"
   },
   "exclude": ["dist"]
 }

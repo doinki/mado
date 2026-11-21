@@ -1,5 +1,6 @@
-import oxlintConfig from '@mado/oxlint';
 import { defineConfig } from 'oxlint';
+
+import oxlintConfig from './packages/mado-oxlint/src/index.ts';
 
 export default defineConfig({
   env: {
