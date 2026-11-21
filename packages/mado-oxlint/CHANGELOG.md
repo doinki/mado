@@ -1,5 +1,11 @@
 # @mado/oxlint
 
+## 0.3.0
+
+### Minor Changes
+
+- [`97b254c`](https://github.com/doinki/mado/commit/97b254c4771bfa1e4f2a695ea89ff9a01e23b088) Thanks [@doinki](https://github.com/doinki)! - The shared `@mado/oxlint` configuration now includes the Oxc preset, which flags missing `throw` statements and chained comparisons as errors.
+
 ## 0.2.1
 
 ### Patch Changes
