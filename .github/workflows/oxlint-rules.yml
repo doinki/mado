@@ -19,17 +19,38 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v7
-      - uses: actions/setup-node@v7
-        with:
-          node-version-file: .nvmrc
-      - run: node packages/mado-oxlint/scripts/crawl.js
+      - uses: ./.github/actions/pnpm-install
+
+      - name: Sync rules and prepare the package release
+        working-directory: packages/mado-oxlint
+        shell: bash
+        run: |
+          pnpm run crawl
+          pnpm run generate
+          if [[ -z "$(git status --porcelain -- src)" ]]; then
+            exit 0
+          fi
+
+          pnpm add --save-peer oxlint@latest
+          pnpm run typecheck
+          for preset in src/*.ts; do
+            ./node_modules/.bin/oxlint --config "$preset" --print-config > /dev/null
+          done
+
+          oxlint_range=$(pnpm pkg get peerDependencies.oxlint)
+          cat > "$GITHUB_WORKSPACE/.changeset/oxlint-rules-${GITHUB_SHA:0:12}.md" <<EOF
+          ---
+          '@mado/oxlint': minor
+          ---
+
+          Sync the built-in rule presets and require oxlint ${oxlint_range}.
+          EOF
+
       - name: Create or update pull request
         uses: peter-evans/create-pull-request@v8
         with:
           branch: update-oxlint-rules
           commit-message: 'chore(oxlint): Sync upstream rules'
           title: 'chore(oxlint): Sync upstream rules'
-          body: |
-            Syncs rule metadata from the `main` branch of `oxc-project/website`.
-            Stores each scope's rules in a separate JSON file under `packages/mado-oxlint/upstream`.
-          add-paths: packages/mado-oxlint/upstream
+          body: Syncs upstream rule snapshots. When a preset changes, this PR also updates Oxlint dependencies and includes a changeset for `@mado/oxlint`.
+          add-paths: packages/mado-oxlint, pnpm-lock.yaml, .changeset

@@ -1,110 +1,73 @@
-import { glob, mkdir, readFile, writeFile } from 'node:fs/promises';
+import { execFileSync } from 'node:child_process';
+import { existsSync } from 'node:fs';
+import { glob, rm, writeFile } from 'node:fs/promises';
 import { basename, join } from 'node:path';
+import { pathToFileURL } from 'node:url';
 
-import ts from '@typescript/typescript6';
+import { format } from 'oxfmt';
 
-const upstreamDirectory = join(import.meta.dirname, '..', 'upstream');
-const sourceDirectory = join(import.meta.dirname, '..', 'src');
-const files = (await Array.fromAsync(glob('*.json', { cwd: upstreamDirectory }))).sort();
-let addedRules = 0;
+import formatConfig from '../../../oxfmt.config.ts';
 
-await mkdir(sourceDirectory, { recursive: true });
+const upstream = join(import.meta.dirname, '..', 'upstream');
+const src = join(import.meta.dirname, '..', 'src');
+const snapshotFiles = await Array.fromAsync(glob('*.json', { cwd: upstream }));
+const retired = getPresetPathsFromHead();
 
-for (const file of files) {
-  const scope = basename(file, '.json');
-  const plugin = scope.replaceAll('_', '-');
-  const rules = JSON.parse(await readFile(join(upstreamDirectory, file), 'utf8'));
-  const path = join(sourceDirectory, `${plugin}.ts`);
-  const existing = await readFile(path, 'utf8').catch((error) => {
-    if (error.code !== 'ENOENT') throw error;
-    return null;
+for (const snapshotFile of snapshotFiles) {
+  const preset = presetFor(snapshotFile);
+  retired.delete(preset.path);
+
+  const { default: upstreamRules } = await import(pathToFileURL(join(upstream, snapshotFile)), {
+    with: { type: 'json' },
   });
-  const { added, content } = updateRules(path, existing ?? createConfig(plugin), plugin, rules);
-  if (content === existing) continue;
+  const config = existsSync(preset.path)
+    ? (await import(pathToFileURL(preset.path))).default
+    : { plugins: [preset.plugin] };
 
-  await writeFile(path, content);
-  addedRules += added;
+  const content = await renderPreset(upstreamRules, config, preset.plugin);
+
+  await writeFile(preset.path, content);
 }
 
-console.log(`Processed ${files.length} scopes and added ${addedRules} new rules.`);
+for (const path of retired) await rm(path, { force: true });
+console.log(`Synced ${snapshotFiles.length} plugin presets.`);
 
-function createConfig(plugin) {
-  return `import type { OxlintConfig } from 'oxlint';
+function presetFor(snapshotFile) {
+  const plugin = basename(snapshotFile, '.json').replaceAll('_', '-');
 
-const rules: OxlintConfig['rules'] = {};
+  return { path: join(src, `${plugin}.ts`), plugin };
+}
+
+function getPresetPathsFromHead() {
+  const tracked = execFileSync('git', ['ls-tree', '--name-only', 'HEAD'], { cwd: upstream, encoding: 'utf8' });
+  const snapshots = tracked.split('\n').filter((file) => file.endsWith('.json'));
+
+  return new Set(snapshots.map((file) => presetFor(file).path));
+}
+
+async function renderPreset(upstreamRules, { rules = {}, ...config }, plugin) {
+  const entries = upstreamRules.map(({ docs_url, value }) => {
+    const fullKey = `${plugin}/${value}`;
+    const key = plugin === 'eslint' ? value : fullKey;
+    const setting = Object.hasOwn(rules, key) ? rules[key] : (rules[fullKey] ?? 'off');
+    return `// ${new URL(docs_url).href}\n${JSON.stringify(key)}: ${JSON.stringify(setting)}`;
+  });
+  const properties = Object.entries(config).map(([key, value]) => `${JSON.stringify(key)}: ${JSON.stringify(value)},`);
+
+  const source = `import type { OxlintConfig } from 'oxlint';
+
+const rules: OxlintConfig['rules'] = {
+${entries.join(',\n')}
+};
 
 export default {
-  plugins: ['${plugin}'],
+${properties.join('\n')}
   rules,
 } satisfies OxlintConfig;
 `;
-}
 
-function updateRules(path, content, plugin, upstreamRules) {
-  const { rulesObject, source } = parseRules(path, content);
-  const existingRules = new Map(
-    rulesObject.properties.values().map((property) => {
-      const name = property.name.text;
-      return [plugin === 'eslint' ? name.replace(/^eslint\//, '') : name, property];
-    }),
-  );
-  const additions = [];
-  const edits = [];
-  for (const { docs_url, value } of upstreamRules) {
-    const name = plugin === 'eslint' ? value : `${plugin}/${value}`;
-    const property = existingRules.get(name);
-    if (!property) {
-      additions.push(`  // ${docs_url}\n  '${name}': 'off',`);
-      continue;
-    }
+  const { code, errors } = await format(`${plugin}.ts`, source, formatConfig);
+  if (errors.length) throw new Error(errors[0].message);
 
-    const comments = ts.getLeadingCommentRanges(content, property.pos) ?? [];
-    if (comments.some(({ end, pos }) => content.slice(pos, end).includes(docs_url))) continue;
-
-    const position = property.getStart(source);
-    const linePrefix = content.slice(content.lastIndexOf('\n', position - 1) + 1, position);
-    const inline = linePrefix.trim().length > 0;
-    const indent = inline ? '  ' : linePrefix;
-    const commentPrefix = inline ? `\n${indent}` : '';
-    edits.push({ end: position, start: position, text: `${commentPrefix}// ${docs_url}\n${indent}` });
-  }
-
-  if (additions.length > 0) {
-    const end = rulesObject.end - 1;
-    const start = content.slice(0, end).trimEnd().length;
-    const lastRule = rulesObject.properties.at(-1);
-    if (lastRule && !rulesObject.properties.hasTrailingComma) {
-      edits.push({ end: lastRule.end, start: lastRule.end, text: ',' });
-    }
-    edits.push({ end, start, text: `\n${additions.join('\n')}\n` });
-  }
-
-  return {
-    added: additions.length,
-    content: applyEdits(content, edits),
-  };
-}
-
-function parseRules(path, content) {
-  const source = ts.createSourceFile(path, content, ts.ScriptTarget.Latest);
-  const declaration = source.statements
-    .values()
-    .filter(ts.isVariableStatement)
-    .flatMap((statement) => statement.declarationList.declarations)
-    .find(({ name }) => name.text === 'rules');
-
-  return { rulesObject: declaration.initializer, source };
-}
-
-function applyEdits(content, edits) {
-  if (edits.length === 0) return content;
-
-  const chunks = [];
-  let cursor = 0;
-  for (const { end, start, text } of edits.toSorted((a, b) => a.start - b.start || a.end - b.end)) {
-    chunks.push(content.slice(cursor, start), text);
-    cursor = end;
-  }
-  chunks.push(content.slice(cursor));
-  return chunks.join('');
+  return code;
 }
