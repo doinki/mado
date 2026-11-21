@@ -1,9 +1,11 @@
 import type { OxlintConfig } from 'oxlint';
 
+import node from './node.ts';
 import oxc from './oxc.ts';
+import promise from './promise.ts';
 
 const config: OxlintConfig = {
-  extends: [oxc],
+  extends: [node, oxc, promise],
   jsPlugins: ['eslint-plugin-perfectionist', 'eslint-plugin-simple-import-sort', 'eslint-plugin-trim'],
   rules: {
     'perfectionist/sort-heritage-clauses': 'warn',
