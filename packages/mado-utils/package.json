@@ -46,10 +46,10 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@babel/runtime": "^7.29.10"
+    "@babel/runtime": "^7.29.15"
   },
   "devDependencies": {
-    "@vitest/coverage-istanbul": "^5.0.5",
+    "@vitest/coverage-istanbul": "^5.1.1",
     "happy-dom": "^21.0.4"
   }
 }
