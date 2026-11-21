@@ -133,6 +133,8 @@ const rules: OxlintConfig['rules'] = {
   'typescript/no-unsafe-call': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unsafe-declaration-merging.html
   'typescript/no-unsafe-declaration-merging': 'off',
+  // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unsafe-enum-assignment.html
+  'typescript/no-unsafe-enum-assignment': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unsafe-enum-comparison.html
   'typescript/no-unsafe-enum-comparison': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unsafe-function-type.html

@@ -1,7 +1,7 @@
 import { glob, mkdir, readFile, writeFile } from 'node:fs/promises';
 import { basename, join } from 'node:path';
 
-import ts from 'typescript';
+import ts from '@typescript/typescript6';
 
 const upstreamDirectory = join(import.meta.dirname, '..', 'upstream');
 const sourceDirectory = join(import.meta.dirname, '..', 'src');

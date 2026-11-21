@@ -73,7 +73,7 @@
     "oxlint": "^1.94.0"
   },
   "peerDependencies": {
-    "oxlint": "^1.88.0"
+    "oxlint": "^1.94.0"
   },
   "engines": {
     "node": "^22.18.0 || >=24.0.0"
