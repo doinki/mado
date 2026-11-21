@@ -2,7 +2,7 @@ import type { OxlintConfig } from 'oxlint';
 
 const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/import/consistent-type-specifier-style.html
-  'import/consistent-type-specifier-style': 'off',
+  'import/consistent-type-specifier-style': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/import/default.html
   'import/default': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/import/export.html
@@ -12,9 +12,9 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/import/extensions.html
   'import/extensions': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/import/first.html
-  'import/first': 'off',
+  'import/first': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/import/group-exports.html
-  'import/group-exports': 'off',
+  'import/group-exports': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/import/max-dependencies.html
   'import/max-dependencies': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/import/named.html
@@ -22,25 +22,25 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/import/namespace.html
   'import/namespace': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/import/newline-after-import.html
-  'import/newline-after-import': 'off',
+  'import/newline-after-import': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/import/no-absolute-path.html
   'import/no-absolute-path': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/import/no-amd.html
   'import/no-amd': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/import/no-anonymous-default-export.html
-  'import/no-anonymous-default-export': 'off',
+  'import/no-anonymous-default-export': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/import/no-commonjs.html
   'import/no-commonjs': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/import/no-cycle.html
-  'import/no-cycle': 'off',
+  'import/no-cycle': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/import/no-default-export.html
   'import/no-default-export': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/import/no-duplicates.html
-  'import/no-duplicates': 'off',
+  'import/no-duplicates': ['warn', { considerQueryString: true }],
   // https://oxc.rs/docs/guide/usage/linter/rules/import/no-dynamic-require.html
   'import/no-dynamic-require': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/import/no-empty-named-blocks.html
-  'import/no-empty-named-blocks': 'off',
+  'import/no-empty-named-blocks': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/import/no-mutable-exports.html
   'import/no-mutable-exports': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/import/no-named-as-default.html
@@ -48,7 +48,7 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/import/no-named-as-default-member.html
   'import/no-named-as-default-member': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/import/no-named-default.html
-  'import/no-named-default': 'off',
+  'import/no-named-default': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/import/no-named-export.html
   'import/no-named-export': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/import/no-namespace.html
