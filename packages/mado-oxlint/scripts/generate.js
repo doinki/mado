@@ -1,5 +1,6 @@
 import { glob, mkdir, readFile, writeFile } from 'node:fs/promises';
 import { basename, join } from 'node:path';
+
 import ts from 'typescript';
 
 const upstreamDirectory = join(import.meta.dirname, '..', 'upstream');
@@ -18,7 +19,7 @@ for (const file of files) {
     if (error.code !== 'ENOENT') throw error;
     return null;
   });
-  const { content, added } = updateRules(path, existing ?? createConfig(plugin), plugin, rules);
+  const { added, content } = updateRules(path, existing ?? createConfig(plugin), plugin, rules);
   if (content === existing) continue;
 
   await writeFile(path, content);
@@ -40,7 +41,7 @@ export default {
 }
 
 function updateRules(path, content, plugin, upstreamRules) {
-  const { source, rulesObject } = parseRules(path, content);
+  const { rulesObject, source } = parseRules(path, content);
   const existingRules = new Map(
     rulesObject.properties.values().map((property) => {
       const name = property.name.text;
@@ -49,7 +50,7 @@ function updateRules(path, content, plugin, upstreamRules) {
   );
   const additions = [];
   const edits = [];
-  for (const { value, docs_url } of upstreamRules) {
+  for (const { docs_url, value } of upstreamRules) {
     const name = plugin === 'eslint' ? value : `${plugin}/${value}`;
     const property = existingRules.get(name);
     if (!property) {
@@ -58,14 +59,14 @@ function updateRules(path, content, plugin, upstreamRules) {
     }
 
     const comments = ts.getLeadingCommentRanges(content, property.pos) ?? [];
-    if (comments.some(({ pos, end }) => content.slice(pos, end).includes(docs_url))) continue;
+    if (comments.some(({ end, pos }) => content.slice(pos, end).includes(docs_url))) continue;
 
     const position = property.getStart(source);
     const linePrefix = content.slice(content.lastIndexOf('\n', position - 1) + 1, position);
     const inline = linePrefix.trim().length > 0;
     const indent = inline ? '  ' : linePrefix;
     const commentPrefix = inline ? `\n${indent}` : '';
-    edits.push({ start: position, end: position, text: `${commentPrefix}// ${docs_url}\n${indent}` });
+    edits.push({ end: position, start: position, text: `${commentPrefix}// ${docs_url}\n${indent}` });
   }
 
   if (additions.length > 0) {
@@ -73,14 +74,14 @@ function updateRules(path, content, plugin, upstreamRules) {
     const start = content.slice(0, end).trimEnd().length;
     const lastRule = rulesObject.properties.at(-1);
     if (lastRule && !rulesObject.properties.hasTrailingComma) {
-      edits.push({ start: lastRule.end, end: lastRule.end, text: ',' });
+      edits.push({ end: lastRule.end, start: lastRule.end, text: ',' });
     }
-    edits.push({ start, end, text: `\n${additions.join('\n')}\n` });
+    edits.push({ end, start, text: `\n${additions.join('\n')}\n` });
   }
 
   return {
-    content: applyEdits(content, edits),
     added: additions.length,
+    content: applyEdits(content, edits),
   };
 }
 
@@ -92,7 +93,7 @@ function parseRules(path, content) {
     .flatMap((statement) => statement.declarationList.declarations)
     .find(({ name }) => name.text === 'rules');
 
-  return { source, rulesObject: declaration.initializer };
+  return { rulesObject: declaration.initializer, source };
 }
 
 function applyEdits(content, edits) {
@@ -100,7 +101,7 @@ function applyEdits(content, edits) {
 
   const chunks = [];
   let cursor = 0;
-  for (const { start, end, text } of edits.toSorted((a, b) => a.start - b.start || a.end - b.end)) {
+  for (const { end, start, text } of edits.toSorted((a, b) => a.start - b.start || a.end - b.end)) {
     chunks.push(content.slice(cursor, start), text);
     cursor = end;
   }

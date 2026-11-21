@@ -17,7 +17,7 @@ async function fetchJson(url) {
 }
 
 async function saveRules(scopes) {
-  await rm(outputDirectory, { recursive: true, force: true });
+  await rm(outputDirectory, { force: true, recursive: true });
   await mkdir(outputDirectory);
 
   await Promise.all(

@@ -7,6 +7,7 @@
     "publint": "turbo publint",
     "release": "pnpm run build && pnpm run publint && changeset publish",
     "fmt": "oxfmt",
+    "lint": "oxlint --fix",
     "prepare": "husky"
   },
   "devDependencies": {
@@ -26,10 +27,12 @@
     "husky": "^9.1.7",
     "lint-staged": "^17.6.1",
     "oxfmt": "^0.79.0",
+    "oxlint": "^1.94.0",
     "publint": "^0.3.25",
     "rimraf": "^6.1.4",
     "rollup": "^4.68.7",
     "rollup-plugin-dts": "^6.5.1",
+    "tsrs": "7.1.0-beta.tsrs4",
     "turbo": "^2.11.13",
     "typescript": "^7.0.2",
     "vitest": "^5.1.1"

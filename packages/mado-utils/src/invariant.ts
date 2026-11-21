@@ -13,7 +13,7 @@ export function isInvariantError(error: unknown): error is InvariantError {
 /**
  * @throws {InvariantError}
  */
-export function invariant(condition: unknown, message: string | (() => string)): asserts condition {
+export function invariant(condition: unknown, message: (() => string) | string): asserts condition {
   if (!condition) {
     throw new InvariantError(typeof message === 'function' ? message() : message);
   }
@@ -24,7 +24,7 @@ export function invariant(condition: unknown, message: string | (() => string)):
  */
 export function invariantResponse(
   condition: unknown,
-  message: string | (() => string),
+  message: (() => string) | string,
   responseInit?: ResponseInit,
 ): asserts condition {
   if (!condition) {
