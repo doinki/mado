@@ -1,4 +1,6 @@
-minimumReleaseAge: 10
+minimumReleaseAge: 180
+minimumReleaseAgeExclude:
+  - oxlint
 
 packages:
   - packages/*
