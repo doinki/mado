@@ -2,17 +2,17 @@ import type { OxlintConfig } from 'oxlint';
 
 const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/react/button-has-type.html
-  'react/button-has-type': 'off',
+  'react/button-has-type': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/capitalized-calls.html
-  'react/capitalized-calls': 'off',
+  'react/capitalized-calls': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/checked-requires-onchange-or-readonly.html
-  'react/checked-requires-onchange-or-readonly': 'off',
+  'react/checked-requires-onchange-or-readonly': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/display-name.html
   'react/display-name': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/error-boundaries.html
-  'react/error-boundaries': 'off',
+  'react/error-boundaries': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/exhaustive-deps.html
-  'react/exhaustive-deps': 'off',
+  'react/exhaustive-deps': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/exhaustive-effect-dependencies.html
   'react/exhaustive-effect-dependencies': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/forbid-component-props.html
@@ -22,27 +22,30 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/react/forbid-elements.html
   'react/forbid-elements': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/forward-ref-uses-ref.html
-  'react/forward-ref-uses-ref': 'off',
+  'react/forward-ref-uses-ref': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/function-component-definition.html
-  'react/function-component-definition': 'off',
+  'react/function-component-definition': [
+    'warn',
+    { namedComponents: 'function-declaration', unnamedComponents: 'function-expression' },
+  ],
   // https://oxc.rs/docs/guide/usage/linter/rules/react/globals.html
-  'react/globals': 'off',
+  'react/globals': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/hook-use-state.html
-  'react/hook-use-state': 'off',
+  'react/hook-use-state': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/hooks.html
   'react/hooks': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/iframe-missing-sandbox.html
   'react/iframe-missing-sandbox': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/immutability.html
-  'react/immutability': 'off',
+  'react/immutability': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/incompatible-library.html
-  'react/incompatible-library': 'off',
+  'react/incompatible-library': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/invariant.html
   'react/invariant': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/jsx-boolean-value.html
   'react/jsx-boolean-value': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/jsx-curly-brace-presence.html
-  'react/jsx-curly-brace-presence': 'off',
+  'react/jsx-curly-brace-presence': ['warn', { children: 'never', propElementValues: 'always', props: 'never' }],
   // https://oxc.rs/docs/guide/usage/linter/rules/react/jsx-filename-extension.html
   'react/jsx-filename-extension': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/jsx-fragments.html
@@ -50,11 +53,11 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/react/jsx-handler-names.html
   'react/jsx-handler-names': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/jsx-key.html
-  'react/jsx-key': 'off',
+  'react/jsx-key': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/jsx-max-depth.html
   'react/jsx-max-depth': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/jsx-no-comment-textnodes.html
-  'react/jsx-no-comment-textnodes': 'off',
+  'react/jsx-no-comment-textnodes': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/jsx-no-constructed-context-values.html
   'react/jsx-no-constructed-context-values': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/jsx-no-duplicate-props.html
@@ -62,17 +65,17 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/react/jsx-no-literals.html
   'react/jsx-no-literals': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/jsx-no-script-url.html
-  'react/jsx-no-script-url': 'off',
+  'react/jsx-no-script-url': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/jsx-no-target-blank.html
-  'react/jsx-no-target-blank': 'off',
+  'react/jsx-no-target-blank': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/jsx-no-undef.html
   'react/jsx-no-undef': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/jsx-no-useless-fragment.html
-  'react/jsx-no-useless-fragment': 'off',
+  'react/jsx-no-useless-fragment': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/jsx-pascal-case.html
-  'react/jsx-pascal-case': 'off',
+  'react/jsx-pascal-case': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/jsx-props-no-spread-multi.html
-  'react/jsx-props-no-spread-multi': 'off',
+  'react/jsx-props-no-spread-multi': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/jsx-props-no-spreading.html
   'react/jsx-props-no-spreading': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/memo-dependencies.html
@@ -80,15 +83,15 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/react/no-array-index-key.html
   'react/no-array-index-key': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/no-children-prop.html
-  'react/no-children-prop': 'off',
+  'react/no-children-prop': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/no-clone-element.html
   'react/no-clone-element': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/no-danger.html
   'react/no-danger': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/no-danger-with-children.html
-  'react/no-danger-with-children': 'off',
+  'react/no-danger-with-children': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/no-deriving-state-in-effects.html
-  'react/no-deriving-state-in-effects': 'off',
+  'react/no-deriving-state-in-effects': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/no-did-mount-set-state.html
   'react/no-did-mount-set-state': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/no-did-update-set-state.html
@@ -132,31 +135,31 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/react/prefer-es6-class.html
   'react/prefer-es6-class': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/prefer-function-component.html
-  'react/prefer-function-component': 'off',
+  'react/prefer-function-component': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/preserve-manual-memoization.html
   'react/preserve-manual-memoization': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/purity.html
-  'react/purity': 'off',
+  'react/purity': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/react-in-jsx-scope.html
   'react/react-in-jsx-scope': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/refs.html
-  'react/refs': 'off',
+  'react/refs': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/require-render-return.html
   'react/require-render-return': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/rule-suppression.html
   'react/rule-suppression': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/rules-of-hooks.html
-  'react/rules-of-hooks': 'off',
+  'react/rules-of-hooks': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/self-closing-comp.html
-  'react/self-closing-comp': 'off',
+  'react/self-closing-comp': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/set-state-in-effect.html
   'react/set-state-in-effect': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/set-state-in-render.html
-  'react/set-state-in-render': 'off',
+  'react/set-state-in-render': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/state-in-constructor.html
   'react/state-in-constructor': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/static-components.html
-  'react/static-components': 'off',
+  'react/static-components': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/style-prop-object.html
   'react/style-prop-object': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/syntax.html
@@ -166,11 +169,11 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/react/unsupported-syntax.html
   'react/unsupported-syntax': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/use-memo.html
-  'react/use-memo': 'off',
+  'react/use-memo': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/void-dom-elements-no-children.html
-  'react/void-dom-elements-no-children': 'off',
+  'react/void-dom-elements-no-children': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/react/void-use-memo.html
-  'react/void-use-memo': 'off',
+  'react/void-use-memo': 'warn',
 };
 
 export default {

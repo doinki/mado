@@ -14,7 +14,7 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/import/first.html
   'import/first': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/import/group-exports.html
-  'import/group-exports': 'warn',
+  'import/group-exports': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/import/max-dependencies.html
   'import/max-dependencies': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/import/named.html

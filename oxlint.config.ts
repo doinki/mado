@@ -1,13 +1,17 @@
 import { defineConfig } from 'oxlint';
 
-import oxlintConfig from './packages/mado-oxlint/src/index.ts';
+import imports from './packages/mado-oxlint/src/import.ts';
+import node from './packages/mado-oxlint/src/node.ts';
+import oxc from './packages/mado-oxlint/src/oxc.ts';
+import promise from './packages/mado-oxlint/src/promise.ts';
+import sort from './packages/mado-oxlint/src/sort.ts';
 
 export default defineConfig({
   env: {
     builtin: true,
     node: true,
   },
-  extends: [oxlintConfig],
+  extends: [imports, node, oxc, promise, sort],
   options: {
     typeAware: true,
   },
