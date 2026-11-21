@@ -6,6 +6,7 @@
     "build": "turbo build",
     "publint": "turbo publint",
     "release": "pnpm run build && pnpm run publint && changeset publish",
+    "fmt": "oxfmt",
     "prepare": "husky"
   },
   "devDependencies": {
