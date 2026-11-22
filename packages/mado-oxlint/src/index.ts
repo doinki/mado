@@ -6,10 +6,11 @@ import oxc from './oxc.ts';
 import promise from './promise.ts';
 import react from './react.ts';
 import sort from './sort.ts';
+import unicorn from './unicorn.ts';
 import vitest from './vitest.ts';
 
 const config: OxlintConfig = {
-  extends: [imports, node, oxc, promise, react, sort, vitest],
+  extends: [imports, node, oxc, promise, react, sort, unicorn, vitest],
   jsPlugins: ['eslint-plugin-trim'],
   rules: {
     'trim/argument': 'warn',

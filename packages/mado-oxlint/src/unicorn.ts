@@ -6,27 +6,27 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/consistent-assert.html
   'unicorn/consistent-assert': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/consistent-date-clone.html
-  'unicorn/consistent-date-clone': 'off',
+  'unicorn/consistent-date-clone': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/consistent-empty-array-spread.html
   'unicorn/consistent-empty-array-spread': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/consistent-existence-index-check.html
-  'unicorn/consistent-existence-index-check': 'off',
+  'unicorn/consistent-existence-index-check': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/consistent-function-scoping.html
   'unicorn/consistent-function-scoping': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/consistent-template-literal-escape.html
   'unicorn/consistent-template-literal-escape': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/custom-error-definition.html
-  'unicorn/custom-error-definition': 'off',
+  'unicorn/custom-error-definition': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/empty-brace-spaces.html
   'unicorn/empty-brace-spaces': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/error-message.html
-  'unicorn/error-message': 'off',
+  'unicorn/error-message': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/escape-case.html
   'unicorn/escape-case': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/explicit-length-check.html
   'unicorn/explicit-length-check': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/explicit-timer-delay.html
-  'unicorn/explicit-timer-delay': 'off',
+  'unicorn/explicit-timer-delay': ['error', 'always'],
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/filename-case.html
   'unicorn/filename-case': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/import-style.html
@@ -34,17 +34,17 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/max-nested-calls.html
   'unicorn/max-nested-calls': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/new-for-builtins.html
-  'unicorn/new-for-builtins': 'off',
+  'unicorn/new-for-builtins': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-abusive-eslint-disable.html
-  'unicorn/no-abusive-eslint-disable': 'off',
+  'unicorn/no-abusive-eslint-disable': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-accessor-recursion.html
-  'unicorn/no-accessor-recursion': 'off',
+  'unicorn/no-accessor-recursion': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-anonymous-default-export.html
   'unicorn/no-anonymous-default-export': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-array-callback-reference.html
-  'unicorn/no-array-callback-reference': 'off',
+  'unicorn/no-array-callback-reference': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-array-fill-with-reference-type.html
-  'unicorn/no-array-fill-with-reference-type': 'off',
+  'unicorn/no-array-fill-with-reference-type': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-array-for-each.html
   'unicorn/no-array-for-each': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-array-method-this-argument.html
@@ -56,33 +56,33 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-array-sort.html
   'unicorn/no-array-sort': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-await-expression-member.html
-  'unicorn/no-await-expression-member': 'off',
+  'unicorn/no-await-expression-member': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-await-in-promise-methods.html
-  'unicorn/no-await-in-promise-methods': 'off',
+  'unicorn/no-await-in-promise-methods': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-confusing-array-with.html
-  'unicorn/no-confusing-array-with': 'off',
+  'unicorn/no-confusing-array-with': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-console-spaces.html
   'unicorn/no-console-spaces': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-document-cookie.html
   'unicorn/no-document-cookie': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-empty-file.html
-  'unicorn/no-empty-file': 'off',
+  'unicorn/no-empty-file': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-hex-escape.html
   'unicorn/no-hex-escape': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-immediate-mutation.html
-  'unicorn/no-immediate-mutation': 'off',
+  'unicorn/no-immediate-mutation': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-instanceof-array.html
-  'unicorn/no-instanceof-array': 'off',
+  'unicorn/no-instanceof-array': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-instanceof-builtins.html
   'unicorn/no-instanceof-builtins': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-invalid-fetch-options.html
-  'unicorn/no-invalid-fetch-options': 'off',
+  'unicorn/no-invalid-fetch-options': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-invalid-remove-event-listener.html
-  'unicorn/no-invalid-remove-event-listener': 'off',
+  'unicorn/no-invalid-remove-event-listener': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-length-as-slice-end.html
-  'unicorn/no-length-as-slice-end': 'off',
+  'unicorn/no-length-as-slice-end': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-lonely-if.html
-  'unicorn/no-lonely-if': 'off',
+  'unicorn/no-lonely-if': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-magic-array-flat-depth.html
   'unicorn/no-magic-array-flat-depth': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-negated-condition.html
@@ -92,151 +92,151 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-nested-ternary.html
   'unicorn/no-nested-ternary': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-new-array.html
-  'unicorn/no-new-array': 'off',
+  'unicorn/no-new-array': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-new-buffer.html
-  'unicorn/no-new-buffer': 'off',
+  'unicorn/no-new-buffer': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-null.html
   'unicorn/no-null': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-object-as-default-parameter.html
-  'unicorn/no-object-as-default-parameter': 'off',
+  'unicorn/no-object-as-default-parameter': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-process-exit.html
   'unicorn/no-process-exit': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-single-promise-in-promise-methods.html
-  'unicorn/no-single-promise-in-promise-methods': 'off',
+  'unicorn/no-single-promise-in-promise-methods': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-static-only-class.html
   'unicorn/no-static-only-class': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-thenable.html
-  'unicorn/no-thenable': 'off',
+  'unicorn/no-thenable': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-this-assignment.html
   'unicorn/no-this-assignment': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-typeof-undefined.html
-  'unicorn/no-typeof-undefined': 'off',
+  'unicorn/no-typeof-undefined': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-unnecessary-array-flat-depth.html
-  'unicorn/no-unnecessary-array-flat-depth': 'off',
+  'unicorn/no-unnecessary-array-flat-depth': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-unnecessary-array-splice-count.html
-  'unicorn/no-unnecessary-array-splice-count': 'off',
+  'unicorn/no-unnecessary-array-splice-count': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-unnecessary-await.html
-  'unicorn/no-unnecessary-await': 'off',
+  'unicorn/no-unnecessary-await': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-unnecessary-slice-end.html
-  'unicorn/no-unnecessary-slice-end': 'off',
+  'unicorn/no-unnecessary-slice-end': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-unreadable-array-destructuring.html
-  'unicorn/no-unreadable-array-destructuring': 'off',
+  'unicorn/no-unreadable-array-destructuring': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-unreadable-iife.html
   'unicorn/no-unreadable-iife': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-useless-collection-argument.html
-  'unicorn/no-useless-collection-argument': 'off',
+  'unicorn/no-useless-collection-argument': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-useless-error-capture-stack-trace.html
-  'unicorn/no-useless-error-capture-stack-trace': 'off',
+  'unicorn/no-useless-error-capture-stack-trace': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-useless-fallback-in-spread.html
-  'unicorn/no-useless-fallback-in-spread': 'off',
+  'unicorn/no-useless-fallback-in-spread': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-useless-iterator-to-array.html
-  'unicorn/no-useless-iterator-to-array': 'off',
+  'unicorn/no-useless-iterator-to-array': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-useless-length-check.html
-  'unicorn/no-useless-length-check': 'off',
+  'unicorn/no-useless-length-check': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-useless-promise-resolve-reject.html
-  'unicorn/no-useless-promise-resolve-reject': 'off',
+  'unicorn/no-useless-promise-resolve-reject': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-useless-spread.html
-  'unicorn/no-useless-spread': 'off',
+  'unicorn/no-useless-spread': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-useless-switch-case.html
-  'unicorn/no-useless-switch-case': 'off',
+  'unicorn/no-useless-switch-case': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-useless-undefined.html
-  'unicorn/no-useless-undefined': 'off',
+  'unicorn/no-useless-undefined': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-zero-fractions.html
-  'unicorn/no-zero-fractions': 'off',
+  'unicorn/no-zero-fractions': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/number-literal-case.html
   'unicorn/number-literal-case': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/numeric-separators-style.html
-  'unicorn/numeric-separators-style': 'off',
+  'unicorn/numeric-separators-style': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-add-event-listener.html
   'unicorn/prefer-add-event-listener': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-array-find.html
-  'unicorn/prefer-array-find': 'off',
+  'unicorn/prefer-array-find': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-array-flat.html
-  'unicorn/prefer-array-flat': 'off',
+  'unicorn/prefer-array-flat': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-array-flat-map.html
-  'unicorn/prefer-array-flat-map': 'off',
+  'unicorn/prefer-array-flat-map': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-array-index-of.html
-  'unicorn/prefer-array-index-of': 'off',
+  'unicorn/prefer-array-index-of': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-array-some.html
-  'unicorn/prefer-array-some': 'off',
+  'unicorn/prefer-array-some': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-at.html
-  'unicorn/prefer-at': 'off',
+  'unicorn/prefer-at': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-bigint-literals.html
-  'unicorn/prefer-bigint-literals': 'off',
+  'unicorn/prefer-bigint-literals': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-blob-reading-methods.html
   'unicorn/prefer-blob-reading-methods': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-class-fields.html
-  'unicorn/prefer-class-fields': 'off',
+  'unicorn/prefer-class-fields': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-classlist-toggle.html
-  'unicorn/prefer-classlist-toggle': 'off',
+  'unicorn/prefer-classlist-toggle': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-code-point.html
-  'unicorn/prefer-code-point': 'off',
+  'unicorn/prefer-code-point': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-date-now.html
-  'unicorn/prefer-date-now': 'off',
+  'unicorn/prefer-date-now': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-default-parameters.html
   'unicorn/prefer-default-parameters': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-dom-node-append.html
-  'unicorn/prefer-dom-node-append': 'off',
+  'unicorn/prefer-dom-node-append': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-dom-node-dataset.html
   'unicorn/prefer-dom-node-dataset': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-dom-node-remove.html
-  'unicorn/prefer-dom-node-remove': 'off',
+  'unicorn/prefer-dom-node-remove': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-dom-node-text-content.html
-  'unicorn/prefer-dom-node-text-content': 'off',
+  'unicorn/prefer-dom-node-text-content': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-event-target.html
   'unicorn/prefer-event-target': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-export-from.html
-  'unicorn/prefer-export-from': 'off',
+  'unicorn/prefer-export-from': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-global-this.html
   'unicorn/prefer-global-this': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-import-meta-properties.html
-  'unicorn/prefer-import-meta-properties': 'off',
+  'unicorn/prefer-import-meta-properties': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-includes.html
-  'unicorn/prefer-includes': 'off',
+  'unicorn/prefer-includes': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-keyboard-event-key.html
-  'unicorn/prefer-keyboard-event-key': 'off',
+  'unicorn/prefer-keyboard-event-key': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-logical-operator-over-ternary.html
-  'unicorn/prefer-logical-operator-over-ternary': 'off',
+  'unicorn/prefer-logical-operator-over-ternary': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-math-min-max.html
-  'unicorn/prefer-math-min-max': 'off',
+  'unicorn/prefer-math-min-max': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-math-trunc.html
-  'unicorn/prefer-math-trunc': 'off',
+  'unicorn/prefer-math-trunc': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-modern-dom-apis.html
   'unicorn/prefer-modern-dom-apis': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-modern-math-apis.html
-  'unicorn/prefer-modern-math-apis': 'off',
+  'unicorn/prefer-modern-math-apis': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-module.html
   'unicorn/prefer-module': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-native-coercion-functions.html
-  'unicorn/prefer-native-coercion-functions': 'off',
+  'unicorn/prefer-native-coercion-functions': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-negative-index.html
-  'unicorn/prefer-negative-index': 'off',
+  'unicorn/prefer-negative-index': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-node-protocol.html
-  'unicorn/prefer-node-protocol': 'off',
+  'unicorn/prefer-node-protocol': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-number-coercion.html
   'unicorn/prefer-number-coercion': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-number-properties.html
-  'unicorn/prefer-number-properties': 'off',
+  'unicorn/prefer-number-properties': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-object-from-entries.html
-  'unicorn/prefer-object-from-entries': 'off',
+  'unicorn/prefer-object-from-entries': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-optional-catch-binding.html
   'unicorn/prefer-optional-catch-binding': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-prototype-methods.html
-  'unicorn/prefer-prototype-methods': 'off',
+  'unicorn/prefer-prototype-methods': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-query-selector.html
   'unicorn/prefer-query-selector': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-reflect-apply.html
-  'unicorn/prefer-reflect-apply': 'off',
+  'unicorn/prefer-reflect-apply': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-regexp-test.html
-  'unicorn/prefer-regexp-test': 'off',
+  'unicorn/prefer-regexp-test': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-response-static-json.html
-  'unicorn/prefer-response-static-json': 'off',
+  'unicorn/prefer-response-static-json': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-set-has.html
-  'unicorn/prefer-set-has': 'off',
+  'unicorn/prefer-set-has': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-set-size.html
-  'unicorn/prefer-set-size': 'off',
+  'unicorn/prefer-set-size': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-single-call.html
-  'unicorn/prefer-single-call': 'off',
+  'unicorn/prefer-single-call': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-spread.html
   'unicorn/prefer-spread': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-string-raw.html
@@ -246,35 +246,35 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-string-slice.html
   'unicorn/prefer-string-slice': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-string-starts-ends-with.html
-  'unicorn/prefer-string-starts-ends-with': 'off',
+  'unicorn/prefer-string-starts-ends-with': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-string-trim-start-end.html
-  'unicorn/prefer-string-trim-start-end': 'off',
+  'unicorn/prefer-string-trim-start-end': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-structured-clone.html
   'unicorn/prefer-structured-clone': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-ternary.html
-  'unicorn/prefer-ternary': 'off',
+  'unicorn/prefer-ternary': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-top-level-await.html
-  'unicorn/prefer-top-level-await': 'off',
+  'unicorn/prefer-top-level-await': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-type-error.html
   'unicorn/prefer-type-error': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/relative-url-style.html
   'unicorn/relative-url-style': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/require-array-join-separator.html
-  'unicorn/require-array-join-separator': 'off',
+  'unicorn/require-array-join-separator': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/require-module-attributes.html
   'unicorn/require-module-attributes': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/require-module-specifiers.html
   'unicorn/require-module-specifiers': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/require-number-to-fixed-digits-argument.html
-  'unicorn/require-number-to-fixed-digits-argument': 'off',
+  'unicorn/require-number-to-fixed-digits-argument': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/require-post-message-target-origin.html
-  'unicorn/require-post-message-target-origin': 'off',
+  'unicorn/require-post-message-target-origin': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/switch-case-braces.html
-  'unicorn/switch-case-braces': 'off',
+  'unicorn/switch-case-braces': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/switch-case-break-position.html
-  'unicorn/switch-case-break-position': 'off',
+  'unicorn/switch-case-break-position': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/text-encoding-identifier-case.html
-  'unicorn/text-encoding-identifier-case': 'off',
+  'unicorn/text-encoding-identifier-case': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/throw-new-error.html
   'unicorn/throw-new-error': 'off',
 };
