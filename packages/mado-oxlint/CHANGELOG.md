@@ -1,5 +1,13 @@
 # @mado/oxlint
 
+## 0.7.0
+
+### Minor Changes
+
+- [`a4d3971`](https://github.com/doinki/mado/commit/a4d39712c99a5be8711cce46e4e34232f7947fb7) Thanks [@doinki](https://github.com/doinki)! - Enable the Vitest preset in the default Oxlint configuration. Focused tests, duplicate test titles, and unhandled asynchronous assertions now produce lint errors.
+
+  The preset prefers `.for` for parameterized tests, `it` inside `describe`, and `test` at the top level. It also warns about explicit imports of Vitest globals. To use global test APIs, set `test.globals` to `true` in Vitest and include `vitest/globals` in your TypeScript `types` list.
+
 ## 0.6.0
 
 ### Minor Changes
