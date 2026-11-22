@@ -12,10 +12,11 @@ describe(useDebounce, () => {
 
   it('should debounce multiple function calls into a single one over a specified interval', () => {
     let counter = 0;
-    const increment = () => {
+
+    function increment() {
       counter += 1;
       return counter;
-    };
+    }
 
     const { result } = renderHook((props) => useDebounce(props), {
       initialProps: increment,
@@ -35,9 +36,10 @@ describe(useDebounce, () => {
 
   it('should ensure no function is executed if the debounced function is cancelled before the delay', () => {
     let counter = 0;
-    const increment = () => {
+
+    function increment() {
       counter += 1;
-    };
+    }
 
     const { result } = renderHook((props) => useDebounce(props), {
       initialProps: increment,
@@ -56,9 +58,10 @@ describe(useDebounce, () => {
 
   it('should verify debounced function does not execute after the component unmounts', () => {
     let counter = 0;
-    const increment = () => {
+
+    function increment() {
       counter += 1;
-    };
+    }
 
     const { result, unmount } = renderHook((props) => useDebounce(props), {
       initialProps: increment,
@@ -77,9 +80,10 @@ describe(useDebounce, () => {
 
   it('should check if the debounced function works correctly with component rerender', () => {
     let counter = 0;
-    const increment = () => {
+
+    function increment() {
       counter += 1;
-    };
+    }
 
     const { rerender, result } = renderHook((props) => useDebounce(props), {
       initialProps: increment,
@@ -103,9 +107,10 @@ describe(useDebounce, () => {
 
   it('should execute the debounced function only once after the specified delay', () => {
     let counter = 0;
-    const increment = () => {
+
+    function increment() {
       counter += 1;
-    };
+    }
 
     const { result } = renderHook((props) => useDebounce(props, 300), {
       initialProps: increment,

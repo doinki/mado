@@ -75,7 +75,7 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-generated-empty-object-type.html
   'typescript/no-generated-empty-object-type': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-implied-eval.html
-  'typescript/no-implied-eval': 'error',
+  'typescript/no-implied-eval': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-import-type-side-effects.html
   'typescript/no-import-type-side-effects': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-inferrable-types.html
@@ -111,7 +111,7 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unnecessary-boolean-literal-compare.html
   'typescript/no-unnecessary-boolean-literal-compare': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unnecessary-condition.html
-  'typescript/no-unnecessary-condition': 'warn',
+  'typescript/no-unnecessary-condition': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unnecessary-parameter-property-assignment.html
   'typescript/no-unnecessary-parameter-property-assignment': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unnecessary-qualifier.html
@@ -125,7 +125,7 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unnecessary-type-constraint.html
   'typescript/no-unnecessary-type-constraint': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unnecessary-type-conversion.html
-  'typescript/no-unnecessary-type-conversion': 'warn',
+  'typescript/no-unnecessary-type-conversion': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unnecessary-type-parameters.html
   'typescript/no-unnecessary-type-parameters': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unsafe-argument.html
@@ -185,7 +185,7 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/prefer-optional-chain.html
   'typescript/prefer-optional-chain': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/prefer-promise-reject-errors.html
-  'typescript/prefer-promise-reject-errors': 'warn',
+  'typescript/prefer-promise-reject-errors': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/prefer-readonly.html
   'typescript/prefer-readonly': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/prefer-readonly-parameter-types.html
@@ -207,7 +207,7 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/require-array-sort-compare.html
   'typescript/require-array-sort-compare': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/require-await.html
-  'typescript/require-await': 'warn',
+  'typescript/require-await': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/restrict-plus-operands.html
   'typescript/restrict-plus-operands': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/restrict-template-expressions.html
@@ -235,11 +235,17 @@ export default {
     {
       files: ['**/*.{ts,tsx,mts,cts}'],
       rules: {
+        'typescript/no-implied-eval': 'error',
+        'typescript/no-unnecessary-condition': 'warn',
+        'typescript/no-unnecessary-type-conversion': 'warn',
         'typescript/no-unsafe-argument': 'warn',
         'typescript/no-unsafe-assignment': 'warn',
         'typescript/no-unsafe-call': 'warn',
         'typescript/no-unsafe-member-access': 'warn',
         'typescript/no-unsafe-return': 'warn',
+        'typescript/only-throw-error': 'error',
+        'typescript/prefer-promise-reject-errors': 'warn',
+        'typescript/require-await': 'warn',
       },
     },
   ],

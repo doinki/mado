@@ -5,9 +5,9 @@ export function useMediaQuery(query: string, defaultMatches = false): boolean {
   const [subscribe, getSnapshot, getServerSnapshot] = useMemo(() => {
     const matchMedia = typeof window !== 'undefined' && window.matchMedia;
 
-    const getDefaultSnapshot = () => {
+    function getDefaultSnapshot() {
       return defaultMatches;
-    };
+    }
 
     if (!matchMedia) {
       return [() => () => {}, getDefaultSnapshot, getDefaultSnapshot];

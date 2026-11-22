@@ -5,7 +5,10 @@ describe(remember, () => {
     const rose = Symbol('rose');
 
     let returnValue = rose;
-    const getValue = () => returnValue;
+
+    function getValue() {
+      return returnValue;
+    }
 
     remember('what is in a name', getValue);
 

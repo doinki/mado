@@ -1,5 +1,6 @@
 import { defineConfig } from 'oxlint';
 
+import eslint from './packages/mado-oxlint/src/eslint.ts';
 import imports from './packages/mado-oxlint/src/import.ts';
 import node from './packages/mado-oxlint/src/node.ts';
 import oxc from './packages/mado-oxlint/src/oxc.ts';
@@ -14,7 +15,7 @@ export default defineConfig({
     builtin: true,
     node: true,
   },
-  extends: [imports, node, oxc, promise, sort, typescript, unicorn, vitest],
+  extends: [eslint, imports, node, oxc, promise, sort, typescript, unicorn, vitest],
   options: {
     typeAware: true,
   },

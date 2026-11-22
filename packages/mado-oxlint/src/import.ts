@@ -2,7 +2,7 @@ import type { OxlintConfig } from 'oxlint';
 
 const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/import/consistent-type-specifier-style.html
-  'import/consistent-type-specifier-style': 'warn',
+  'import/consistent-type-specifier-style': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/import/default.html
   'import/default': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/import/export.html

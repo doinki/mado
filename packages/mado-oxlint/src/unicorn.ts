@@ -116,7 +116,7 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-unnecessary-array-splice-count.html
   'unicorn/no-unnecessary-array-splice-count': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-unnecessary-await.html
-  'unicorn/no-unnecessary-await': 'warn',
+  'unicorn/no-unnecessary-await': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-unnecessary-slice-end.html
   'unicorn/no-unnecessary-slice-end': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-unreadable-array-destructuring.html
@@ -150,7 +150,7 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-add-event-listener.html
   'unicorn/prefer-add-event-listener': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-array-find.html
-  'unicorn/prefer-array-find': 'warn',
+  'unicorn/prefer-array-find': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-array-flat.html
   'unicorn/prefer-array-flat': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-array-flat-map.html
@@ -192,7 +192,7 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-import-meta-properties.html
   'unicorn/prefer-import-meta-properties': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-includes.html
-  'unicorn/prefer-includes': 'warn',
+  'unicorn/prefer-includes': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-keyboard-event-key.html
   'unicorn/prefer-keyboard-event-key': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-logical-operator-over-ternary.html
@@ -246,7 +246,7 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-string-slice.html
   'unicorn/prefer-string-slice': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-string-starts-ends-with.html
-  'unicorn/prefer-string-starts-ends-with': 'warn',
+  'unicorn/prefer-string-starts-ends-with': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-string-trim-start-end.html
   'unicorn/prefer-string-trim-start-end': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-structured-clone.html

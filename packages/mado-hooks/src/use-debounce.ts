@@ -12,11 +12,7 @@ export function useDebounce<T extends unknown[], U>(
 
   const debounced = useMemo(() => debounce(callback, wait), [callback, wait]);
 
-  useEffect(() => {
-    return () => {
-      debounced.cancel();
-    };
-  }, [debounced]);
+  useEffect(() => () => debounced.cancel(), [debounced]);
 
   return debounced;
 }

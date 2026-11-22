@@ -1,9 +1,12 @@
 import { isPlainObject } from '../src';
 
 describe(isPlainObject, () => {
-  it.for([{}, { foo: true }, { valueOf: 0 }, Object.create(null), new Object()])('should return true', (a) => {
-    expect(isPlainObject(a)).toBe(true);
-  });
+  it.for([{}, { foo: true }, { valueOf: 0 }, Object.create(null), Object.create(Object.prototype)])(
+    'should return true',
+    (a) => {
+      expect(isPlainObject(a)).toBe(true);
+    },
+  );
 
   it.for([
     0,

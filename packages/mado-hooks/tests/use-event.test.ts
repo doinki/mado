@@ -5,12 +5,14 @@ import { useEvent } from '../src';
 describe(useEvent, () => {
   it('should initialize and update the function reference correctly', () => {
     let value = 0;
-    const initialFunction = () => {
+
+    function initialFunction() {
       value = 1;
-    };
-    const updatedFunction = () => {
+    }
+
+    function updatedFunction() {
       value = 2;
-    };
+    }
 
     const { rerender, result } = renderHook((fn) => useEvent(fn), {
       initialProps: initialFunction,
@@ -34,8 +36,8 @@ describe(useEvent, () => {
   });
 
   it('should maintain the same reference across re-renders', () => {
-    const initialFunction = () => {};
-    const updatedFunction = () => {};
+    function initialFunction() {}
+    function updatedFunction() {}
 
     const { rerender, result } = renderHook((fn) => useEvent(fn), {
       initialProps: initialFunction,

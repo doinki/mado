@@ -20,7 +20,7 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/promise/no-return-in-finally.html
   'promise/no-return-in-finally': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/promise/no-return-wrap.html
-  'promise/no-return-wrap': 'warn',
+  'promise/no-return-wrap': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/promise/param-names.html
   'promise/param-names': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/promise/prefer-await-to-callbacks.html

@@ -26,7 +26,7 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/react/function-component-definition.html
   'react/function-component-definition': [
     'warn',
-    { namedComponents: 'function-declaration', unnamedComponents: 'function-expression' },
+    { namedComponents: 'function-declaration', unnamedComponents: 'arrow-function' },
   ],
   // https://oxc.rs/docs/guide/usage/linter/rules/react/globals.html
   'react/globals': 'warn',

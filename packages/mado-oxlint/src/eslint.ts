@@ -2,13 +2,13 @@ import type { OxlintConfig } from 'oxlint';
 
 const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/accessor-pairs.html
-  'accessor-pairs': 'off',
+  'accessor-pairs': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/array-callback-return.html
-  'array-callback-return': 'off',
+  'array-callback-return': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/arrow-body-style.html
-  'arrow-body-style': 'off',
+  'arrow-body-style': ['warn', 'as-needed'],
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/block-scoped-var.html
-  'block-scoped-var': 'off',
+  'block-scoped-var': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/capitalized-comments.html
   'capitalized-comments': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/class-methods-use-this.html
@@ -18,29 +18,29 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/constructor-super.html
   'constructor-super': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/curly.html
-  curly: 'off',
+  curly: ['warn', 'multi-line'],
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/default-case.html
   'default-case': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/default-case-last.html
-  'default-case-last': 'off',
+  'default-case-last': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/default-param-last.html
-  'default-param-last': 'off',
+  'default-param-last': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/eqeqeq.html
-  eqeqeq: 'off',
+  eqeqeq: ['warn', 'always', { null: 'ignore' }],
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/for-direction.html
-  'for-direction': 'off',
+  'for-direction': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/func-name-matching.html
-  'func-name-matching': 'off',
+  'func-name-matching': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/func-names.html
   'func-names': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/func-style.html
-  'func-style': 'off',
+  'func-style': ['warn', 'declaration'],
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/getter-return.html
   'getter-return': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/grouped-accessor-pairs.html
-  'grouped-accessor-pairs': 'off',
+  'grouped-accessor-pairs': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/guard-for-in.html
-  'guard-for-in': 'off',
+  'guard-for-in': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/id-denylist.html
   'id-denylist': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/id-length.html
@@ -50,7 +50,7 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/init-declarations.html
   'init-declarations': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/logical-assignment-operators.html
-  'logical-assignment-operators': 'off',
+  'logical-assignment-operators': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/max-classes-per-file.html
   'max-classes-per-file': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/max-depth.html
@@ -68,25 +68,25 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/new-cap.html
   'new-cap': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-alert.html
-  'no-alert': 'off',
+  'no-alert': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-array-constructor.html
-  'no-array-constructor': 'off',
+  'no-array-constructor': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-async-promise-executor.html
-  'no-async-promise-executor': 'off',
+  'no-async-promise-executor': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-await-in-loop.html
   'no-await-in-loop': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-bitwise.html
   'no-bitwise': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-caller.html
-  'no-caller': 'off',
+  'no-caller': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-case-declarations.html
   'no-case-declarations': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-class-assign.html
   'no-class-assign': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-compare-neg-zero.html
-  'no-compare-neg-zero': 'off',
+  'no-compare-neg-zero': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-cond-assign.html
-  'no-cond-assign': 'off',
+  'no-cond-assign': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-console.html
   'no-console': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-const-assign.html
@@ -96,13 +96,13 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-constant-condition.html
   'no-constant-condition': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-constructor-return.html
-  'no-constructor-return': 'off',
+  'no-constructor-return': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-continue.html
   'no-continue': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-control-regex.html
-  'no-control-regex': 'off',
+  'no-control-regex': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-debugger.html
-  'no-debugger': 'off',
+  'no-debugger': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-delete-var.html
   'no-delete-var': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-div-regex.html
@@ -110,39 +110,39 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-dupe-class-members.html
   'no-dupe-class-members': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-dupe-else-if.html
-  'no-dupe-else-if': 'off',
+  'no-dupe-else-if': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-dupe-keys.html
   'no-dupe-keys': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-duplicate-case.html
-  'no-duplicate-case': 'off',
+  'no-duplicate-case': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-duplicate-imports.html
   'no-duplicate-imports': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-else-return.html
   'no-else-return': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-empty.html
-  'no-empty': 'off',
+  'no-empty': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-empty-character-class.html
-  'no-empty-character-class': 'off',
+  'no-empty-character-class': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-empty-function.html
   'no-empty-function': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-empty-pattern.html
-  'no-empty-pattern': 'off',
+  'no-empty-pattern': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-empty-static-block.html
-  'no-empty-static-block': 'off',
+  'no-empty-static-block': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-eq-null.html
   'no-eq-null': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-eval.html
-  'no-eval': 'off',
+  'no-eval': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-ex-assign.html
-  'no-ex-assign': 'off',
+  'no-ex-assign': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-extend-native.html
-  'no-extend-native': 'off',
+  'no-extend-native': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-extra-bind.html
-  'no-extra-bind': 'off',
+  'no-extra-bind': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-extra-boolean-cast.html
   'no-extra-boolean-cast': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-extra-label.html
-  'no-extra-label': 'off',
+  'no-extra-label': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-fallthrough.html
   'no-fallthrough': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-func-assign.html
@@ -152,7 +152,7 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-implicit-coercion.html
   'no-implicit-coercion': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-implicit-globals.html
-  'no-implicit-globals': 'off',
+  'no-implicit-globals': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-implied-eval.html
   'no-implied-eval': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-import-assign.html
@@ -162,63 +162,63 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-inner-declarations.html
   'no-inner-declarations': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-invalid-regexp.html
-  'no-invalid-regexp': 'off',
+  'no-invalid-regexp': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-irregular-whitespace.html
-  'no-irregular-whitespace': 'off',
+  'no-irregular-whitespace': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-iterator.html
-  'no-iterator': 'off',
+  'no-iterator': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-label-var.html
-  'no-label-var': 'off',
+  'no-label-var': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-labels.html
   'no-labels': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-lone-blocks.html
-  'no-lone-blocks': 'off',
+  'no-lone-blocks': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-lonely-if.html
-  'no-lonely-if': 'off',
+  'no-lonely-if': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-loop-func.html
-  'no-loop-func': 'off',
+  'no-loop-func': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-loss-of-precision.html
-  'no-loss-of-precision': 'off',
+  'no-loss-of-precision': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-magic-numbers.html
   'no-magic-numbers': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-misleading-character-class.html
-  'no-misleading-character-class': 'off',
+  'no-misleading-character-class': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-multi-assign.html
-  'no-multi-assign': 'off',
+  'no-multi-assign': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-multi-str.html
-  'no-multi-str': 'off',
+  'no-multi-str': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-negated-condition.html
   'no-negated-condition': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-nested-ternary.html
   'no-nested-ternary': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-new.html
-  'no-new': 'off',
+  'no-new': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-new-func.html
-  'no-new-func': 'off',
+  'no-new-func': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-new-native-nonconstructor.html
   'no-new-native-nonconstructor': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-new-wrappers.html
-  'no-new-wrappers': 'off',
+  'no-new-wrappers': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-nonoctal-decimal-escape.html
   'no-nonoctal-decimal-escape': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-obj-calls.html
   'no-obj-calls': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-object-constructor.html
-  'no-object-constructor': 'off',
+  'no-object-constructor': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-param-reassign.html
-  'no-param-reassign': 'off',
+  'no-param-reassign': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-plusplus.html
   'no-plusplus': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-promise-executor-return.html
-  'no-promise-executor-return': 'off',
+  'no-promise-executor-return': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-proto.html
-  'no-proto': 'off',
+  'no-proto': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-prototype-builtins.html
-  'no-prototype-builtins': 'off',
+  'no-prototype-builtins': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-redeclare.html
   'no-redeclare': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-regex-spaces.html
-  'no-regex-spaces': 'off',
+  'no-regex-spaces': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-restricted-exports.html
   'no-restricted-exports': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-restricted-globals.html
@@ -228,25 +228,25 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-restricted-properties.html
   'no-restricted-properties': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-return-assign.html
-  'no-return-assign': 'off',
+  'no-return-assign': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-script-url.html
-  'no-script-url': 'off',
+  'no-script-url': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-self-assign.html
-  'no-self-assign': 'off',
+  'no-self-assign': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-self-compare.html
-  'no-self-compare': 'off',
+  'no-self-compare': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-sequences.html
-  'no-sequences': 'off',
+  'no-sequences': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-setter-return.html
   'no-setter-return': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-shadow.html
   'no-shadow': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-shadow-restricted-names.html
-  'no-shadow-restricted-names': 'off',
+  'no-shadow-restricted-names': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-sparse-arrays.html
-  'no-sparse-arrays': 'off',
+  'no-sparse-arrays': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-template-curly-in-string.html
-  'no-template-curly-in-string': 'off',
+  'no-template-curly-in-string': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-ternary.html
   'no-ternary': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-this-before-super.html
@@ -262,23 +262,23 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-underscore-dangle.html
   'no-underscore-dangle': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-unexpected-multiline.html
-  'no-unexpected-multiline': 'off',
+  'no-unexpected-multiline': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-unmodified-loop-condition.html
-  'no-unmodified-loop-condition': 'off',
+  'no-unmodified-loop-condition': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-unneeded-ternary.html
-  'no-unneeded-ternary': 'off',
+  'no-unneeded-ternary': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-unreachable.html
   'no-unreachable': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-unreachable-loop.html
-  'no-unreachable-loop': 'off',
+  'no-unreachable-loop': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-unsafe-finally.html
-  'no-unsafe-finally': 'off',
+  'no-unsafe-finally': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-unsafe-negation.html
   'no-unsafe-negation': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-unsafe-optional-chaining.html
   'no-unsafe-optional-chaining': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-unused-expressions.html
-  'no-unused-expressions': 'off',
+  'no-unused-expressions': ['warn', { allowShortCircuit: true, allowTernary: true }],
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-unused-labels.html
   'no-unused-labels': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-unused-private-class-members.html
@@ -288,27 +288,27 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-use-before-define.html
   'no-use-before-define': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-useless-assignment.html
-  'no-useless-assignment': 'off',
+  'no-useless-assignment': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-useless-backreference.html
-  'no-useless-backreference': 'off',
+  'no-useless-backreference': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-useless-call.html
-  'no-useless-call': 'off',
+  'no-useless-call': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-useless-catch.html
-  'no-useless-catch': 'off',
+  'no-useless-catch': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-useless-computed-key.html
-  'no-useless-computed-key': 'off',
+  'no-useless-computed-key': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-useless-concat.html
-  'no-useless-concat': 'off',
+  'no-useless-concat': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-useless-constructor.html
-  'no-useless-constructor': 'off',
+  'no-useless-constructor': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-useless-escape.html
-  'no-useless-escape': 'off',
+  'no-useless-escape': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-useless-rename.html
-  'no-useless-rename': 'off',
+  'no-useless-rename': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-useless-return.html
-  'no-useless-return': 'off',
+  'no-useless-return': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-var.html
-  'no-var': 'off',
+  'no-var': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-void.html
   'no-void': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-warning-comments.html
@@ -316,55 +316,55 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-with.html
   'no-with': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/object-shorthand.html
-  'object-shorthand': 'off',
+  'object-shorthand': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/one-var.html
   'one-var': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/operator-assignment.html
   'operator-assignment': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/prefer-arrow-callback.html
-  'prefer-arrow-callback': 'off',
+  'prefer-arrow-callback': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/prefer-const.html
-  'prefer-const': 'off',
+  'prefer-const': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/prefer-destructuring.html
-  'prefer-destructuring': 'off',
+  'prefer-destructuring': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/prefer-exponentiation-operator.html
-  'prefer-exponentiation-operator': 'off',
+  'prefer-exponentiation-operator': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/prefer-named-capture-group.html
   'prefer-named-capture-group': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/prefer-numeric-literals.html
-  'prefer-numeric-literals': 'off',
+  'prefer-numeric-literals': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/prefer-object-has-own.html
-  'prefer-object-has-own': 'off',
+  'prefer-object-has-own': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/prefer-object-spread.html
-  'prefer-object-spread': 'off',
+  'prefer-object-spread': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/prefer-promise-reject-errors.html
   'prefer-promise-reject-errors': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/prefer-regex-literals.html
-  'prefer-regex-literals': 'off',
+  'prefer-regex-literals': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/prefer-rest-params.html
-  'prefer-rest-params': 'off',
+  'prefer-rest-params': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/prefer-spread.html
-  'prefer-spread': 'off',
+  'prefer-spread': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/prefer-template.html
-  'prefer-template': 'off',
+  'prefer-template': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/preserve-caught-error.html
-  'preserve-caught-error': 'off',
+  'preserve-caught-error': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/radix.html
-  radix: 'off',
+  radix: 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/require-await.html
   'require-await': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/require-unicode-regexp.html
   'require-unicode-regexp': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/require-yield.html
-  'require-yield': 'off',
+  'require-yield': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/sort-imports.html
   'sort-imports': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/sort-keys.html
   'sort-keys': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/sort-vars.html
-  'sort-vars': 'off',
+  'sort-vars': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/symbol-description.html
-  'symbol-description': 'off',
+  'symbol-description': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/unicode-bom.html
   'unicode-bom': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/use-isnan.html
@@ -374,10 +374,52 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/vars-on-top.html
   'vars-on-top': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/eslint/yoda.html
-  yoda: 'off',
+  yoda: ['warn', 'never'],
 };
 
 export default {
+  overrides: [
+    {
+      files: ['**/*.{js,jsx,mjs,cjs}'],
+      rules: {
+        'constructor-super': 'error',
+        'getter-return': 'error',
+        'no-class-assign': 'warn',
+        'no-const-assign': 'error',
+        'no-constant-binary-expression': 'error',
+        'no-constant-condition': 'warn',
+        'no-delete-var': 'error',
+        'no-dupe-class-members': 'error',
+        'no-dupe-keys': 'error',
+        'no-extra-boolean-cast': 'warn',
+        'no-fallthrough': 'warn',
+        'no-func-assign': 'warn',
+        'no-global-assign': 'error',
+        'no-implied-eval': 'error',
+        'no-import-assign': 'error',
+        'no-new-native-nonconstructor': 'error',
+        'no-nonoctal-decimal-escape': 'error',
+        'no-obj-calls': 'error',
+        'no-redeclare': 'error',
+        'no-setter-return': 'error',
+        'no-this-before-super': 'error',
+        'no-throw-literal': 'error',
+        'no-unassigned-vars': 'warn',
+        'no-undef': 'error',
+        'no-unreachable': 'warn',
+        'no-unsafe-negation': 'error',
+        'no-unsafe-optional-chaining': 'error',
+        'no-unused-labels': 'warn',
+        'no-unused-private-class-members': 'warn',
+        'no-unused-vars': 'warn',
+        'no-with': 'error',
+        'prefer-promise-reject-errors': 'warn',
+        'require-await': 'warn',
+        'use-isnan': 'error',
+        'valid-typeof': 'error',
+      },
+    },
+  ],
   plugins: ['eslint'],
   rules,
 } satisfies OxlintConfig;
