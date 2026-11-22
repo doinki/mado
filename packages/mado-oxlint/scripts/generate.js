@@ -20,9 +20,9 @@ for (const snapshotFile of snapshotFiles) {
   const { default: upstreamRules } = await import(pathToFileURL(join(upstream, snapshotFile)), {
     with: { type: 'json' },
   });
-  const config = existsSync(preset.path)
-    ? (await import(pathToFileURL(preset.path))).default
-    : { plugins: [preset.plugin] };
+  const { default: config } = existsSync(preset.path)
+    ? await import(pathToFileURL(preset.path))
+    : { default: { plugins: [preset.plugin] } };
 
   const content = await renderPreset(upstreamRules, config, preset.plugin);
 

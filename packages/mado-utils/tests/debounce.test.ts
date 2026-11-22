@@ -10,10 +10,13 @@ describe(debounce, () => {
   });
 
   it('should delay execution and maintain the correct context and arguments', () => {
-    const handler = vi.fn();
     const expectedContext = { foo: 'bar' };
+    const handler = vi.fn(function (this: typeof expectedContext, first: string, second: string) {
+      return this.foo + first + second;
+    });
 
     const debounced = debounce(handler);
+    expectTypeOf(debounced).returns.toBeVoid();
     debounced.apply(expectedContext, ['a', 'b']);
 
     expect(handler).toHaveBeenCalledTimes(0);

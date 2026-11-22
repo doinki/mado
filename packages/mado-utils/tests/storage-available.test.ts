@@ -11,10 +11,11 @@ describe(storageAvailable, () => {
   });
 
   it('should return false if storage is not available', () => {
+    const getMissingStorage = vi.fn<() => undefined>();
     // @ts-expect-error Simulate a browser without localStorage despite the DOM type.
-    vi.spyOn(window, 'localStorage', 'get').mockReturnValue(undefined);
+    vi.spyOn(window, 'localStorage', 'get').mockImplementation(getMissingStorage);
     // @ts-expect-error Simulate a browser without sessionStorage despite the DOM type.
-    vi.spyOn(window, 'sessionStorage', 'get').mockReturnValue(undefined);
+    vi.spyOn(window, 'sessionStorage', 'get').mockImplementation(getMissingStorage);
 
     expect(storageAvailable('localStorage')).toBe(false);
     expect(storageAvailable('sessionStorage')).toBe(false);

@@ -38,7 +38,7 @@ describe(isInvariantError, () => {
     expect(isInvariantError(new InvariantError(''))).toBe(true);
   });
 
-  it.for([new Error(), 0, false, '', Symbol(''), null, undefined, {}, () => {}])(
+  it.for([new Error('ordinary error'), 0, false, '', Symbol(''), null, undefined, {}, () => {}])(
     'should return false if error is not an InvariantError',
     (a) => {
       expect(isInvariantError(a)).toBe(false);

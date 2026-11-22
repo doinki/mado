@@ -14,12 +14,14 @@ describe(useDebounce, () => {
     let counter = 0;
     const increment = () => {
       counter += 1;
+      return counter;
     };
 
     const { result } = renderHook((props) => useDebounce(props), {
       initialProps: increment,
     });
 
+    expectTypeOf(result.current).returns.toBeVoid();
     result.current();
     result.current();
     result.current();

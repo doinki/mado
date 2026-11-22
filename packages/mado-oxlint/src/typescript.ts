@@ -46,7 +46,10 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-confusing-non-null-assertion.html
   'typescript/no-confusing-non-null-assertion': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-confusing-void-expression.html
-  'typescript/no-confusing-void-expression': 'warn',
+  'typescript/no-confusing-void-expression': [
+    'warn',
+    { ignoreArrowShorthand: true, ignoreVoidReturningFunctions: true },
+  ],
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-deprecated.html
   'typescript/no-deprecated': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-duplicate-enum-values.html
@@ -126,11 +129,11 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unnecessary-type-parameters.html
   'typescript/no-unnecessary-type-parameters': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unsafe-argument.html
-  'typescript/no-unsafe-argument': 'warn',
+  'typescript/no-unsafe-argument': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unsafe-assignment.html
-  'typescript/no-unsafe-assignment': 'warn',
+  'typescript/no-unsafe-assignment': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unsafe-call.html
-  'typescript/no-unsafe-call': 'warn',
+  'typescript/no-unsafe-call': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unsafe-declaration-merging.html
   'typescript/no-unsafe-declaration-merging': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unsafe-enum-assignment.html
@@ -140,11 +143,11 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unsafe-function-type.html
   'typescript/no-unsafe-function-type': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unsafe-member-access.html
-  'typescript/no-unsafe-member-access': 'warn',
+  'typescript/no-unsafe-member-access': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unsafe-return.html
-  'typescript/no-unsafe-return': 'warn',
+  'typescript/no-unsafe-return': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unsafe-type-assertion.html
-  'typescript/no-unsafe-type-assertion': 'warn',
+  'typescript/no-unsafe-type-assertion': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unsafe-unary-minus.html
   'typescript/no-unsafe-unary-minus': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-useless-default-assignment.html
@@ -228,6 +231,18 @@ const rules: OxlintConfig['rules'] = {
 };
 
 export default {
+  overrides: [
+    {
+      files: ['**/*.{ts,tsx,mts,cts}'],
+      rules: {
+        'typescript/no-unsafe-argument': 'warn',
+        'typescript/no-unsafe-assignment': 'warn',
+        'typescript/no-unsafe-call': 'warn',
+        'typescript/no-unsafe-member-access': 'warn',
+        'typescript/no-unsafe-return': 'warn',
+      },
+    },
+  ],
   plugins: ['typescript'],
   rules,
 } satisfies OxlintConfig;
