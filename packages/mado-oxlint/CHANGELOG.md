@@ -1,5 +1,13 @@
 # @mado/oxlint
 
+## 0.9.1
+
+### Patch Changes
+
+- [`d1145bc`](https://github.com/doinki/mado/commit/d1145bc2f8958602297c64bf1347e9afbbe770eb) Thanks [@doinki](https://github.com/doinki)! - Limit warnings for unsafe arguments, assignments, calls, member access, and return values to `.ts`, `.tsx`, `.mts`, and `.cts` files. Disable `typescript/no-unsafe-type-assertion` for all files.
+
+  Allow concise arrow functions to return a `void` expression. Functions explicitly typed to return `void` and callbacks with a contextual `void` return type can also use `return` with a `void` expression.
+
 ## 0.9.0
 
 ### Minor Changes

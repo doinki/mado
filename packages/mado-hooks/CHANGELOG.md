@@ -1,5 +1,18 @@
 # @mado/hooks
 
+## 0.7.0
+
+### Minor Changes
+
+- [`d1145bc`](https://github.com/doinki/mado/commit/d1145bc2f8958602297c64bf1347e9afbbe770eb) Thanks [@doinki](https://github.com/doinki)! - The functions returned by `debounce` and `useDebounce` now have a `void` return type. Calling them schedules the callback for later. If you need the callback's result, consume it inside the callback.
+
+  `@mado/utils` now exports `Debounced<T>` for a debounced function with a `cancel()` method. For an overloaded callback, `debounce` infers the parameters of its last overload.
+
+### Patch Changes
+
+- Updated dependencies [[`d1145bc`](https://github.com/doinki/mado/commit/d1145bc2f8958602297c64bf1347e9afbbe770eb)]:
+  - @mado/utils@0.5.0
+
 ## 0.6.1
 
 ### Patch Changes
