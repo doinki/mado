@@ -1,13 +1,11 @@
-import { describe, expect, it } from 'vitest';
-
 import { isPlainObject } from '../src';
 
-describe('isPlainObject', () => {
-  it.each([{}, { foo: true }, { valueOf: 0 }, Object.create(null), new Object()])('should return true', (a) => {
+describe(isPlainObject, () => {
+  it.for([{}, { foo: true }, { valueOf: 0 }, Object.create(null), new Object()])('should return true', (a) => {
     expect(isPlainObject(a)).toBe(true);
   });
 
-  it.each([
+  it.for([
     0,
     0n,
     Number.NaN,

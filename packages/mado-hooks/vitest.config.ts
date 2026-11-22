@@ -6,6 +6,7 @@ export default defineConfig({
       provider: 'istanbul',
     },
     environment: 'happy-dom',
+    globals: true,
     setupFiles: 'vitest.setup.ts',
   },
 });

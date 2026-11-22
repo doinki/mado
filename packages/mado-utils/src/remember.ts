@@ -1,10 +1,5 @@
-declare namespace globalThis {
-  // eslint-disable-next-line no-var
-  var __remember: Map<string, any> | undefined;
-}
-
 export function remember<T>(name: string, getValue: () => T): T {
-  const ctx = globalThis;
+  const ctx = globalThis as { __remember?: Map<string, unknown> };
 
   if (!ctx.__remember) {
     ctx.__remember = new Map();

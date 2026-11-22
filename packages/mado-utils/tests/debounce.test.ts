@@ -1,8 +1,6 @@
-import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-
 import { debounce } from '../src';
 
-describe('debounce', () => {
+describe(debounce, () => {
   beforeEach(() => {
     vi.useFakeTimers();
   });
@@ -26,12 +24,11 @@ describe('debounce', () => {
     const debounced = debounce(collectContext);
     debounced.apply(expectedContext, ['a', 'b']);
 
-    expect(handler).toBeCalledTimes(0);
+    expect(handler).toHaveBeenCalledTimes(0);
 
     vi.advanceTimersByTime(166);
 
-    expect(handler).toBeCalledTimes(1);
-    expect(handler).toBeCalledWith('a', 'b');
+    expect(handler).toHaveBeenCalledExactlyOnceWith('a', 'b');
     expect(actualContext).toBe(expectedContext);
   });
 
@@ -41,12 +38,12 @@ describe('debounce', () => {
 
     debounced();
 
-    expect(handler).toBeCalledTimes(0);
+    expect(handler).toHaveBeenCalledTimes(0);
 
     debounced.cancel();
 
     vi.advanceTimersByTime(166);
 
-    expect(handler).toBeCalledTimes(0);
+    expect(handler).toHaveBeenCalledTimes(0);
   });
 });

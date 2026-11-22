@@ -5,13 +5,14 @@ import node from './packages/mado-oxlint/src/node.ts';
 import oxc from './packages/mado-oxlint/src/oxc.ts';
 import promise from './packages/mado-oxlint/src/promise.ts';
 import sort from './packages/mado-oxlint/src/sort.ts';
+import vitest from './packages/mado-oxlint/src/vitest.ts';
 
 export default defineConfig({
   env: {
     builtin: true,
     node: true,
   },
-  extends: [imports, node, oxc, promise, sort],
+  extends: [imports, node, oxc, promise, sort, vitest],
   options: {
     typeAware: true,
   },

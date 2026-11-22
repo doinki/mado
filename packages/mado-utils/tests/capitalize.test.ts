@@ -1,8 +1,6 @@
-import { describe, expect, it } from 'vitest';
-
 import { capitalize } from '../src';
 
-describe('capitalize', () => {
+describe(capitalize, () => {
   it('should capitalize the first letter of a lowercase string', () => {
     expect(capitalize('hello')).toBe('Hello');
   });

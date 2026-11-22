@@ -1,8 +1,17 @@
-import { describe, expect, it } from 'vitest';
-
 import { invariant, InvariantError, invariantResponse, isInvariantError } from '../src/invariant';
 
-describe('InvariantError', () => {
+function getThrownResponse(run: () => void): Response {
+  try {
+    run();
+  } catch (error) {
+    if (error instanceof Response) return error;
+    throw error;
+  }
+
+  throw new Error('Expected a Response to be thrown');
+}
+
+describe(InvariantError, () => {
   it('should be an instance of Error', () => {
     expect(new InvariantError('')).toBeInstanceOf(Error);
   });
@@ -24,12 +33,12 @@ describe('InvariantError', () => {
   });
 });
 
-describe('isInvariantError', () => {
+describe(isInvariantError, () => {
   it('should return true if error is an InvariantError', () => {
     expect(isInvariantError(new InvariantError(''))).toBe(true);
   });
 
-  it.each([new Error(), 0, false, '', Symbol(''), null, undefined, {}, () => {}])(
+  it.for([new Error(), 0, false, '', Symbol(''), null, undefined, {}, () => {}])(
     'should return false if error is not an InvariantError',
     (a) => {
       expect(isInvariantError(a)).toBe(false);
@@ -37,7 +46,7 @@ describe('isInvariantError', () => {
   );
 });
 
-describe('invariant', () => {
+describe(invariant, () => {
   it('should not throw if condition is truthy', () => {
     expect(() => {
       invariant(true, '');
@@ -63,7 +72,7 @@ describe('invariant', () => {
   });
 });
 
-describe('invariantResponse', () => {
+describe(invariantResponse, () => {
   it('should not throw if condition is truthy', () => {
     expect(() => {
       invariantResponse(true, '');
@@ -77,43 +86,25 @@ describe('invariantResponse', () => {
   });
 
   it('should throw with the given message', async () => {
-    try {
-      invariantResponse(false, 'message');
+    const response = getThrownResponse(() => invariantResponse(false, 'message'));
 
-      expect.fail('should not be called');
-    } catch (error) {
-      invariant(error instanceof Response, 'should be a Response');
-
-      expect(error.ok).toBe(false);
-      expect(error.status).toBe(400);
-      expect(await error.text()).toBe('message');
-    }
+    expect(response.ok).toBe(false);
+    expect(response.status).toBe(400);
+    await expect(response.text()).resolves.toBe('message');
   });
 
   it('should throw with the given message function', async () => {
-    try {
-      invariantResponse(false, () => 'message');
+    const response = getThrownResponse(() => invariantResponse(false, () => 'message'));
 
-      expect.fail('should not be called');
-    } catch (error) {
-      invariant(error instanceof Response, 'should be a Response');
-
-      expect(error.ok).toBe(false);
-      expect(error.status).toBe(400);
-      expect(await error.text()).toBe('message');
-    }
+    expect(response.ok).toBe(false);
+    expect(response.status).toBe(400);
+    await expect(response.text()).resolves.toBe('message');
   });
 
   it('should throw with the given responseInit', () => {
-    try {
-      invariantResponse(false, '', { status: 500 });
+    const response = getThrownResponse(() => invariantResponse(false, '', { status: 500 }));
 
-      expect.fail('should not be called');
-    } catch (error) {
-      invariant(error instanceof Response, 'should be a Response');
-
-      expect(error.ok).toBe(false);
-      expect(error.status).toBe(500);
-    }
+    expect(response.ok).toBe(false);
+    expect(response.status).toBe(500);
   });
 });

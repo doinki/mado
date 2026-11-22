@@ -1,8 +1,6 @@
-import { afterEach, describe, expect, it, vi } from 'vitest';
-
 import { storageAvailable } from '../src';
 
-describe('storageAvailable', () => {
+describe(storageAvailable, () => {
   afterEach(() => {
     vi.restoreAllMocks();
   });

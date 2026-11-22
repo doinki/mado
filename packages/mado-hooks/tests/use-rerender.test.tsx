@@ -1,5 +1,4 @@
 import { fireEvent, render, renderHook, screen } from '@testing-library/react';
-import { describe, expect, test } from 'vitest';
 
 import { useRerender } from '../src';
 
@@ -19,8 +18,8 @@ function T() {
   );
 }
 
-describe('useRerender', () => {
-  test('should cause a re-render when the rerender function is called', () => {
+describe(useRerender, () => {
+  it('should cause a re-render when the rerender function is called', () => {
     render(<T />);
 
     expect(screen.getByTestId('count')).toHaveTextContent('1');
@@ -30,7 +29,7 @@ describe('useRerender', () => {
     expect(screen.getByTestId('count')).toHaveTextContent('2');
   });
 
-  test('should maintain the same reference across re-renders', () => {
+  it('should maintain the same reference across re-renders', () => {
     const { rerender, result } = renderHook(() => useRerender());
 
     const firstRef = result.current;

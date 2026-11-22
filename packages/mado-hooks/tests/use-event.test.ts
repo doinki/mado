@@ -1,10 +1,9 @@
 import { act, renderHook } from '@testing-library/react';
-import { describe, expect, test } from 'vitest';
 
 import { useEvent } from '../src';
 
-describe('useEvent', () => {
-  test('should initialize and update the function reference correctly', () => {
+describe(useEvent, () => {
+  it('should initialize and update the function reference correctly', () => {
     let value = 0;
     const initialFunction = () => {
       value = 1;
@@ -34,7 +33,7 @@ describe('useEvent', () => {
     expect(value).toBe(2);
   });
 
-  test('should maintain the same reference across re-renders', () => {
+  it('should maintain the same reference across re-renders', () => {
     const initialFunction = () => {};
     const updatedFunction = () => {};
 
