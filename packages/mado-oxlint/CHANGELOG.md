@@ -1,5 +1,13 @@
 # @mado/oxlint
 
+## 0.8.0
+
+### Minor Changes
+
+- [`82e60d7`](https://github.com/doinki/mado/commit/82e60d7a3d16f754af9a835c32469e8fcf9e683a) Thanks [@doinki](https://github.com/doinki)! - Include the Unicorn preset in the default Oxlint configuration. It reports errors for recursive getters and setters, filling an array with a shared object, sending a request body with GET or HEAD, and removing an event listener with a new callback. Timer calls must specify a delay, and lint suppression comments must name the rules they disable.
+
+  The preset also warns about array callbacks that receive unintended arguments, errors created without a message, and Node.js built-in imports that omit the `node:` prefix.
+
 ## 0.7.0
 
 ### Minor Changes
