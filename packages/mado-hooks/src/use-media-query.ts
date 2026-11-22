@@ -1,3 +1,4 @@
+/* oxlint-disable typescript/prefer-optional-chain -- SSR can run without a window binding. */
 import { useMemo, useSyncExternalStore } from 'react';
 
 export function useMediaQuery(query: string, defaultMatches = false): boolean {

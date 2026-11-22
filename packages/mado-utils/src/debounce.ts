@@ -5,11 +5,10 @@ export interface Cancelable {
 export function debounce<T extends (...args: any[]) => any>(func: T, wait = 166): Cancelable & T {
   let timeout: ReturnType<typeof setTimeout>;
 
-  function debounced(...args: Parameters<T>) {
+  function debounced(this: ThisParameterType<T>, ...args: Parameters<T>) {
     clearTimeout(timeout);
 
     timeout = setTimeout(() => {
-      // @ts-ignore
       func.apply(this, args);
     }, wait);
   }

@@ -13,15 +13,7 @@ describe(debounce, () => {
     const handler = vi.fn();
     const expectedContext = { foo: 'bar' };
 
-    let actualContext;
-    function collectContext(...args: any[]) {
-      // @ts-expect-error
-      // eslint-disable-next-line @typescript-eslint/no-this-alias
-      actualContext = this;
-      handler(...args);
-    }
-
-    const debounced = debounce(collectContext);
+    const debounced = debounce(handler);
     debounced.apply(expectedContext, ['a', 'b']);
 
     expect(handler).toHaveBeenCalledTimes(0);
@@ -29,7 +21,7 @@ describe(debounce, () => {
     vi.advanceTimersByTime(166);
 
     expect(handler).toHaveBeenCalledExactlyOnceWith('a', 'b');
-    expect(actualContext).toBe(expectedContext);
+    expect(handler.mock.contexts[0]).toBe(expectedContext);
   });
 
   it('should cancel the delayed execution when cancel is called', () => {

@@ -2,13 +2,13 @@ import type { OxlintConfig } from 'oxlint';
 
 const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/adjacent-overload-signatures.html
-  'typescript/adjacent-overload-signatures': 'off',
+  'typescript/adjacent-overload-signatures': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/array-type.html
   'typescript/array-type': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/await-thenable.html
-  'typescript/await-thenable': 'off',
+  'typescript/await-thenable': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/ban-ts-comment.html
-  'typescript/ban-ts-comment': 'off',
+  'typescript/ban-ts-comment': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/ban-tslint-comment.html
   'typescript/ban-tslint-comment': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/ban-types.html
@@ -16,43 +16,43 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/class-literal-property-style.html
   'typescript/class-literal-property-style': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/consistent-generic-constructors.html
-  'typescript/consistent-generic-constructors': 'off',
+  'typescript/consistent-generic-constructors': ['warn', 'constructor'],
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/consistent-indexed-object-style.html
   'typescript/consistent-indexed-object-style': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/consistent-return.html
   'typescript/consistent-return': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/consistent-type-assertions.html
-  'typescript/consistent-type-assertions': 'off',
+  'typescript/consistent-type-assertions': ['warn', { assertionStyle: 'as' }],
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/consistent-type-definitions.html
-  'typescript/consistent-type-definitions': 'off',
+  'typescript/consistent-type-definitions': ['warn', 'interface'],
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/consistent-type-exports.html
-  'typescript/consistent-type-exports': 'off',
+  'typescript/consistent-type-exports': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/consistent-type-imports.html
-  'typescript/consistent-type-imports': 'off',
+  'typescript/consistent-type-imports': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/dot-notation.html
-  'typescript/dot-notation': 'off',
+  'typescript/dot-notation': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/explicit-function-return-type.html
   'typescript/explicit-function-return-type': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/explicit-member-accessibility.html
-  'typescript/explicit-member-accessibility': 'off',
+  'typescript/explicit-member-accessibility': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/explicit-module-boundary-types.html
   'typescript/explicit-module-boundary-types': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/method-signature-style.html
-  'typescript/method-signature-style': 'off',
+  'typescript/method-signature-style': ['warn', 'property'],
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-array-delete.html
-  'typescript/no-array-delete': 'off',
+  'typescript/no-array-delete': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-base-to-string.html
-  'typescript/no-base-to-string': 'off',
+  'typescript/no-base-to-string': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-confusing-non-null-assertion.html
-  'typescript/no-confusing-non-null-assertion': 'off',
+  'typescript/no-confusing-non-null-assertion': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-confusing-void-expression.html
-  'typescript/no-confusing-void-expression': 'off',
+  'typescript/no-confusing-void-expression': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-deprecated.html
   'typescript/no-deprecated': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-duplicate-enum-values.html
-  'typescript/no-duplicate-enum-values': 'off',
+  'typescript/no-duplicate-enum-values': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-duplicate-type-constituents.html
-  'typescript/no-duplicate-type-constituents': 'off',
+  'typescript/no-duplicate-type-constituents': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-dynamic-delete.html
   'typescript/no-dynamic-delete': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-empty-interface.html
@@ -60,45 +60,45 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-empty-object-type.html
   'typescript/no-empty-object-type': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-explicit-any.html
-  'typescript/no-explicit-any': 'off',
+  'typescript/no-explicit-any': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-extra-non-null-assertion.html
-  'typescript/no-extra-non-null-assertion': 'off',
+  'typescript/no-extra-non-null-assertion': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-extraneous-class.html
   'typescript/no-extraneous-class': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-floating-promises.html
   'typescript/no-floating-promises': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-for-in-array.html
-  'typescript/no-for-in-array': 'off',
+  'typescript/no-for-in-array': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-generated-empty-object-type.html
   'typescript/no-generated-empty-object-type': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-implied-eval.html
-  'typescript/no-implied-eval': 'off',
+  'typescript/no-implied-eval': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-import-type-side-effects.html
-  'typescript/no-import-type-side-effects': 'off',
+  'typescript/no-import-type-side-effects': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-inferrable-types.html
-  'typescript/no-inferrable-types': 'off',
+  'typescript/no-inferrable-types': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-invalid-void-type.html
-  'typescript/no-invalid-void-type': 'off',
+  'typescript/no-invalid-void-type': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-meaningless-void-operator.html
-  'typescript/no-meaningless-void-operator': 'off',
+  'typescript/no-meaningless-void-operator': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-misused-new.html
-  'typescript/no-misused-new': 'off',
+  'typescript/no-misused-new': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-misused-promises.html
   'typescript/no-misused-promises': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-misused-spread.html
-  'typescript/no-misused-spread': 'off',
+  'typescript/no-misused-spread': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-mixed-enums.html
-  'typescript/no-mixed-enums': 'off',
+  'typescript/no-mixed-enums': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-namespace.html
-  'typescript/no-namespace': 'off',
+  'typescript/no-namespace': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-non-null-asserted-nullish-coalescing.html
-  'typescript/no-non-null-asserted-nullish-coalescing': 'off',
+  'typescript/no-non-null-asserted-nullish-coalescing': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-non-null-asserted-optional-chain.html
-  'typescript/no-non-null-asserted-optional-chain': 'off',
+  'typescript/no-non-null-asserted-optional-chain': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-non-null-assertion.html
   'typescript/no-non-null-assertion': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-redundant-type-constituents.html
-  'typescript/no-redundant-type-constituents': 'off',
+  'typescript/no-redundant-type-constituents': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-require-imports.html
   'typescript/no-require-imports': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-restricted-types.html
@@ -106,11 +106,11 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-this-alias.html
   'typescript/no-this-alias': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unnecessary-boolean-literal-compare.html
-  'typescript/no-unnecessary-boolean-literal-compare': 'off',
+  'typescript/no-unnecessary-boolean-literal-compare': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unnecessary-condition.html
-  'typescript/no-unnecessary-condition': 'off',
+  'typescript/no-unnecessary-condition': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unnecessary-parameter-property-assignment.html
-  'typescript/no-unnecessary-parameter-property-assignment': 'off',
+  'typescript/no-unnecessary-parameter-property-assignment': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unnecessary-qualifier.html
   'typescript/no-unnecessary-qualifier': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unnecessary-template-expression.html
@@ -118,83 +118,83 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unnecessary-type-arguments.html
   'typescript/no-unnecessary-type-arguments': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unnecessary-type-assertion.html
-  'typescript/no-unnecessary-type-assertion': 'off',
+  'typescript/no-unnecessary-type-assertion': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unnecessary-type-constraint.html
   'typescript/no-unnecessary-type-constraint': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unnecessary-type-conversion.html
-  'typescript/no-unnecessary-type-conversion': 'off',
+  'typescript/no-unnecessary-type-conversion': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unnecessary-type-parameters.html
-  'typescript/no-unnecessary-type-parameters': 'off',
+  'typescript/no-unnecessary-type-parameters': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unsafe-argument.html
-  'typescript/no-unsafe-argument': 'off',
+  'typescript/no-unsafe-argument': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unsafe-assignment.html
-  'typescript/no-unsafe-assignment': 'off',
+  'typescript/no-unsafe-assignment': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unsafe-call.html
-  'typescript/no-unsafe-call': 'off',
+  'typescript/no-unsafe-call': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unsafe-declaration-merging.html
-  'typescript/no-unsafe-declaration-merging': 'off',
+  'typescript/no-unsafe-declaration-merging': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unsafe-enum-assignment.html
-  'typescript/no-unsafe-enum-assignment': 'off',
+  'typescript/no-unsafe-enum-assignment': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unsafe-enum-comparison.html
   'typescript/no-unsafe-enum-comparison': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unsafe-function-type.html
-  'typescript/no-unsafe-function-type': 'off',
+  'typescript/no-unsafe-function-type': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unsafe-member-access.html
-  'typescript/no-unsafe-member-access': 'off',
+  'typescript/no-unsafe-member-access': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unsafe-return.html
-  'typescript/no-unsafe-return': 'off',
+  'typescript/no-unsafe-return': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unsafe-type-assertion.html
-  'typescript/no-unsafe-type-assertion': 'off',
+  'typescript/no-unsafe-type-assertion': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-unsafe-unary-minus.html
   'typescript/no-unsafe-unary-minus': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-useless-default-assignment.html
-  'typescript/no-useless-default-assignment': 'off',
+  'typescript/no-useless-default-assignment': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-useless-empty-export.html
-  'typescript/no-useless-empty-export': 'off',
+  'typescript/no-useless-empty-export': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-var-requires.html
   'typescript/no-var-requires': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/no-wrapper-object-types.html
-  'typescript/no-wrapper-object-types': 'off',
+  'typescript/no-wrapper-object-types': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/non-nullable-type-assertion-style.html
-  'typescript/non-nullable-type-assertion-style': 'off',
+  'typescript/non-nullable-type-assertion-style': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/only-throw-error.html
   'typescript/only-throw-error': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/parameter-properties.html
   'typescript/parameter-properties': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/prefer-as-const.html
-  'typescript/prefer-as-const': 'off',
+  'typescript/prefer-as-const': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/prefer-enum-initializers.html
-  'typescript/prefer-enum-initializers': 'off',
+  'typescript/prefer-enum-initializers': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/prefer-find.html
-  'typescript/prefer-find': 'off',
+  'typescript/prefer-find': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/prefer-for-of.html
-  'typescript/prefer-for-of': 'off',
+  'typescript/prefer-for-of': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/prefer-function-type.html
   'typescript/prefer-function-type': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/prefer-includes.html
-  'typescript/prefer-includes': 'off',
+  'typescript/prefer-includes': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/prefer-literal-enum-member.html
-  'typescript/prefer-literal-enum-member': 'off',
+  'typescript/prefer-literal-enum-member': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/prefer-namespace-keyword.html
   'typescript/prefer-namespace-keyword': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/prefer-nullish-coalescing.html
-  'typescript/prefer-nullish-coalescing': 'off',
+  'typescript/prefer-nullish-coalescing': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/prefer-optional-chain.html
-  'typescript/prefer-optional-chain': 'off',
+  'typescript/prefer-optional-chain': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/prefer-promise-reject-errors.html
-  'typescript/prefer-promise-reject-errors': 'off',
+  'typescript/prefer-promise-reject-errors': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/prefer-readonly.html
   'typescript/prefer-readonly': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/prefer-readonly-parameter-types.html
   'typescript/prefer-readonly-parameter-types': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/prefer-reduce-type-parameter.html
-  'typescript/prefer-reduce-type-parameter': 'off',
+  'typescript/prefer-reduce-type-parameter': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/prefer-regexp-exec.html
-  'typescript/prefer-regexp-exec': 'off',
+  'typescript/prefer-regexp-exec': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/prefer-return-this-type.html
-  'typescript/prefer-return-this-type': 'off',
+  'typescript/prefer-return-this-type': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/prefer-string-starts-ends-with.html
-  'typescript/prefer-string-starts-ends-with': 'off',
+  'typescript/prefer-string-starts-ends-with': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/prefer-ts-expect-error.html
   'typescript/prefer-ts-expect-error': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/promise-function-async.html
@@ -202,27 +202,27 @@ const rules: OxlintConfig['rules'] = {
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/related-getter-setter-pairs.html
   'typescript/related-getter-setter-pairs': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/require-array-sort-compare.html
-  'typescript/require-array-sort-compare': 'off',
+  'typescript/require-array-sort-compare': 'error',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/require-await.html
-  'typescript/require-await': 'off',
+  'typescript/require-await': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/restrict-plus-operands.html
   'typescript/restrict-plus-operands': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/restrict-template-expressions.html
   'typescript/restrict-template-expressions': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/return-await.html
-  'typescript/return-await': 'off',
+  'typescript/return-await': ['warn', 'error-handling-correctness-only'],
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/strict-boolean-expressions.html
   'typescript/strict-boolean-expressions': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/strict-void-return.html
-  'typescript/strict-void-return': 'off',
+  'typescript/strict-void-return': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/switch-exhaustiveness-check.html
-  'typescript/switch-exhaustiveness-check': 'off',
+  'typescript/switch-exhaustiveness-check': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/triple-slash-reference.html
   'typescript/triple-slash-reference': 'off',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/unbound-method.html
-  'typescript/unbound-method': 'off',
+  'typescript/unbound-method': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/unified-signatures.html
-  'typescript/unified-signatures': 'off',
+  'typescript/unified-signatures': 'warn',
   // https://oxc.rs/docs/guide/usage/linter/rules/typescript/use-unknown-in-catch-callback-variable.html
   'typescript/use-unknown-in-catch-callback-variable': 'off',
 };

@@ -11,9 +11,9 @@ describe(storageAvailable, () => {
   });
 
   it('should return false if storage is not available', () => {
-    // @ts-expect-error
+    // @ts-expect-error Simulate a browser without localStorage despite the DOM type.
     vi.spyOn(window, 'localStorage', 'get').mockReturnValue(undefined);
-    // @ts-expect-error
+    // @ts-expect-error Simulate a browser without sessionStorage despite the DOM type.
     vi.spyOn(window, 'sessionStorage', 'get').mockReturnValue(undefined);
 
     expect(storageAvailable('localStorage')).toBe(false);
@@ -22,14 +22,15 @@ describe(storageAvailable, () => {
 
   it('should return true for storageAvailable even when storage quota is exceeded', () => {
     const storage = {
+      clear: vi.fn(),
+      getItem: vi.fn(),
+      key: vi.fn(),
       length: 1,
       removeItem: vi.fn(),
       setItem: vi.fn(),
     };
 
-    // @ts-expect-error
     vi.spyOn(window, 'localStorage', 'get').mockReturnValue(storage);
-    // @ts-expect-error
     vi.spyOn(window, 'sessionStorage', 'get').mockReturnValue(storage);
 
     storage.setItem.mockImplementation(() => {
