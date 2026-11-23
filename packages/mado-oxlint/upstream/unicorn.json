@@ -7,6 +7,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/catch-error-name.html"
   },
   {
@@ -17,6 +18,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/consistent-assert.html"
   },
   {
@@ -27,6 +29,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/consistent-date-clone.html"
   },
   {
@@ -37,6 +40,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/consistent-empty-array-spread.html"
   },
   {
@@ -47,6 +51,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/consistent-existence-index-check.html"
   },
   {
@@ -57,6 +62,7 @@
     "type_aware": false,
     "fix": "pending",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/consistent-function-scoping.html"
   },
   {
@@ -67,6 +73,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/consistent-template-literal-escape.html"
   },
   {
@@ -77,6 +84,7 @@
     "type_aware": false,
     "fix": "pending",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/custom-error-definition.html"
   },
   {
@@ -87,6 +95,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/empty-brace-spaces.html"
   },
   {
@@ -97,6 +106,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/error-message.html"
   },
   {
@@ -107,6 +117,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/escape-case.html"
   },
   {
@@ -117,6 +128,7 @@
     "type_aware": false,
     "fix": "conditional_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/explicit-length-check.html"
   },
   {
@@ -127,6 +139,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/explicit-timer-delay.html"
   },
   {
@@ -137,6 +150,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/filename-case.html"
   },
   {
@@ -147,6 +161,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/import-style.html"
   },
   {
@@ -157,6 +172,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/max-nested-calls.html"
   },
   {
@@ -167,6 +183,7 @@
     "type_aware": false,
     "fix": "pending",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/new-for-builtins.html"
   },
   {
@@ -177,6 +194,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-abusive-eslint-disable.html"
   },
   {
@@ -187,6 +205,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-accessor-recursion.html"
   },
   {
@@ -197,6 +216,7 @@
     "type_aware": false,
     "fix": "pending",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-anonymous-default-export.html"
   },
   {
@@ -207,6 +227,7 @@
     "type_aware": false,
     "fix": "pending",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-array-callback-reference.html"
   },
   {
@@ -217,6 +238,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-array-fill-with-reference-type.html"
   },
   {
@@ -227,6 +249,7 @@
     "type_aware": false,
     "fix": "pending",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-array-for-each.html"
   },
   {
@@ -237,6 +260,7 @@
     "type_aware": false,
     "fix": "pending",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-array-method-this-argument.html"
   },
   {
@@ -247,6 +271,7 @@
     "type_aware": false,
     "fix": "pending",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-array-reduce.html"
   },
   {
@@ -257,6 +282,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-array-reverse.html"
   },
   {
@@ -267,6 +293,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-array-sort.html"
   },
   {
@@ -277,6 +304,7 @@
     "type_aware": false,
     "fix": "fixable_dangerous_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-await-expression-member.html"
   },
   {
@@ -287,6 +315,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": true,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-await-in-promise-methods.html"
   },
   {
@@ -297,6 +326,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-confusing-array-with.html"
   },
   {
@@ -307,6 +337,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-console-spaces.html"
   },
   {
@@ -317,6 +348,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-document-cookie.html"
   },
   {
@@ -327,6 +359,7 @@
     "type_aware": false,
     "fix": "none",
     "default": true,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-empty-file.html"
   },
   {
@@ -337,6 +370,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-hex-escape.html"
   },
   {
@@ -347,6 +381,7 @@
     "type_aware": false,
     "fix": "pending",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-immediate-mutation.html"
   },
   {
@@ -357,6 +392,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-instanceof-array.html"
   },
   {
@@ -367,6 +403,7 @@
     "type_aware": false,
     "fix": "conditional_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-instanceof-builtins.html"
   },
   {
@@ -377,6 +414,7 @@
     "type_aware": false,
     "fix": "none",
     "default": true,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-invalid-fetch-options.html"
   },
   {
@@ -387,6 +425,7 @@
     "type_aware": false,
     "fix": "none",
     "default": true,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-invalid-remove-event-listener.html"
   },
   {
@@ -397,6 +436,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-length-as-slice-end.html"
   },
   {
@@ -407,6 +447,7 @@
     "type_aware": false,
     "fix": "pending",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-lonely-if.html"
   },
   {
@@ -417,6 +458,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-magic-array-flat-depth.html"
   },
   {
@@ -427,6 +469,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-negated-condition.html"
   },
   {
@@ -437,6 +480,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-negation-in-equality-check.html"
   },
   {
@@ -447,6 +491,7 @@
     "type_aware": false,
     "fix": "conditional_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-nested-ternary.html"
   },
   {
@@ -457,6 +502,7 @@
     "type_aware": false,
     "fix": "fixable_dangerous_suggestion",
     "default": true,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-new-array.html"
   },
   {
@@ -467,6 +513,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-new-buffer.html"
   },
   {
@@ -477,6 +524,7 @@
     "type_aware": false,
     "fix": "conditional_dangerous_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-null.html"
   },
   {
@@ -487,6 +535,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-object-as-default-parameter.html"
   },
   {
@@ -497,6 +546,7 @@
     "type_aware": false,
     "fix": "pending",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-process-exit.html"
   },
   {
@@ -507,6 +557,7 @@
     "type_aware": false,
     "fix": "conditional_fix",
     "default": true,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-single-promise-in-promise-methods.html"
   },
   {
@@ -517,6 +568,7 @@
     "type_aware": false,
     "fix": "fixable_dangerous_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-static-only-class.html"
   },
   {
@@ -527,6 +579,7 @@
     "type_aware": false,
     "fix": "none",
     "default": true,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-thenable.html"
   },
   {
@@ -537,6 +590,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-this-assignment.html"
   },
   {
@@ -547,6 +601,7 @@
     "type_aware": false,
     "fix": "fixable_safe_fix_or_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-typeof-undefined.html"
   },
   {
@@ -557,6 +612,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-unnecessary-array-flat-depth.html"
   },
   {
@@ -567,6 +623,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-unnecessary-array-splice-count.html"
   },
   {
@@ -577,6 +634,7 @@
     "type_aware": false,
     "fix": "conditional_fix",
     "default": true,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-unnecessary-await.html"
   },
   {
@@ -587,6 +645,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-unnecessary-slice-end.html"
   },
   {
@@ -597,6 +656,7 @@
     "type_aware": false,
     "fix": "pending",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-unreadable-array-destructuring.html"
   },
   {
@@ -607,6 +667,7 @@
     "type_aware": false,
     "fix": "conditional_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-unreadable-iife.html"
   },
   {
@@ -617,6 +678,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-useless-collection-argument.html"
   },
   {
@@ -627,6 +689,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-useless-error-capture-stack-trace.html"
   },
   {
@@ -637,6 +700,7 @@
     "type_aware": false,
     "fix": "conditional_fix",
     "default": true,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-useless-fallback-in-spread.html"
   },
   {
@@ -647,6 +711,7 @@
     "type_aware": false,
     "fix": "fixable_safe_fix_or_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-useless-iterator-to-array.html"
   },
   {
@@ -657,6 +722,7 @@
     "type_aware": false,
     "fix": "pending",
     "default": true,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-useless-length-check.html"
   },
   {
@@ -667,6 +733,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-useless-promise-resolve-reject.html"
   },
   {
@@ -677,6 +744,7 @@
     "type_aware": false,
     "fix": "fixable_dangerous_fix",
     "default": true,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-useless-spread.html"
   },
   {
@@ -687,6 +755,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-useless-switch-case.html"
   },
   {
@@ -695,8 +764,9 @@
     "category": "pedantic",
     "version": "0.6.1",
     "type_aware": false,
-    "fix": "fixable_safe_fix_or_suggestion",
+    "fix": "fixable_dangerous_fix_or_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-useless-undefined.html"
   },
   {
@@ -707,6 +777,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/no-zero-fractions.html"
   },
   {
@@ -717,6 +788,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/number-literal-case.html"
   },
   {
@@ -727,6 +799,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/numeric-separators-style.html"
   },
   {
@@ -737,6 +810,7 @@
     "type_aware": false,
     "fix": "pending",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-add-event-listener.html"
   },
   {
@@ -747,6 +821,7 @@
     "type_aware": false,
     "fix": "pending",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-array-find.html"
   },
   {
@@ -757,6 +832,7 @@
     "type_aware": false,
     "fix": "conditional_dangerous_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-array-flat.html"
   },
   {
@@ -767,6 +843,7 @@
     "type_aware": false,
     "fix": "fixable_safe_fix_or_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-array-flat-map.html"
   },
   {
@@ -777,6 +854,7 @@
     "type_aware": false,
     "fix": "pending",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-array-index-of.html"
   },
   {
@@ -787,6 +865,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-array-some.html"
   },
   {
@@ -797,6 +876,7 @@
     "type_aware": false,
     "fix": "fixable_dangerous_fix_or_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-at.html"
   },
   {
@@ -807,6 +887,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-bigint-literals.html"
   },
   {
@@ -817,6 +898,7 @@
     "type_aware": false,
     "fix": "pending",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-blob-reading-methods.html"
   },
   {
@@ -827,6 +909,7 @@
     "type_aware": false,
     "fix": "conditional_safe_fix_or_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-class-fields.html"
   },
   {
@@ -837,6 +920,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-classlist-toggle.html"
   },
   {
@@ -847,6 +931,7 @@
     "type_aware": false,
     "fix": "fixable_dangerous_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-code-point.html"
   },
   {
@@ -857,6 +942,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-date-now.html"
   },
   {
@@ -867,6 +953,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-default-parameters.html"
   },
   {
@@ -877,6 +964,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-dom-node-append.html"
   },
   {
@@ -887,6 +975,7 @@
     "type_aware": false,
     "fix": "conditional_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-dom-node-dataset.html"
   },
   {
@@ -897,6 +986,7 @@
     "type_aware": false,
     "fix": "pending",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-dom-node-remove.html"
   },
   {
@@ -907,6 +997,7 @@
     "type_aware": false,
     "fix": "conditional_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-dom-node-text-content.html"
   },
   {
@@ -917,6 +1008,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-event-target.html"
   },
   {
@@ -927,6 +1019,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-export-from.html"
   },
   {
@@ -937,6 +1030,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-global-this.html"
   },
   {
@@ -947,6 +1041,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-import-meta-properties.html"
   },
   {
@@ -957,6 +1052,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-includes.html"
   },
   {
@@ -967,6 +1063,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-keyboard-event-key.html"
   },
   {
@@ -977,6 +1074,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-logical-operator-over-ternary.html"
   },
   {
@@ -987,6 +1085,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-math-min-max.html"
   },
   {
@@ -997,6 +1096,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-math-trunc.html"
   },
   {
@@ -1007,6 +1107,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-modern-dom-apis.html"
   },
   {
@@ -1017,6 +1118,7 @@
     "type_aware": false,
     "fix": "pending",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-modern-math-apis.html"
   },
   {
@@ -1027,6 +1129,7 @@
     "type_aware": false,
     "fix": "pending",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-module.html"
   },
   {
@@ -1037,6 +1140,7 @@
     "type_aware": false,
     "fix": "pending",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-native-coercion-functions.html"
   },
   {
@@ -1047,6 +1151,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-negative-index.html"
   },
   {
@@ -1057,6 +1162,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-node-protocol.html"
   },
   {
@@ -1067,6 +1173,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-number-coercion.html"
   },
   {
@@ -1077,6 +1184,7 @@
     "type_aware": false,
     "fix": "fixable_dangerous_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-number-properties.html"
   },
   {
@@ -1087,6 +1195,7 @@
     "type_aware": false,
     "fix": "pending",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-object-from-entries.html"
   },
   {
@@ -1097,6 +1206,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-optional-catch-binding.html"
   },
   {
@@ -1107,6 +1217,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-prototype-methods.html"
   },
   {
@@ -1117,6 +1228,7 @@
     "type_aware": false,
     "fix": "conditional_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-query-selector.html"
   },
   {
@@ -1127,6 +1239,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-reflect-apply.html"
   },
   {
@@ -1137,6 +1250,7 @@
     "type_aware": false,
     "fix": "fixable_safe_fix_or_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-regexp-test.html"
   },
   {
@@ -1147,6 +1261,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-response-static-json.html"
   },
   {
@@ -1157,6 +1272,7 @@
     "type_aware": false,
     "fix": "fixable_dangerous_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-set-has.html"
   },
   {
@@ -1167,6 +1283,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": true,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-set-size.html"
   },
   {
@@ -1177,6 +1294,7 @@
     "type_aware": false,
     "fix": "conditional_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-single-call.html"
   },
   {
@@ -1187,6 +1305,7 @@
     "type_aware": false,
     "fix": "conditional_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-spread.html"
   },
   {
@@ -1197,6 +1316,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-string-raw.html"
   },
   {
@@ -1207,6 +1327,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-string-replace-all.html"
   },
   {
@@ -1217,6 +1338,7 @@
     "type_aware": false,
     "fix": "conditional_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-string-slice.html"
   },
   {
@@ -1227,6 +1349,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": true,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-string-starts-ends-with.html"
   },
   {
@@ -1237,6 +1360,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-string-trim-start-end.html"
   },
   {
@@ -1247,6 +1371,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-structured-clone.html"
   },
   {
@@ -1257,6 +1382,7 @@
     "type_aware": false,
     "fix": "pending",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-ternary.html"
   },
   {
@@ -1267,6 +1393,7 @@
     "type_aware": false,
     "fix": "pending",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-top-level-await.html"
   },
   {
@@ -1277,6 +1404,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/prefer-type-error.html"
   },
   {
@@ -1287,6 +1415,7 @@
     "type_aware": false,
     "fix": "fixable_safe_fix_or_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/relative-url-style.html"
   },
   {
@@ -1297,6 +1426,7 @@
     "type_aware": false,
     "fix": "conditional_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/require-array-join-separator.html"
   },
   {
@@ -1307,6 +1437,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/require-module-attributes.html"
   },
   {
@@ -1317,6 +1448,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/require-module-specifiers.html"
   },
   {
@@ -1327,6 +1459,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/require-number-to-fixed-digits-argument.html"
   },
   {
@@ -1337,6 +1470,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/require-post-message-target-origin.html"
   },
   {
@@ -1347,6 +1481,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/switch-case-braces.html"
   },
   {
@@ -1357,6 +1492,7 @@
     "type_aware": false,
     "fix": "pending",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/switch-case-break-position.html"
   },
   {
@@ -1367,6 +1503,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/text-encoding-identifier-case.html"
   },
   {
@@ -1377,6 +1514,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/unicorn/throw-new-error.html"
   }
 ]
