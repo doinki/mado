@@ -7,6 +7,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/google-font-display.html"
   },
   {
@@ -17,6 +18,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/google-font-preconnect.html"
   },
   {
@@ -27,6 +29,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/inline-script-id.html"
   },
   {
@@ -37,6 +40,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/next-script-for-ga.html"
   },
   {
@@ -47,6 +51,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/no-assign-module-variable.html"
   },
   {
@@ -57,6 +62,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/no-async-client-component.html"
   },
   {
@@ -67,6 +73,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/no-before-interactive-script-outside-document.html"
   },
   {
@@ -77,6 +84,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/no-css-tags.html"
   },
   {
@@ -87,6 +95,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/no-document-import-in-page.html"
   },
   {
@@ -97,6 +106,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/no-duplicate-head.html"
   },
   {
@@ -107,6 +117,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/no-head-element.html"
   },
   {
@@ -117,6 +128,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/no-head-import-in-document.html"
   },
   {
@@ -127,6 +139,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/no-html-link-for-pages.html"
   },
   {
@@ -137,6 +150,7 @@
     "type_aware": false,
     "fix": "pending",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/no-img-element.html"
   },
   {
@@ -147,6 +161,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/no-page-custom-font.html"
   },
   {
@@ -157,6 +172,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/no-script-component-in-head.html"
   },
   {
@@ -167,6 +183,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/no-styled-jsx-in-document.html"
   },
   {
@@ -177,6 +194,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/no-sync-scripts.html"
   },
   {
@@ -187,6 +205,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/no-title-in-document-head.html"
   },
   {
@@ -197,6 +216,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/no-typos.html"
   },
   {
@@ -207,6 +227,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/nextjs/no-unwanted-polyfillio.html"
   }
 ]

@@ -7,6 +7,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/consistent-each-for.html"
   },
   {
@@ -17,6 +18,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/consistent-test-filename.html"
   },
   {
@@ -27,6 +29,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/consistent-test-it.html"
   },
   {
@@ -37,6 +40,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/consistent-vitest-vi.html"
   },
   {
@@ -47,6 +51,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/expect-expect.html"
   },
   {
@@ -57,6 +62,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/hoisted-apis-on-top.html"
   },
   {
@@ -67,6 +73,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/max-expects.html"
   },
   {
@@ -77,6 +84,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/max-nested-describe.html"
   },
   {
@@ -87,6 +95,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/no-alias-methods.html"
   },
   {
@@ -97,6 +106,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/no-commented-out-tests.html"
   },
   {
@@ -107,6 +117,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/no-conditional-expect.html"
   },
   {
@@ -117,6 +128,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/no-conditional-in-test.html"
   },
   {
@@ -127,6 +139,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/no-conditional-tests.html"
   },
   {
@@ -137,6 +150,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/no-disabled-tests.html"
   },
   {
@@ -147,6 +161,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/no-duplicate-hooks.html"
   },
   {
@@ -157,6 +172,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/no-focused-tests.html"
   },
   {
@@ -167,6 +183,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/no-hooks.html"
   },
   {
@@ -177,6 +194,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/no-identical-title.html"
   },
   {
@@ -187,6 +205,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/no-import-node-test.html"
   },
   {
@@ -197,6 +216,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/no-importing-vitest-globals.html"
   },
   {
@@ -207,6 +227,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/no-interpolation-in-snapshots.html"
   },
   {
@@ -217,6 +238,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/no-large-snapshots.html"
   },
   {
@@ -227,6 +249,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/no-mocks-import.html"
   },
   {
@@ -237,6 +260,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/no-restricted-matchers.html"
   },
   {
@@ -247,6 +271,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/no-restricted-vi-methods.html"
   },
   {
@@ -257,6 +282,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/no-standalone-expect.html"
   },
   {
@@ -267,6 +293,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/no-test-prefixes.html"
   },
   {
@@ -277,6 +304,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/no-test-return-statement.html"
   },
   {
@@ -285,8 +313,9 @@
     "category": "style",
     "version": "1.39.0",
     "type_aware": false,
-    "fix": "fixable_fix",
+    "fix": "fixable_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/no-unneeded-async-expect-function.html"
   },
   {
@@ -297,6 +326,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/padding-around-after-all-blocks.html"
   },
   {
@@ -307,6 +337,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/padding-around-test-blocks.html"
   },
   {
@@ -317,6 +348,7 @@
     "type_aware": false,
     "fix": "fixable_dangerous_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/prefer-called-exactly-once-with.html"
   },
   {
@@ -327,6 +359,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/prefer-called-once.html"
   },
   {
@@ -337,6 +370,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/prefer-called-times.html"
   },
   {
@@ -345,8 +379,9 @@
     "category": "style",
     "version": "0.2.5",
     "type_aware": false,
-    "fix": "fixable_fix",
+    "fix": "fixable_suggestion",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/prefer-called-with.html"
   },
   {
@@ -357,6 +392,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/prefer-comparison-matcher.html"
   },
   {
@@ -367,6 +403,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/prefer-describe-function-title.html"
   },
   {
@@ -377,6 +414,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/prefer-each.html"
   },
   {
@@ -387,6 +425,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/prefer-equality-matcher.html"
   },
   {
@@ -397,6 +436,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/prefer-expect-assertions.html"
   },
   {
@@ -407,6 +447,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/prefer-expect-resolves.html"
   },
   {
@@ -417,6 +458,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/prefer-expect-type-of.html"
   },
   {
@@ -427,6 +469,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/prefer-hooks-in-order.html"
   },
   {
@@ -437,6 +480,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/prefer-hooks-on-top.html"
   },
   {
@@ -447,6 +491,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/prefer-import-in-mock.html"
   },
   {
@@ -457,6 +502,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/prefer-importing-vitest-globals.html"
   },
   {
@@ -467,6 +513,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/prefer-lowercase-title.html"
   },
   {
@@ -477,6 +524,7 @@
     "type_aware": false,
     "fix": "conditional_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/prefer-mock-promise-shorthand.html"
   },
   {
@@ -487,6 +535,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/prefer-mock-return-shorthand.html"
   },
   {
@@ -497,6 +546,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/prefer-snapshot-hint.html"
   },
   {
@@ -507,6 +557,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/prefer-spy-on.html"
   },
   {
@@ -515,8 +566,9 @@
     "category": "style",
     "version": "1.57.0",
     "type_aware": false,
-    "fix": "fixable_fix",
+    "fix": "fixable_suggestion",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/prefer-strict-boolean-matchers.html"
   },
   {
@@ -527,6 +579,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/prefer-strict-equal.html"
   },
   {
@@ -535,8 +588,9 @@
     "category": "style",
     "version": "0.2.14",
     "type_aware": false,
-    "fix": "fixable_fix",
+    "fix": "fixable_suggestion",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/prefer-to-be.html"
   },
   {
@@ -547,6 +601,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/prefer-to-be-falsy.html"
   },
   {
@@ -557,6 +612,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/prefer-to-be-object.html"
   },
   {
@@ -567,6 +623,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/prefer-to-be-truthy.html"
   },
   {
@@ -577,6 +634,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/prefer-to-contain.html"
   },
   {
@@ -587,6 +645,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/prefer-to-have-been-called-times.html"
   },
   {
@@ -597,6 +656,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/prefer-to-have-length.html"
   },
   {
@@ -607,6 +667,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/prefer-todo.html"
   },
   {
@@ -617,6 +678,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/require-awaited-expect-poll.html"
   },
   {
@@ -627,6 +689,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/require-hook.html"
   },
   {
@@ -637,6 +700,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/require-local-test-context-for-concurrent-snapshots.html"
   },
   {
@@ -647,6 +711,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/require-mock-type-parameters.html"
   },
   {
@@ -657,6 +722,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/require-test-timeout.html"
   },
   {
@@ -667,6 +733,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/require-to-throw-message.html"
   },
   {
@@ -677,6 +744,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/require-top-level-describe.html"
   },
   {
@@ -687,6 +755,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/valid-describe-callback.html"
   },
   {
@@ -697,6 +766,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/valid-expect.html"
   },
   {
@@ -707,6 +777,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/valid-expect-in-promise.html"
   },
   {
@@ -717,6 +788,7 @@
     "type_aware": false,
     "fix": "conditional_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/valid-title.html"
   },
   {
@@ -727,6 +799,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/vitest/warn-todo.html"
   }
 ]

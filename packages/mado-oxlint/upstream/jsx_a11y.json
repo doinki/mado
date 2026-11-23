@@ -7,6 +7,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/alt-text.html"
   },
   {
@@ -17,6 +18,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/anchor-ambiguous-text.html"
   },
   {
@@ -27,6 +29,7 @@
     "type_aware": false,
     "fix": "conditional_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/anchor-has-content.html"
   },
   {
@@ -37,6 +40,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/anchor-is-valid.html"
   },
   {
@@ -47,6 +51,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/aria-activedescendant-has-tabindex.html"
   },
   {
@@ -57,6 +62,7 @@
     "type_aware": false,
     "fix": "conditional_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/aria-props.html"
   },
   {
@@ -67,6 +73,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/aria-proptypes.html"
   },
   {
@@ -77,6 +84,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/aria-role.html"
   },
   {
@@ -85,8 +93,9 @@
     "category": "correctness",
     "version": "0.1.1",
     "type_aware": false,
-    "fix": "fixable_fix",
+    "fix": "conditional_safe_fix_or_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/aria-unsupported-elements.html"
   },
   {
@@ -97,6 +106,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/autocomplete-valid.html"
   },
   {
@@ -107,6 +117,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/click-events-have-key-events.html"
   },
   {
@@ -117,6 +128,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/control-has-associated-label.html"
   },
   {
@@ -127,6 +139,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/heading-has-content.html"
   },
   {
@@ -137,6 +150,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/html-has-lang.html"
   },
   {
@@ -147,6 +161,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/iframe-has-title.html"
   },
   {
@@ -157,6 +172,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/img-redundant-alt.html"
   },
   {
@@ -167,6 +183,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/interactive-supports-focus.html"
   },
   {
@@ -177,6 +194,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/label-has-associated-control.html"
   },
   {
@@ -187,6 +205,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/lang.html"
   },
   {
@@ -197,6 +216,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/media-has-caption.html"
   },
   {
@@ -207,6 +227,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/mouse-events-have-key-events.html"
   },
   {
@@ -217,6 +238,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/no-access-key.html"
   },
   {
@@ -225,8 +247,9 @@
     "category": "correctness",
     "version": "0.0.22",
     "type_aware": false,
-    "fix": "fixable_fix",
+    "fix": "fixable_suggestion",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/no-aria-hidden-on-focusable.html"
   },
   {
@@ -237,6 +260,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/no-autofocus.html"
   },
   {
@@ -247,6 +271,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/no-distracting-elements.html"
   },
   {
@@ -257,6 +282,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/no-interactive-element-to-noninteractive-role.html"
   },
   {
@@ -267,6 +293,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/no-noninteractive-element-interactions.html"
   },
   {
@@ -277,6 +304,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/no-noninteractive-element-to-interactive-role.html"
   },
   {
@@ -287,6 +315,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/no-noninteractive-tabindex.html"
   },
   {
@@ -297,6 +326,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/no-redundant-roles.html"
   },
   {
@@ -307,6 +337,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/no-static-element-interactions.html"
   },
   {
@@ -317,6 +348,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/prefer-tag-over-role.html"
   },
   {
@@ -327,6 +359,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/role-has-required-aria-props.html"
   },
   {
@@ -337,6 +370,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/role-supports-aria-props.html"
   },
   {
@@ -345,8 +379,9 @@
     "category": "correctness",
     "version": "0.0.19",
     "type_aware": false,
-    "fix": "fixable_fix",
+    "fix": "conditional_safe_fix_or_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/scope.html"
   },
   {
@@ -357,6 +392,7 @@
     "type_aware": false,
     "fix": "fixable_dangerous_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jsx_a11y/tabindex-no-positive.html"
   }
 ]

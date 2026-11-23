@@ -7,6 +7,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/node/callback-return.html"
   },
   {
@@ -17,6 +18,7 @@
     "type_aware": false,
     "fix": "pending",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/node/exports-style.html"
   },
   {
@@ -27,6 +29,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/node/global-require.html"
   },
   {
@@ -37,6 +40,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/node/handle-callback-err.html"
   },
   {
@@ -47,6 +51,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/node/no-exports-assign.html"
   },
   {
@@ -57,6 +62,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/node/no-mixed-requires.html"
   },
   {
@@ -67,6 +73,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/node/no-new-require.html"
   },
   {
@@ -77,6 +84,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/node/no-path-concat.html"
   },
   {
@@ -87,6 +95,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/node/no-process-env.html"
   },
   {
@@ -97,6 +106,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/node/no-sync.html"
   },
   {
@@ -107,6 +117,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/node/no-top-level-await.html"
   }
 ]

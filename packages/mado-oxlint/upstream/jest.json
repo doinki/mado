@@ -7,6 +7,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/consistent-test-it.html"
   },
   {
@@ -17,6 +18,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/expect-expect.html"
   },
   {
@@ -27,6 +29,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/max-expects.html"
   },
   {
@@ -37,6 +40,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/max-nested-describe.html"
   },
   {
@@ -47,6 +51,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/no-alias-methods.html"
   },
   {
@@ -57,6 +62,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/no-commented-out-tests.html"
   },
   {
@@ -67,6 +73,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/no-conditional-expect.html"
   },
   {
@@ -77,6 +84,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/no-conditional-in-test.html"
   },
   {
@@ -87,6 +95,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/no-confusing-set-timeout.html"
   },
   {
@@ -97,6 +106,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/no-deprecated-functions.html"
   },
   {
@@ -107,6 +117,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/no-disabled-tests.html"
   },
   {
@@ -117,6 +128,7 @@
     "type_aware": false,
     "fix": "pending",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/no-done-callback.html"
   },
   {
@@ -127,6 +139,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/no-duplicate-hooks.html"
   },
   {
@@ -137,6 +150,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/no-export.html"
   },
   {
@@ -147,6 +161,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/no-focused-tests.html"
   },
   {
@@ -157,6 +172,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/no-hooks.html"
   },
   {
@@ -167,6 +183,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/no-identical-title.html"
   },
   {
@@ -177,6 +194,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/no-interpolation-in-snapshots.html"
   },
   {
@@ -187,6 +205,7 @@
     "type_aware": false,
     "fix": "conditional_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/no-jasmine-globals.html"
   },
   {
@@ -197,6 +216,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/no-large-snapshots.html"
   },
   {
@@ -207,6 +227,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/no-mocks-import.html"
   },
   {
@@ -217,6 +238,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/no-restricted-jest-methods.html"
   },
   {
@@ -227,6 +249,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/no-restricted-matchers.html"
   },
   {
@@ -237,6 +260,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/no-standalone-expect.html"
   },
   {
@@ -247,6 +271,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/no-test-prefixes.html"
   },
   {
@@ -257,6 +282,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/no-test-return-statement.html"
   },
   {
@@ -265,8 +291,9 @@
     "category": "style",
     "version": "1.39.0",
     "type_aware": false,
-    "fix": "fixable_fix",
+    "fix": "fixable_suggestion",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/no-unneeded-async-expect-function.html"
   },
   {
@@ -277,6 +304,7 @@
     "type_aware": false,
     "fix": "conditional_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/no-untyped-mock-factory.html"
   },
   {
@@ -287,6 +315,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/padding-around-after-all-blocks.html"
   },
   {
@@ -297,6 +326,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/padding-around-test-blocks.html"
   },
   {
@@ -305,8 +335,9 @@
     "category": "style",
     "version": "0.2.5",
     "type_aware": false,
-    "fix": "fixable_fix",
+    "fix": "fixable_suggestion",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/prefer-called-with.html"
   },
   {
@@ -317,6 +348,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/prefer-comparison-matcher.html"
   },
   {
@@ -327,6 +359,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/prefer-each.html"
   },
   {
@@ -337,6 +370,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/prefer-ending-with-an-expect.html"
   },
   {
@@ -347,6 +381,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/prefer-equality-matcher.html"
   },
   {
@@ -357,6 +392,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/prefer-expect-assertions.html"
   },
   {
@@ -367,6 +403,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/prefer-expect-resolves.html"
   },
   {
@@ -377,6 +414,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/prefer-hooks-in-order.html"
   },
   {
@@ -387,6 +425,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/prefer-hooks-on-top.html"
   },
   {
@@ -397,6 +436,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/prefer-importing-jest-globals.html"
   },
   {
@@ -407,6 +447,7 @@
     "type_aware": false,
     "fix": "conditional_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/prefer-jest-mocked.html"
   },
   {
@@ -417,6 +458,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/prefer-lowercase-title.html"
   },
   {
@@ -427,6 +469,7 @@
     "type_aware": false,
     "fix": "conditional_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/prefer-mock-promise-shorthand.html"
   },
   {
@@ -437,6 +480,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/prefer-mock-return-shorthand.html"
   },
   {
@@ -447,6 +491,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/prefer-snapshot-hint.html"
   },
   {
@@ -457,6 +502,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/prefer-spy-on.html"
   },
   {
@@ -467,6 +513,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/prefer-strict-equal.html"
   },
   {
@@ -475,8 +522,9 @@
     "category": "style",
     "version": "0.2.14",
     "type_aware": false,
-    "fix": "fixable_fix",
+    "fix": "fixable_suggestion",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/prefer-to-be.html"
   },
   {
@@ -487,6 +535,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/prefer-to-contain.html"
   },
   {
@@ -497,6 +546,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/prefer-to-have-been-called.html"
   },
   {
@@ -507,6 +557,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/prefer-to-have-been-called-times.html"
   },
   {
@@ -517,6 +568,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/prefer-to-have-length.html"
   },
   {
@@ -527,6 +579,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/prefer-todo.html"
   },
   {
@@ -537,6 +590,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/require-hook.html"
   },
   {
@@ -547,6 +601,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/require-to-throw-message.html"
   },
   {
@@ -557,6 +612,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/require-top-level-describe.html"
   },
   {
@@ -567,6 +623,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/valid-describe-callback.html"
   },
   {
@@ -577,6 +634,7 @@
     "type_aware": false,
     "fix": "fixable_suggestion",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/valid-expect.html"
   },
   {
@@ -587,6 +645,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/valid-expect-in-promise.html"
   },
   {
@@ -597,6 +656,7 @@
     "type_aware": false,
     "fix": "conditional_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/jest/valid-title.html"
   }
 ]

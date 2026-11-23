@@ -7,6 +7,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/promise/always-return.html"
   },
   {
@@ -17,6 +18,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/promise/avoid-new.html"
   },
   {
@@ -27,6 +29,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/promise/catch-or-return.html"
   },
   {
@@ -37,6 +40,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/promise/no-callback-in-promise.html"
   },
   {
@@ -47,6 +51,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/promise/no-multiple-resolved.html"
   },
   {
@@ -57,6 +62,7 @@
     "type_aware": false,
     "fix": "pending",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/promise/no-nesting.html"
   },
   {
@@ -67,6 +73,7 @@
     "type_aware": false,
     "fix": "fixable_fix",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/promise/no-new-statics.html"
   },
   {
@@ -77,6 +84,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/promise/no-promise-in-callback.html"
   },
   {
@@ -87,6 +95,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/promise/no-return-in-finally.html"
   },
   {
@@ -97,6 +106,7 @@
     "type_aware": false,
     "fix": "pending",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/promise/no-return-wrap.html"
   },
   {
@@ -107,6 +117,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/promise/param-names.html"
   },
   {
@@ -117,6 +128,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/promise/prefer-await-to-callbacks.html"
   },
   {
@@ -127,6 +139,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/promise/prefer-await-to-then.html"
   },
   {
@@ -137,6 +150,7 @@
     "type_aware": false,
     "fix": "conditional_suggestion",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/promise/prefer-catch.html"
   },
   {
@@ -147,6 +161,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": false,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/promise/spec-only.html"
   },
   {
@@ -157,6 +172,7 @@
     "type_aware": false,
     "fix": "none",
     "default": false,
+    "recommended": true,
     "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/promise/valid-params.html"
   }
 ]
